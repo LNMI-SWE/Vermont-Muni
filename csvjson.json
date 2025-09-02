@@ -7,7 +7,7 @@
     "Square_MI": 17.6,
     "Altitude": 2251,
     "Postal_Code": 5907,
-    "URL": "",
+    "URL": "NULL",
     "Office_Phone": "NULL",
     "Clerk_Email": "NULL"
   },
@@ -103,7 +103,7 @@
     "Square_MI": 38.1,
     "Altitude": 1744,
     "Postal_Code": 5901,
-    "URL": "",
+    "URL": "NULL",
     "Office_Phone": "NULL",
     "Clerk_Email": "NULL"
   },
@@ -739,7 +739,7 @@
     "Square_MI": 39.3,
     "Altitude": 1650,
     "Postal_Code": 5342,
-    "URL": "",
+    "URL": "NULL",
     "Office_Phone": "802-368-7887",
     "Clerk_Email": "whitinghamtownclerk@yahoo.com"
   },
@@ -1675,7 +1675,7 @@
     "Square_MI": 64.4,
     "Altitude": 418,
     "Postal_Code": 5051,
-    "URL": "",
+    "URL": "NULL",
     "Office_Phone": "802-866-5521",
     "Clerk_Email": "clerk@newburyvt.org"
   },
@@ -1963,7 +1963,7 @@
     "Square_MI": 28.8,
     "Altitude": 1000,
     "Postal_Code": 5143,
-    "URL": "",
+    "URL": "NULL",
     "Office_Phone": "802-875-2765",
     "Clerk_Email": "clerk@vermontel.net"
   },
