@@ -1,0 +1,256 @@
+Town_ID,Town_Name,County,Population,Square_MI,Altitude,Postal_Code,URL,Office_Phone,Clerk_Email
+8,Avery's Gore,Essex,0,17.6,2251,5907,,NULL,NULL
+36,Buels Gore,Chittenden,12,5.1,1165,5487,NULL,NULL,NULL
+75,Ferdinand,Essex,33,53,1275,5905,NULL,NULL,NULL
+84,Granby,Essex,86,39.1,1500,5840,NULL,802-328-3611,granby@wildblue.net
+59,Derby,Orleans,4604,57.6,1011,5829,http://derbyvt.org/,802-766-4906,derbytownclerk@derbyvt.org
+47,Chelsea,Orange,1250,39.9,840,5038,http://www.chelseavt.org/,802-685-4460,town.clerk@chelseavt.us
+124,Marshfield,Washington,1496,43.4,850,5658,http://www.town.marshfield.vt.us,802-426-3305,clerk@town.marshfield.vt.us
+115,Lincoln,Addison,1214,44,971,5443,http://lincolnvermont.org/,802-453-2980,clerk@lincolnvermont.org
+7,Averill,Essex,8,38.1,1744,5901,,NULL,NULL
+138,New Haven,Addison,1666,41.8,454,5472,http://newhavenvt.com/,802-453-3516,newhavenclerk@gmavt.net
+245,Williston,Chittenden,1650,30.7,501,5495,http://town.williston.vt.us,802-878-5121,beckettd@willistontown.com
+150,Panton,Addison,682,22,200,5491,http://www.pantonvt.us/,802-475-2333,panton@gmavt.net
+68,Enosburgh,Franklin,2788,48.7,422,5450,http://www.enosburghvermont.org/,802-933-4421,enostown@myfairpoint.net
+114,Lewis,Essex,0,39.7,1711,5903,NULL,NULL,NULL
+102,Ira,Rutland,455,21.3,830,5777,http://www.townofira.com/,802-235-2745,iraclerk@vermontel.com
+237,Westminster,Windham,3210,46.1,314,5158,http://westminster.govoffice.com/,802-722-4091,dwoodward@westminstervt.org
+128,Middletown Springs,Rutland,823,22.8,850,5757,http://middletownsprings.vt.gov/,802-235-2220,middletown@vermontel.net
+37,Burke,Caledonia,1571,34.1,900,5871,http://www.burkevermont.org/,802-467-3717,burke@burkevermont.org
+210,Troy,Orleans,1564,36.1,764,5859,http://www.troyvt.org/,802-988-2663,townoftroy@comcast.net
+240,Weybridge,Addison,824,17.6,180,5753,http://weybridge.govoffice.com,802-545-2450,curavoo@gmavt.net
+160,Pownal,Bennington,3560,46.7,385,5261,http://www.pownal.org/TownOffice/TownOffice.html,802-823-7757,powclerk@sover.net
+229,Weathersfield,Windsor,2788,44.2,412,5030,http://www.weathersfield.org/,802-674-9500,tclerk@weathersfield.org
+40,Calais,Washington,1529,38.6,777,5650,http://www.calaisvermont.gov,802-456-8720,calais.townclerk@gmail.com
+236,Westford,Chittenden,2086,39.3,464,5494,http://westfordvt.us/,802-878-4587,townclerk@westfordvt.us
+242,Whiting,Addison,380,13.7,390,5778,NULL,802-623-7813,townofwhiting@shoreham.net
+58,Danville,Caledonia,2211,61.2,1341,5828,http://www.danvillevt.com/,802-684-3352,danvtc36@yahoo.com
+137,Mount Tabor,Rutland,203,43.8,1670,5739,NULL,802-293-5282,mttabor@vermontel.net
+108,Johnson,Lamoille,3274,45.1,516,5656,http://townofjohnson.com/,802-635-2611,raudibert@townofjohnson.com
+71,Fairfax,Franklin,3765,40.5,349,5454,NULL,802-849-6111 x2,fairfaxtownclerk@live.com
+55,Coventry,Orleans,1014,27.7,718,5825,NULL,802-754-2288,covtc@hotmail.com
+215,Vershire,Orange,629,36.5,1200,5079,http://vershirevt.org/,802-685-2227,clerk-treasurer@vershirevt.org
+212,Underhill,Chittenden,2980,51.4,706,5490,http://www.underhillvt.gov,802-899-4434 x101,underhillclerk@comcast.net
+14,Barre,Washington,7602,30.7,760,5678,http://www.barretown.org/,802-479-9391,dkelty@barretown.org
+122,Manchester,Bennington,4180,42.3,700,5255,http://www.manchester-vt.gov/,802-362-1315,l.spence@manchester-vt.gov
+175,Rutland,Rutland,4038,19.3,540,5736,http://www.rutlandtown.com/,802-773-2528 x5,mkh@rutlandtown.com
+39,Cabot,Washington,1213,38.5,1076,5647,http://www.cabotvt.us/,802-563-2279,tcocabot@fairpoint.net
+238,Westmore,Orleans,306,37.5,1170,5860,http://www.westmoreonline.org/main/,802-525-3007,clerk@westmoreonline.org
+86,Granville,Addison,303,52.2,950,5747,http://www.granvillevermont.org/,802-767-4403,granvilletown@gmavt.net
+20,Berlin,Washington,2864,36.5,589,5602,http://www.berlinvt.org/,802-229-9298,townclerk@berlinvt.org
+220,Waltham,Addison,479,8.9,450,5491,NULL,802-877-3641,Waltham@myfairpoint.net
+88,Groton,Caledonia,876,55,773,5046,http://www.grotonvt.com/,802-584-3276,grotonclerk@fairpoint.net
+226,Waterbury,Washington,4915,49.7,425,5676,http://www.waterburyvt.com/,802-244-8447,clawrence@waterburyvt.com
+116,Londonderry,Windham,1709,35.9,1100,5155,http://www.londonderryvt.org,802-824-3356,londontown@vermontel.net
+185,Shoreham,Addison,1222,46.3,396,5770,http://www.shorehamvt.org,802-897-5841,shorehamtown@shoreham.net
+62,Dummerston,Windham,1915,30.8,756,5346,http://www.dummerston.org,802-257-1496,townclerk@dummerston.org
+72,Fairfield,Franklin,1800,68.5,500,5455,http://fairfieldvermont.us/,802-827-3261,amanda@fairfieldvermont.us
+16,Belvidere,Lamoille,294,32.1,720,5442,NULL,802-644-6621,beltc@pshift.net
+103,Irasburg,Orleans,1077,40.6,814,5845,http://www.irasburgvt.com/,802-754-2242,irasburgtc@comcast.net
+168,Ripton,Addison,556,49.5,1025,5766,http://www.riptonvt.org/,802-388-2266,townclerk@riptonvt.org
+206,Thetford,Orange,2617,44.2,600,5075,http://www.thetfordvermont.us/,802-785-2922,townclerk@thetfordvermont.us
+152,Peacham,Caledonia,665,47.7,1310,5862,http://www.peacham.net,802-592-3218,townclerk@peacham.net
+51,Colchester,Chittenden,16986,58.6,274,5446,http://www.colchestervt.gov/,802 264-5520,krichard@colchestervt.gov
+25,Braintree,Orange,1194,38.3,777,5060,http://www.braintreevt.com,802-728-9787,braintreetownclerk@comcast.net
+90,Guilford,Windham,2046,40,400,5301,http://www.guilfordschool.org/,802-254-6857,guilfordtc@yahoo.com
+119,Lunenburg,Essex,1328,45.4,1172,5906,NULL,802-892-5959,lunenburg01@live.com
+85,Grand Isle,Grand Isle,1955,35.1,160,5458,http://www.grandislevt.org,802-372-8830,clerk@town.grand-isle.vt.us
+159,Poultney,Rutland,3633,44.8,430,5764,NULL,802-287-5761,poultneytownclerk@comcast.net
+189,South Hero,Grand Isle,1696,47.5,240,5486,http://www.southherovt.org/,802-372-5552,southherotc@aol.com
+78,Franklin,Franklin,1268,40.8,452,5457,http://www.franklinvermont.com,802-285-2101,townoff@franklinvt.net
+205,Swanton,Franklin,6203,61.7,155,5488,http://www.swantonvermont.org/,802-868-4421,townclerk@swantonvermont.org
+233,West Rutland,Rutland,2535,18,500,5777,http://www.westrutlandtown.com/,802-438-2204,crwener@westrutlandtown.com
+243,Whitingham,Windham,1298,39.3,1650,5342,,802-368-7887,whitinghamtownclerk@yahoo.com
+148,Orange,Orange,965,39,1500,5649,http://www.orangevt.org/,802-479-2673,kfelch@orangevt.org
+187,Somerset,Windham,5,28.1,2000,5356,NULL,NULL,NULL
+194,St. Johnsbury,Caledonia,7571,36.8,697,5819,http://www.stjtown.com/,802-748-4331,townclerk@stjvt.com
+93,Hardwick,Caledonia,3174,38.9,861,5843,http://hardwickvt.org/,802-472-5971,hardwicktc@vtlink.net
+171,Roxbury,Washington,576,41.8,1007,5669,http://www.roxbury.govoffice2.com,802-485-7840,townrox@tds.net
+244,Williamstown,Orange,3225,40.3,870,5679,http://www.williamstownvt.org/,802-433-5455,clerk@williamstownvt.org
+79,Georgia,Franklin,4375,45.2,385,5478,http://townofgeorgia.com/,802-524-3524,georgia_clerk@comcast.net
+96,Highgate,Franklin,3397,59.9,308,5459,http://www.highgatevt.org,802-868-4697,hgtownclerk@gmail.com
+158,Pomfret,Windsor,997,39.5,1333,5067,http://pomfretvt.us/,802-457-3861,clerk@pomfretvt.us
+9,Bakersfield,Franklin,1215,44.6,726,5441,NULL,802-827-4495,townclerk_bakersfield@comcast.net
+5,Arlington,Bennington,2397,42.4,691,5250,http://www.arlingtonvt.org/,802-375-2332,Townclerk@arlingtonvt.org
+166,Richford,Franklin,2321,43.3,477,5476,http://www.richfordvt.com,802-848-7751,townclerk@richfordvt.org
+130,Monkton,Addison,1759,36.2,533,5469,http://www.monktonvt.com,802-453-3800,townclerk@monktonvt.com
+12,Barnet,Caledonia,1690,43.6,452,5821,http://www.barnetvt.org,802-633-2256,townclerk@barnetvt.org
+70,Fair Haven,Rutland,2928,18,400,5743,http://www.fairhavenvt.org/,802-265-3610 x4,sdclerk@comcast.net
+174,Rutland,Rutland,17292,7.6,540,5702,http://rutland.govoffice.com/,802-773-1800,henryh@rutlandcity.com
+127,Middlesex,Washington,1729,39.9,560,5602,http://middlesexvermont.org/,802-223-5915,middlesxtwnclrk@comcast.net
+44,Cavendish,Windsor,1470,39.7,920,5142,http://www.cavendishvt.com/,802-226-7291,j.pixley@comcast.net
+56,Craftsbury,Orleans,1136,39.7,904,5826,http://www.townofcraftsbury.com/,802-586-2823,craftsbury@gmail.com
+197,Starksboro,Addison,1898,45.5,615,5487,http://www.starksboro.org,802-453-2639,starksboro@madriver.com
+101,Hyde Park,Lamoille,2847,39,671,5655,http://www.hydeparkvt.com,802-888-2300,kim@hydeparkvt.com
+216,Victory,Essex,97,43,1100,5858,NULL,802-328-2400,townofvictory@wildblue.net
+63,Duxbury,Washington,1289,43.1,550,5676,http://www.duxburyvermont.org/,802-244-6660,duxbury1@myfairpoint.net
+184,Sheldon,Franklin,1990,39.3,374,5483,NULL,802-933-2524,tc@sheldonvt.com
+252,Woodbury,Washington,809,39.1,1164,5681,http://woodburyvt.org/,802-456-7051,woodburyclerk@comcast.net
+10,Baltimore,Windsor,250,4.7,1067,5143,http://www.baltimorevt.org,802-263-5274,baltimorevt@tds.net
+2,Albany,Orleans,840,38.7,956,5820,,802-755-6100,albany@gaw.com
+234,West Windsor,Windsor,1067,24.7,689,5037,http://www.westwindsorvt.govoffice2.com/,802-484-7212,west.windsor.townclerk@valley.net
+248,Windsor,Windsor,3756,19.8,362,5089,http://www.windsorvt.org/,802-674-5610,smicka@windsorvt.org
+199,Stowe,Lamoille,4339,72.7,723,5672,http://www.townofstowevt.org/,802-253-6133,akaiser@townofstowevermont.org
+129,Milton,Chittenden,9479,60.9,320,5468,http://miltonvt.org/,802-893-7344,Jcushing@town.milton.vt.us
+227,Waterford,Caledonia,1104,39.7,816,5848,NULL,802-748-2122,townofwaterford@gmail.com
+1,Addison,Addison,1393,49,289,5491,http://www.addisonvt.org/,802-759-2020,addisontown@gmavt.net
+230,Wells,Rutland,1121,23.4,502,5774,http://wellsvt.com/,802-645-0486,wellstownclerk@comcast.net
+95,Hartland,Windsor,3223,45.2,587,5048,http://www.hartland.govoffice.com,802-436-2444,hardlandvtclerk@vermontel.net
+6,Athens,Windham,340,13.1,980,5143,,802-869-3370,townofathens@hotmail.com
+251,Wolcott,Lamoille,1456,39.2,720,5680,http://www.wolcottvt.org/,802-888-2746,wolcott@pshift.com
+217,Waitsfield,Washington,1659,26.9,800,5673,http://www.waitsfieldvt.us/,802-496-2218,waitsfld@madriver.com
+183,Shelburne,Chittenden,6944,44.9,148,5482,http://www.shelburnevt.org/,802-985-5116,chaag@shelburnevt.org
+231,West Fairlee,Orange,726,22.8,752,5083,http://www.westfairleevt.com,802-333-9696,westfairleetc@hotmail.com
+30,Brighton,Essex,1260,53.4,1280,5846,http://brightonvt.org/,802-723-4405,brightonclerk@comcast.net
+232,West Haven,Rutland,278,28.5,380,5743,NULL,802-265-4880,westhaven@myfairpoint.net
+48,Chester,Windsor,3044,55.9,623,5143,http://www.chester.govoffice.com,802-875-2173,tcchester@vermontel.net
+149,Orwell,Addison,1185,49.7,385,5760,http://www.town-of-orwell.org/,802-948-2032,tckorwel@sover.net
+255,Worcester,Washington,902,38.8,780,5682,http://www.worcestervt.org/,802-223-6942 x1,worcesterclerk@comcast.net
+153,Peru,Bennington,416,37.4,1660,5152,NULL,802-824-3065,perutown@myfairpoint.net
+53,Corinth,Orange,1461,48.6,1000,5039,http://www.corinthvt.org/,802-439-5850,corino@tops-tele.com
+50,Clarendon,Rutland,2811,31.6,600,5759,http://www.clarendonvt.org,802-775-4274,clarendonclerk@comcast.net
+24,Bradford,Orange,2619,29.9,425,5033,http://www.bradford-vt.us/,802 222-4727,clerk@bradford-vt.us
+147,Norwich,Washington,3544,44.8,531,5055,http://www.norwich.vt.us/,802-649-1419  x103,clerk@norwich.vt.us
+105,Jamaica,Windham,946,49.5,688,5343,http://www.jamaicavermont.org/,802-874-4681,jamaicatownclerk@svcable.net
+65,East Montpelier,Washington,2578,32.1,727,5651,http://eastmontpeliervt.org,802-223-3313,eastmonttct@comcast.net
+31,Bristol,Addison,3788,42.2,570,5443,http://www.bristolvt.org/,802-453-2486,bristoltown@gmavt.net
+141,Newfane,Windham,1680,40.4,536,5345,http://www.newfanevt.com/,802-365-7772 x10,tclerknewfane@svcable.net
+151,Pawlet,Rutland,1394,42.9,690,5761,http://pawlet.vt.gov/,802-325-3309,pawletclerk@vermontel.net
+179,Searsburg,Bennington,96,21.6,1734,5363,NULL,802-464-8081,josiekil@yahoo.com
+241,Wheelock,Caledonia,811,39.8,790,5851,NULL,802-626-9094,wheelocktown@gmail.com
+23,Bolton,Chittenden,971,42.8,342,5676,http://www.boltonvt.com/,802-434-5075 x222,Deborah@townofboltonvt.com
+22,Bloomfield,Essex,261,40.4,261,5905,NULL,802-962-5191,townofbloomfieldvt@gmail.com
+155,Pittsford,Rutland,3140,43.5,560,5763,http://www.town.pittsford.vt.us,802-483-6500 x13,mckinlay1@myfairpoint.net
+223,Warren,Washington,1681,40.1,893,5674,http://www.warrenvt.org,802-496-2709,clerk@warrenvt.org
+98,Holland,Orleans,588,38.2,1405,5830,NULL,802-895-4440,holland1805@hotmail.com
+209,Townshend,Windham,1149,42.8,547,5353,http://www.townshendvt.net/,802-365-7300,tnclk@svcable.net
+57,Danby,Rutland,1292,41.5,790,5739,NULL,802-293-5136,danbytownclerk@vermontel.net
+253,Woodford,Bennington,414,47.6,2215,5201,http://woodfordvt.org/town-government,802-442-4895,info@woodfordvt.org
+113,Lemington,Essex,107,35.3,1015,5903,NULL,802-277-4814,lemitown@myfairpoint.net
+203,Sunderland,Bennington,850,45.6,659,5252,http://www.sunderlandvt.org/,802-375-6106,town@sunderlandvt.org
+52,Concord,Essex,1196,53.5,860,5824,http://www.concordvt.us/,802-695-2220,townclerk@conclerk.com
+32,Brookfield,Orange,1222,41.7,1325,5036,http://www.brookfieldvt.org/,802-276-3352,Btownhall@aol.com
+120,Lyndon,Caledonia,5448,39.8,720,5851,http://www.lyndonvt.org/,802-626-5785,ltc@kingcon.com
+111,Landgrove,Bennington,144,9.1,1360,5148,http://landgrove.vermont.gov,802-824-3716,townoflandgrove@gmail.com
+92,Hancock,Addison,382,38.5,912,5748,NULL,802-767-3660,hancocktwnclerk@yahoo.com
+107,Jericho,Chittenden,5015,35.4,560,5465,http://www.jerichovt.gov/,802-899-4936 x1,jerichovermont@yahoo.com
+247,Windham,Windham,328,26.1,1967,5359,http://windhamvt.info/,802-874-4211,Windham.town@gmail.com
+204,Sutton,Caledonia,1001,38.4,1152,5867,NULL,802-467-3377,duffyogden@yahoo.com
+19,Berkshire,Franklin,1388,42.2,750,5450,NULL,802-933-2335,townclerk@berkshirevt.com
+133,Moretown,Washington,1653,40.2,500,5660,http://www.moretownvt.org/,802-496-3645,townclerk@moretownvt.net
+140,Newbury,Orange,1955,64.4,418,5051,,802-866-5521,clerk@newburyvt.org
+67,Elmore,Lamoille,849,39.6,1154,5657,http://www.elmorevt.org/,802-888-2637,mccorkill@aol.com
+254,Woodstock,Windsor,3232,44.6,705,5091,http://www.townofwoodstock.org,802-457-3611,jay@townofwoodstock.org
+109,Killington,Rutland,1095,46.9,1240,5751,http://www.killingtontown.com/,802-422-3243,lucrecia@town.killington.vt.us
+42,Canaan,Essex,1078,33.4,1042,5903,http://www.canaanvt.org/,802-266-3370,nlabrecque@canaanschools.org
+29,Bridport,Addison,1235,46.2,320,5734,NULL,802-758-2483,bridporttown@gmavt.net
+222,Warner's Grant,Essex,0,3.2,1285,5907,NULL,NULL,NULL
+182,Sheffield,Caledonia,727,32.8,907,5866,http://sheffieldvt.org,802-626-8862,townclerk@sheffieldvt.org
+249,Winhall,Bennington,702,44,1293,5340,http://www.winhall.org/,802-297-2122,winclerk@comcast.net
+139,Newark,Caledonia,470,37.2,1738,5871,NULL,802-467-3336,tclerknewark@kingcon.com
+38,Burlington,Chittenden,38889,15.1,201,5401,http://www.ci.burlington.vt.us/,802-865-7019,sschrader@burlingtonvt.gov
+193,St. George,Chittenden,698,3.6,643,5495,http://www.stgeorgevt.com/,802-482-5272,stgeorgevtclerk@comcast.net
+118,Ludlow,Windsor,2449,35.7,1067,5149,http://www.ludlow.vt.us/,802-228-3232,treasure@ludlow.vt.us
+66,Eden,Lamoille,1152,64.3,1111,5653,http://www.edenvt.org/,802-635-2528,cveareden@myfairpoint.net
+154,Pittsfield,Rutland,427,20.1,892,5762,http://www.pittsfieldvt.org,802-746-8170,townofpittsfield@myfairpoint.net
+191,St. Albans,Franklin,7650,2,388,5478,http://www.stalbansvt.com/,802-524-1500 x264,s.krupp@stalbansvt.com
+74,Fayston,Washington,1141,36.5,1209,5660,http://www.faystonvt.com/,802-496-2454,faystontc@madriver.com
+207,Tinmouth,Rutland,567,28.4,1263,5773,http://www.tinmouthvt.org/,802-446-2498,tinmouthtown@vermontel.net
+186,Shrewsbury,Rutland,1108,50.2,1640,5738,http://www.shrewsburyvt.org,802-492-3511,shrewsburyclerk@vermontel.net
+125,Mendon,Rutland,1028,38.1,1020,5701,http://www.mendonvt.org,802-775-1662,mendonclerk@comcast.net
+11,Barnard,Windsor,958,48.9,1334,5031,NULL,802-234-9211,barnardto@gmail.com
+117,Lowell,Orleans,738,56.1,996,5847,NULL,802-744-6559,kclinger@lowelltown.org
+165,Readsboro,Bennington,809,36.5,1205,5350,https://readsborovt.org/,802-423-5405,clerk@readsborovt.org
+213,Vergennes,Addison,2741,2.5,203,5491,http://www.vergennes.org/,802-877-2841,clerk@vergennes.org
+4,Andover,Windsor,496,28.8,1000,5143,,802-875-2765,clerk@vermontel.net
+135,Morristown,Lamoille,5139,51.6,675,5661,http://www.morristownvt.org/,802-888-6370,mawilson@morristownvt.org
+188,South Burlington,Chittenden,15814,29.6,310,5403,http://www.sburl.com/,802-846-4105,dkinville@sburl.com
+134,Morgan,Orleans,669,33.9,1384,5853,http://www.town.morgan-vt.org/,802-895-2927,tmorganvt@comcast.net
+170,Rockingham,Windham,5309,42.3,320,5101,http://www.rockbf.org/,802-463-4336,daldrich@rockbf.org
+196,Stannard,Caledonia,185,12.5,1700,5842,NULL,802-533-2577,townofstanndard@myfairpoint.net
+218,Walden,Caledonia,782,39,1830,5873,NULL,802-563-2220,waldentc@pivot.net
+104,Isle La Motte,Grand Isle,488,16.7,210,5463,http://www.islelamotte.us/,802-928-3434,islemott@fairpoint.net
+28,Bridgewater,Windsor,980,49.6,820,5034,NULL,802-672-3334,twnbridg@comcast.net
+49,Chittenden,Rutland,1182,74.2,1100,5737,http://www.chittendenvt.org/,802-483-6647,chittendenvt@comcast.net
+145,Northfield,Washington,5791,43.7,735,5663,http://www.northfield-vt.gov/,802-485-5421,kpedley@northfield.vt.us
+94,Hartford,Windsor,10367,45.9,371,5001,http://www.hartford-vt.org/,802-295-2785,mhill@hartford-vt.org
+35,Brunswick,Essex,107,26,1000,5905,NULL,802-962-5514,bruns321@sover.net
+34,Brownington,Orleans,885,28.4,1025,5860,NULL,802-754-8401,browningtontc@comcast.net
+156,Plainfield,Washington,1286,21.1,780,5667,http://www.plainfieldvt.us/,802-454-8461,plainfieldtc@gmail.com
+106,Jay,Orleans,426,34,922,5859,http://www.jayvt.com/,802-988-2996,townofjay@comcast.net
+176,Ryegate,Caledonia,1150,36.8,1060,5042,http://www.ryegatevt.org/,802-584-3880,ryegateclerk@yahoo.com
+200,Strafford,Orange,1045,44.3,930,5072,http://www.townofstraffordvt.com/,802-765-4411,townclerk@straffordvt.org
+144,North Hero,Grand Isle,810,46.6,116,5474,http://www.northherovt.com,802-372-6926,townclerk@northherovt.com
+83,Grafton,Windham,649,38.4,860,5146,http://www.graftonvermont.org,802-843-2419,gtclerk@vermontel.net
+208,Topsham,Orange,1142,49,1284,5076,http://www.topshamvt.org/,802-439-5505,topsham@tops-tele.com
+198,Stockbridge,Windsor,674,46.2,734,5772,NULL,802-746-8400,townofstockbridge@myfairpoint.net
+246,Wilmington,Windham,2225,41.3,1580,5363,http://www.wilmingtonvermont.us/,802-464-5836,wilmclrk@sover.net
+41,Cambridge,Lamoille,3186,63.7,454,5464,http://www.townofcambridgevt.org/,802-644-2251,jane.cto@myfairpoint.net
+163,Randolph,Orange,4853,47.9,694,5060,http://randolphvt.govoffice2.com/,802-728-5433 x11,clerk@randolphvt.org
+82,Goshen,Addison,227,21.4,1136,5733,http://goshenvt.org/,802-247-6455,townclerk@goshenvt.org
+61,Dover,Windham,1410,35.3,1860,5356,http://www.doververmont.com/,802-464-5100,dvrclerk@sover.net
+219,Wallingford,Rutland,2274,43.4,620,5773,http://www.wallingfordvt.com/,802-446-2336,townclerk@wallingfordvt.com
+239,Weston,Windsor,630,35.2,1300,5161,http://westonvt.org/,802-824-6645,clerk@westonvt.org
+190,Springfield,Windsor,9078,49.5,410,5156,http://www.springfieldvt.govoffice2.com/,802-885-2104,tosclerk@vermontel.net
+178,Sandgate,Bennington,353,42.2,766,5250,http://www.sandgatevermont.org/,802-375-9075,sandgateclerk@live.com
+17,Bennington,Bennington,15737,42.5,750,5201,http://www.bennington.com/,802 442-1043,tcorcoran@benningtonvt.org
+142,Newport,Orleans,5005,7.6,722,5855,http://www.newportvermont.org/,802-334-2112,newportcityclerkjim@comcast.net
+18,Benson,Rutland,1039,45.5,420,5731,http://www.benson-vt.com,802-537-2611,townclerk@benson-vt.com
+110,Kirby,Caledonia,456,24.4,1260,5851,http://kirbyvermont.org/,802-626-9386,kirbytc@kingcon.com
+214,Vernon,Windham,2141,20,280,5354,http://www.vernon-vt.org/,802-257-0292,s.harris@vernon-vt.org
+64,East Haven,Essex,301,37.4,1020,5837,NULL,802-467-3772,tclerk1790@kingcon.com
+43,Castleton,Rutland,4367,42.4,439,5735,http://www.bsi-vt.com/castleton/,802-468-2212 x214,casclerk@shoreham.net
+76,Ferrisburgh,Addison,2657,61.2,218,5456,http://www.ferrisburghvt.org/,802-877-3429,ferrisburghclerk@comcast.net
+202,Sudbury,Rutland,583,22.2,572,5733,NULL,802-623-7296,NULL
+167,Richmond,Chittenden,4090,32.3,319,5477,http://www.richmondvt.com/home.php,802-434-2221,townclerk@richmondvt.com
+97,Hinesburg,Chittenden,4340,40.1,241,5461,http://www.hinesburg.org/,802-482-2281,hinesburgclerk@gmavt.net
+15,Barton,Orleans,2780,44.9,931,5822,http://sites.google.com/site/townofbarton/,802-525-6222,bartontown@comcast.net
+201,Stratton,Windham,136,46.9,1880,5360,http://townofstrattonvt.com/,802-896-6184,townclerk@townofstrattonvt.com
+126,Middlebury,Addison,8183,39.2,370,5753,http://www.middlebury.govoffice.com/,802-388-8100 x211,awebster@townofmiddlebury.org
+146,Norton,Essex,214,39.4,1252,5907,NULL,802-822-9935,townofnorton@myfairpoint.net
+224,Warren's Gore,Essex,10,11.6,1789,5907,NULL,NULL,NULL
+211,Tunbridge,Orange,1309,44.8,600,5077,http://www.tunbridgevt.com/,802-889-5521,townclerk@tunbridge.biz
+112,Leicester,Addison,974,22,440,5733,http://www.leicestervt.org,802-247-5961 x3,leicestervt@comcast.net
+172,Royalton,Windsor,2603,40.9,513,5068,http://www.royaltonvt.com,802-763-7207,royalclerk@bluemoo.net
+73,Fairlee,Orange,967,21.2,430,5045,http://www.fairleevt.org/,802-333-4363,townclerk@fairleevt.org
+87,Greensboro,Orleans,770,39.4,1463,5841,http://www.greensborovt.org/,802-533-2911,brideyvt@yahoo.com
+91,Halifax,Windham,782,39.8,1590,5358,http://www.halifaxvermont.com,802-368-7390,townclerk@halifaxvermont.com
+177,Salisbury,Addison,1090,30.1,340,5769,http://townofsalisbury.org/,802-352-4228,town.clerk@comcast.net
+21,Bethel,Windsor,1968,45.5,573,5032,http://www.bethelvt.govoffice3.com/,802-234-9722,betheltownclerk@comcast.net
+132,Montpelier,Washington,8035,10.3,523,5602,http://www.montpelier-vt.org/,802-223-9500,jodum@montpelier-vt.org
+100,Huntington,Chittenden,1861,38.1,623,5462,http://huntingtonvt.org/,802-434-2032,huntingtonclerk@gmavt.net
+221,Wardsboro,Windham,854,29.3,1090,5355,NULL,802-896-6055,wardsborotownoffice@myfairpoint.net
+192,St. Albans,Franklin,5086,60.6,180,5481,http://www.stalbanstown.com,802-524-2415,stalbtwn@comcast.net
+235,Westfield,Orleans,503,40.2,825,5874,NULL,802-744-2484,townofwestfield@comcast.net
+157,Plymouth,Windsor,555,48.7,1217,5056,http://www.plymouthvt.org,802-672-3655,clerk@plymouthvt.org
+81,Glover,Orange,966,38.6,945,5839,http://townofglover.com/,802-525-6227,glovertc@comcast.net
+46,Charlotte,Chittenden,3569,50.4,110,5445,http://www.charlottevt.org/,802-425-3071,mary@townofcharlotte.com
+161,Proctor,Rutland,1877,7.6,500,5765,http://proctorvermont.com/,802-459-3333,info@proctorvermont.com
+13,Barre,Washington,9291,4,609,5641,http://www.barrecity.org/,802-476-0242,cdawes@barrecity.org
+3,Alburgh,Grand Isle,1952,48.8,124,5440,http://www.alburghvt.org/,802-796-3468,townofalburgh@fairpoint.net
+89,Guildhall,Essex,268,32.7,874,5905,http://www.guildhallvt.org/,802-676-3797,townclerk@guildhallvt.org
+121,Maidstone,Essex,105,31.8,893,5905,http://www.maidstone-vt.org/,802-676-3210,maidstonetownclerk@gmail.com
+80,Glastenbury,Bennington,16,44.5,1200,5262,NULL,NULL,NULL
+228,Waterville,Lamoille,697,16.4,394,5492,NULL,802-644-8865,townofwaterville@myfairpoint.net
+123,Marlboro,Windham,978,40.7,1736,5344,http://www.marlboro.vt.us,802-254-2181,marlborotownclerk@gmail.com
+225,Washington,Orange,1047,38.9,1260,5675,NULL,802-883-2218,washingtontownclerk@gmail.com
+173,Rupert,Bennington,704,44.6,824,5776,NULL,802-394-7728,rupert187@myfairpoint.net
+162,Putney,Windham,2634,26.8,580,5346,http://www.putneyvt.org,802-387-5862,putneytc@putneyvt.org
+169,Rochester,Windsor,1171,56.2,878,5767,http://www.rochestervermont.org/,802-767-3631,rochestertown@comcast.net
+45,Charleston,Orleans,895,38.6,1196,5872,http://www.charlestonvt.org/,802-895-2814,townofcharlestonvt@comcastnet
+69,Essex,Chittenden,18626,39.3,492,5452,http://www.essex.org/,802-879-0413,cmoomey@essex.org
+131,Montgomery,Franklin,992,56.7,492,5471,http://www.montgomeryvt.us/,802-326-4719,montgomerytc@fairpoint.net
+164,Reading,Windsor,707,41.7,754,5062,http://www.readingvt.govoffice.com/,802-484-7250,readingvermont@comcast.net
+60,Dorset,Bennington,2036,47.9,802,5253,http://www.dorsetvt.org/,802-362-1178 x2,dorsetclerk@gmail.com
+33,Brookline,Windham,467,12.9,570,5345,http://www.brooklinevt.com,802-365-4648,brook763@comcast.net
+99,Hubbardton,Rutland,752,28.9,480,5735,http://hubbardtonvt.com/,802-273-2951,clrkhubb@shoreham.net
+143,Newport,Orleans,1511,43.5,792,5857,NULL,802-334-6442,nctownclerk@comcast.net
+26,Brandon,Rutland,3917,40.2,421,5733,http://www.town.brandon.vt.us/,802-247-5721,wadick@sover.net
+181,Sharon,Windsor,1411,40.1,500,5065,http://sharonvt.net/,802-763-8268 x101,clerk@sharonvt.net
+195,Stamford,Bennington,813,39.6,1131,5352,http://www.stamfordvt.org/,802-694-1361,stamfdvt@live.com
+180,Shaftsbury,Bennington,3767,43.2,833,5262,http://www.shaftsbury.net/,802-442-4038,shaftsburyclerk@comcast.net
+136,Mount Holly,Rutland,1241,49.6,1540,5758,http://www.mounthollyvt.org/,802-259-2391,mthollytc@yahoo.com
+77,Fletcher,Franklin,1179,38,628,5444,http://fletchervt.net/,802-849-6616,townfletcher@surfglobal.net
+250,Winooski,Chittenden,6561,1.5,200,5404,http://www.winooskivt.org/,802-655-6419,cjbarrett@winooskivt.org
+54,Cornwall,Addison,1136,28.6,374,5753,http://cornwallvt.com/,802-462-2775,cornwallvt@shoreham.net
+27,Brattleboro,Windham,12005,32.4,310,5301,http://www.brattleboro.org/,802-251-8157,townclerk@brattleboro.org
