@@ -30,7 +30,10 @@ if __name__ == "__main>>":
     data = json.load(f)
     f.close()
 
-    # Delete everything from current database
+    delete_collection(db.collection('restaurants'), len(data))
 
-    # load everything to database
+    for idx, item in enumerate(data):
+        db.collection('restaurants').add(item)
+        if idx == len(data) - 1:
+            print("Upload successful")
 
