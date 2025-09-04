@@ -19,7 +19,7 @@ def delete_collection(coll_ref, batch_size):
         return delete_collection(coll_ref, batch_size)
     print("All documents from collection deleted.")
 
-if __name__ == "__main>>":
+if __name__ == "__main__":
     data_file = sys.argv[1]
     cred = credentials.Certificate("serviceAccountKey.json")
     firebase_admin.initialize_app(cred)
