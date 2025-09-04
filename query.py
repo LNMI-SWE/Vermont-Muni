@@ -3,8 +3,8 @@ from typing import List
 
 import firebase_admin
 from firebase_admin import credentials, firestore
-from parser import parse
-from query_engine import run
+from parser import parse_query
+#from query_engine import run
 
 
 HELP_TEXT = """
@@ -22,6 +22,20 @@ Other commands:
   help   Show this help
   quit   Exit the program
 """
+
+# small example of interface (only accepts Field, Operator, Field)
+def main():
+    print("Welcome to the query interface. Type 'quit' to exit.")
+    while True:
+        query_str = input("> ")
+        if query_str.lower() in {"quit", "exit"}:
+            break
+
+        result = parse_query(query_str)
+        print(result)
+
+if __name__ == "__main__":
+    main()
 
 
 def format_results(rows: List[dict]) -> str:
