@@ -6,10 +6,7 @@
     "Population": 0,
     "Square_MI": 17.6,
     "Altitude": 2251,
-    "Postal_Code": 5907,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5907
   },
   {
     "Town_ID": 36,
@@ -18,10 +15,7 @@
     "Population": 12,
     "Square_MI": 5.1,
     "Altitude": 1165,
-    "Postal_Code": 5487,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5487
   },
   {
     "Town_ID": 75,
@@ -30,10 +24,7 @@
     "Population": 33,
     "Square_MI": 53,
     "Altitude": 1275,
-    "Postal_Code": 5905,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5905
   },
   {
     "Town_ID": 84,
@@ -43,7 +34,6 @@
     "Square_MI": 39.1,
     "Altitude": 1500,
     "Postal_Code": 5840,
-    "URL": "NULL",
     "Office_Phone": "802-328-3611",
     "Clerk_Email": "granby@wildblue.net"
   },
@@ -102,10 +92,7 @@
     "Population": 8,
     "Square_MI": 38.1,
     "Altitude": 1744,
-    "Postal_Code": 5901,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5901
   },
   {
     "Town_ID": 138,
@@ -162,10 +149,7 @@
     "Population": 0,
     "Square_MI": 39.7,
     "Altitude": 1711,
-    "Postal_Code": 5903,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5903
   },
   {
     "Town_ID": 102,
@@ -295,7 +279,6 @@
     "Square_MI": 13.7,
     "Altitude": 390,
     "Postal_Code": 5778,
-    "URL": "NULL",
     "Office_Phone": "802-623-7813",
     "Clerk_Email": "townofwhiting@shoreham.net"
   },
@@ -319,7 +302,6 @@
     "Square_MI": 43.8,
     "Altitude": 1670,
     "Postal_Code": 5739,
-    "URL": "NULL",
     "Office_Phone": "802-293-5282",
     "Clerk_Email": "mttabor@vermontel.net"
   },
@@ -343,7 +325,6 @@
     "Square_MI": 40.5,
     "Altitude": 349,
     "Postal_Code": 5454,
-    "URL": "NULL",
     "Office_Phone": "802-849-6111 x2",
     "Clerk_Email": "fairfaxtownclerk@live.com"
   },
@@ -355,7 +336,6 @@
     "Square_MI": 27.7,
     "Altitude": 718,
     "Postal_Code": 5825,
-    "URL": "NULL",
     "Office_Phone": "802-754-2288",
     "Clerk_Email": "covtc@hotmail.com"
   },
@@ -475,7 +455,6 @@
     "Square_MI": 8.9,
     "Altitude": 450,
     "Postal_Code": 5491,
-    "URL": "NULL",
     "Office_Phone": "802-877-3641",
     "Clerk_Email": "Waltham@myfairpoint.net"
   },
@@ -559,7 +538,6 @@
     "Square_MI": 32.1,
     "Altitude": 720,
     "Postal_Code": 5442,
-    "URL": "NULL",
     "Office_Phone": "802-644-6621",
     "Clerk_Email": "beltc@pshift.net"
   },
@@ -655,7 +633,6 @@
     "Square_MI": 45.4,
     "Altitude": 1172,
     "Postal_Code": 5906,
-    "URL": "NULL",
     "Office_Phone": "802-892-5959",
     "Clerk_Email": "lunenburg01@live.com"
   },
@@ -679,7 +656,6 @@
     "Square_MI": 44.8,
     "Altitude": 430,
     "Postal_Code": 5764,
-    "URL": "NULL",
     "Office_Phone": "802-287-5761",
     "Clerk_Email": "poultneytownclerk@comcast.net"
   },
@@ -739,7 +715,6 @@
     "Square_MI": 39.3,
     "Altitude": 1650,
     "Postal_Code": 5342,
-    "URL": "NULL",
     "Office_Phone": "802-368-7887",
     "Clerk_Email": "whitinghamtownclerk@yahoo.com"
   },
@@ -762,10 +737,7 @@
     "Population": 5,
     "Square_MI": 28.1,
     "Altitude": 2000,
-    "Postal_Code": 5356,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5356
   },
   {
     "Town_ID": 194,
@@ -859,7 +831,6 @@
     "Square_MI": 44.6,
     "Altitude": 726,
     "Postal_Code": 5441,
-    "URL": "NULL",
     "Office_Phone": "802-827-4495",
     "Clerk_Email": "townclerk_bakersfield@comcast.net"
   },
@@ -1003,7 +974,6 @@
     "Square_MI": 43,
     "Altitude": 1100,
     "Postal_Code": 5858,
-    "URL": "NULL",
     "Office_Phone": "802-328-2400",
     "Clerk_Email": "townofvictory@wildblue.net"
   },
@@ -1027,7 +997,6 @@
     "Square_MI": 39.3,
     "Altitude": 374,
     "Postal_Code": 5483,
-    "URL": "NULL",
     "Office_Phone": "802-933-2524",
     "Clerk_Email": "tc@sheldonvt.com"
   },
@@ -1123,7 +1092,6 @@
     "Square_MI": 39.7,
     "Altitude": 816,
     "Postal_Code": 5848,
-    "URL": "NULL",
     "Office_Phone": "802-748-2122",
     "Clerk_Email": "townofwaterford@gmail.com"
   },
@@ -1243,7 +1211,6 @@
     "Square_MI": 28.5,
     "Altitude": 380,
     "Postal_Code": 5743,
-    "URL": "NULL",
     "Office_Phone": "802-265-4880",
     "Clerk_Email": "westhaven@myfairpoint.net"
   },
@@ -1291,7 +1258,6 @@
     "Square_MI": 37.4,
     "Altitude": 1660,
     "Postal_Code": 5152,
-    "URL": "NULL",
     "Office_Phone": "802-824-3065",
     "Clerk_Email": "perutown@myfairpoint.net"
   },
@@ -1411,7 +1377,6 @@
     "Square_MI": 21.6,
     "Altitude": 1734,
     "Postal_Code": 5363,
-    "URL": "NULL",
     "Office_Phone": "802-464-8081",
     "Clerk_Email": "josiekil@yahoo.com"
   },
@@ -1423,7 +1388,6 @@
     "Square_MI": 39.8,
     "Altitude": 790,
     "Postal_Code": 5851,
-    "URL": "NULL",
     "Office_Phone": "802-626-9094",
     "Clerk_Email": "wheelocktown@gmail.com"
   },
@@ -1447,7 +1411,6 @@
     "Square_MI": 40.4,
     "Altitude": 261,
     "Postal_Code": 5905,
-    "URL": "NULL",
     "Office_Phone": "802-962-5191",
     "Clerk_Email": "townofbloomfieldvt@gmail.com"
   },
@@ -1483,7 +1446,6 @@
     "Square_MI": 38.2,
     "Altitude": 1405,
     "Postal_Code": 5830,
-    "URL": "NULL",
     "Office_Phone": "802-895-4440",
     "Clerk_Email": "holland1805@hotmail.com"
   },
@@ -1507,7 +1469,6 @@
     "Square_MI": 41.5,
     "Altitude": 790,
     "Postal_Code": 5739,
-    "URL": "NULL",
     "Office_Phone": "802-293-5136",
     "Clerk_Email": "danbytownclerk@vermontel.net"
   },
@@ -1531,7 +1492,6 @@
     "Square_MI": 35.3,
     "Altitude": 1015,
     "Postal_Code": 5903,
-    "URL": "NULL",
     "Office_Phone": "802-277-4814",
     "Clerk_Email": "lemitown@myfairpoint.net"
   },
@@ -1603,7 +1563,6 @@
     "Square_MI": 38.5,
     "Altitude": 912,
     "Postal_Code": 5748,
-    "URL": "NULL",
     "Office_Phone": "802-767-3660",
     "Clerk_Email": "hancocktwnclerk@yahoo.com"
   },
@@ -1639,7 +1598,6 @@
     "Square_MI": 38.4,
     "Altitude": 1152,
     "Postal_Code": 5867,
-    "URL": "NULL",
     "Office_Phone": "802-467-3377",
     "Clerk_Email": "duffyogden@yahoo.com"
   },
@@ -1651,7 +1609,6 @@
     "Square_MI": 42.2,
     "Altitude": 750,
     "Postal_Code": 5450,
-    "URL": "NULL",
     "Office_Phone": "802-933-2335",
     "Clerk_Email": "townclerk@berkshirevt.com"
   },
@@ -1675,7 +1632,6 @@
     "Square_MI": 64.4,
     "Altitude": 418,
     "Postal_Code": 5051,
-    "URL": "NULL",
     "Office_Phone": "802-866-5521",
     "Clerk_Email": "clerk@newburyvt.org"
   },
@@ -1735,7 +1691,6 @@
     "Square_MI": 46.2,
     "Altitude": 320,
     "Postal_Code": 5734,
-    "URL": "NULL",
     "Office_Phone": "802-758-2483",
     "Clerk_Email": "bridporttown@gmavt.net"
   },
@@ -1746,10 +1701,7 @@
     "Population": 0,
     "Square_MI": 3.2,
     "Altitude": 1285,
-    "Postal_Code": 5907,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5907
   },
   {
     "Town_ID": 182,
@@ -1783,7 +1735,6 @@
     "Square_MI": 37.2,
     "Altitude": 1738,
     "Postal_Code": 5871,
-    "URL": "NULL",
     "Office_Phone": "802-467-3336",
     "Clerk_Email": "tclerknewark@kingcon.com"
   },
@@ -1915,7 +1866,6 @@
     "Square_MI": 48.9,
     "Altitude": 1334,
     "Postal_Code": 5031,
-    "URL": "NULL",
     "Office_Phone": "802-234-9211",
     "Clerk_Email": "barnardto@gmail.com"
   },
@@ -1927,7 +1877,6 @@
     "Square_MI": 56.1,
     "Altitude": 996,
     "Postal_Code": 5847,
-    "URL": "NULL",
     "Office_Phone": "802-744-6559",
     "Clerk_Email": "kclinger@lowelltown.org"
   },
@@ -1963,7 +1912,6 @@
     "Square_MI": 28.8,
     "Altitude": 1000,
     "Postal_Code": 5143,
-    "URL": "NULL",
     "Office_Phone": "802-875-2765",
     "Clerk_Email": "clerk@vermontel.net"
   },
@@ -2023,7 +1971,6 @@
     "Square_MI": 12.5,
     "Altitude": 1700,
     "Postal_Code": 5842,
-    "URL": "NULL",
     "Office_Phone": "802-533-2577",
     "Clerk_Email": "townofstanndard@myfairpoint.net"
   },
@@ -2035,7 +1982,6 @@
     "Square_MI": 39,
     "Altitude": 1830,
     "Postal_Code": 5873,
-    "URL": "NULL",
     "Office_Phone": "802-563-2220",
     "Clerk_Email": "waldentc@pivot.net"
   },
@@ -2059,7 +2005,6 @@
     "Square_MI": 49.6,
     "Altitude": 820,
     "Postal_Code": 5034,
-    "URL": "NULL",
     "Office_Phone": "802-672-3334",
     "Clerk_Email": "twnbridg@comcast.net"
   },
@@ -2107,7 +2052,6 @@
     "Square_MI": 26,
     "Altitude": 1000,
     "Postal_Code": 5905,
-    "URL": "NULL",
     "Office_Phone": "802-962-5514",
     "Clerk_Email": "bruns321@sover.net"
   },
@@ -2119,7 +2063,6 @@
     "Square_MI": 28.4,
     "Altitude": 1025,
     "Postal_Code": 5860,
-    "URL": "NULL",
     "Office_Phone": "802-754-8401",
     "Clerk_Email": "browningtontc@comcast.net"
   },
@@ -2215,7 +2158,6 @@
     "Square_MI": 46.2,
     "Altitude": 734,
     "Postal_Code": 5772,
-    "URL": "NULL",
     "Office_Phone": "802-746-8400",
     "Clerk_Email": "townofstockbridge@myfairpoint.net"
   },
@@ -2395,7 +2337,6 @@
     "Square_MI": 37.4,
     "Altitude": 1020,
     "Postal_Code": 5837,
-    "URL": "NULL",
     "Office_Phone": "802-467-3772",
     "Clerk_Email": "tclerk1790@kingcon.com"
   },
@@ -2431,9 +2372,7 @@
     "Square_MI": 22.2,
     "Altitude": 572,
     "Postal_Code": 5733,
-    "URL": "NULL",
     "Office_Phone": "802-623-7296",
-    "Clerk_Email": "NULL"
   },
   {
     "Town_ID": 167,
@@ -2503,7 +2442,6 @@
     "Square_MI": 39.4,
     "Altitude": 1252,
     "Postal_Code": 5907,
-    "URL": "NULL",
     "Office_Phone": "802-822-9935",
     "Clerk_Email": "townofnorton@myfairpoint.net"
   },
@@ -2514,10 +2452,7 @@
     "Population": 10,
     "Square_MI": 11.6,
     "Altitude": 1789,
-    "Postal_Code": 5907,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5907
   },
   {
     "Town_ID": 211,
@@ -2647,7 +2582,6 @@
     "Square_MI": 29.3,
     "Altitude": 1090,
     "Postal_Code": 5355,
-    "URL": "NULL",
     "Office_Phone": "802-896-6055",
     "Clerk_Email": "wardsborotownoffice@myfairpoint.net"
   },
@@ -2671,7 +2605,6 @@
     "Square_MI": 40.2,
     "Altitude": 825,
     "Postal_Code": 5874,
-    "URL": "NULL",
     "Office_Phone": "802-744-2484",
     "Clerk_Email": "townofwestfield@comcast.net"
   },
@@ -2778,10 +2711,7 @@
     "Population": 16,
     "Square_MI": 44.5,
     "Altitude": 1200,
-    "Postal_Code": 5262,
-    "URL": "NULL",
-    "Office_Phone": "NULL",
-    "Clerk_Email": "NULL"
+    "Postal_Code": 5262
   },
   {
     "Town_ID": 228,
@@ -2791,7 +2721,6 @@
     "Square_MI": 16.4,
     "Altitude": 394,
     "Postal_Code": 5492,
-    "URL": "NULL",
     "Office_Phone": "802-644-8865",
     "Clerk_Email": "townofwaterville@myfairpoint.net"
   },
@@ -2815,7 +2744,6 @@
     "Square_MI": 38.9,
     "Altitude": 1260,
     "Postal_Code": 5675,
-    "URL": "NULL",
     "Office_Phone": "802-883-2218",
     "Clerk_Email": "washingtontownclerk@gmail.com"
   },
@@ -2827,7 +2755,6 @@
     "Square_MI": 44.6,
     "Altitude": 824,
     "Postal_Code": 5776,
-    "URL": "NULL",
     "Office_Phone": "802-394-7728",
     "Clerk_Email": "rupert187@myfairpoint.net"
   },
@@ -2947,7 +2874,6 @@
     "Square_MI": 43.5,
     "Altitude": 792,
     "Postal_Code": 5857,
-    "URL": "NULL",
     "Office_Phone": "802-334-6442",
     "Clerk_Email": "nctownclerk@comcast.net"
   },
