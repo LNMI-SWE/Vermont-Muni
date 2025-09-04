@@ -39,16 +39,6 @@ def format_results(rows: List[dict]) -> str:
     names = [r.get("Town_Name") or r.get("name") or "<unknown>" for r in rows]
     return ", ".join(names)
 
-def ensure_firestore():
-    """Lazy-import and init Firestore only if --execute is used."""
-    import firebase_admin
-    from firebase_admin import credentials, firestore
-
-    cred = credentials.Certificate("serviceAccountKey.json")
-    if not firebase_admin._apps:
-        firebase_admin.initialize_app(cred)
-    return firestore.client()
-
 def main(argv: List[str]) -> int:
     parser = argparse.ArgumentParser(
         description="Query CLI (parse-only by default; use --execute to run against Firestore)."
