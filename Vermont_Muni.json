@@ -6,7 +6,7 @@
     "Population": 0,
     "Square_MI": 17.6,
     "Altitude": 2251,
-    "Postal_Code": 5907
+    "Postal_Code": "05907"
   },
   {
     "Town_ID": 36,
@@ -15,7 +15,7 @@
     "Population": 12,
     "Square_MI": 5.1,
     "Altitude": 1165,
-    "Postal_Code": 5487
+    "Postal_Code": "05487"
   },
   {
     "Town_ID": 75,
@@ -24,7 +24,7 @@
     "Population": 33,
     "Square_MI": 53,
     "Altitude": 1275,
-    "Postal_Code": 5905
+    "Postal_Code": "05905"
   },
   {
     "Town_ID": 84,
@@ -33,7 +33,7 @@
     "Population": 86,
     "Square_MI": 39.1,
     "Altitude": 1500,
-    "Postal_Code": 5840,
+    "Postal_Code": "05840",
     "Office_Phone": "802-328-3611",
     "Clerk_Email": "granby@wildblue.net"
   },
@@ -44,7 +44,7 @@
     "Population": 4604,
     "Square_MI": 57.6,
     "Altitude": 1011,
-    "Postal_Code": 5829,
+    "Postal_Code": "05829",
     "URL": "http://derbyvt.org/",
     "Office_Phone": "802-766-4906",
     "Clerk_Email": "derbytownclerk@derbyvt.org"
@@ -56,7 +56,7 @@
     "Population": 1250,
     "Square_MI": 39.9,
     "Altitude": 840,
-    "Postal_Code": 5038,
+    "Postal_Code": "05038",
     "URL": "http://www.chelseavt.org/",
     "Office_Phone": "802-685-4460",
     "Clerk_Email": "town.clerk@chelseavt.us"
@@ -68,7 +68,7 @@
     "Population": 1496,
     "Square_MI": 43.4,
     "Altitude": 850,
-    "Postal_Code": 5658,
+    "Postal_Code": "05658",
     "URL": "http://www.town.marshfield.vt.us",
     "Office_Phone": "802-426-3305",
     "Clerk_Email": "clerk@town.marshfield.vt.us"
@@ -80,7 +80,7 @@
     "Population": 1214,
     "Square_MI": 44,
     "Altitude": 971,
-    "Postal_Code": 5443,
+    "Postal_Code": "05443",
     "URL": "http://lincolnvermont.org/",
     "Office_Phone": "802-453-2980",
     "Clerk_Email": "clerk@lincolnvermont.org"
@@ -92,7 +92,7 @@
     "Population": 8,
     "Square_MI": 38.1,
     "Altitude": 1744,
-    "Postal_Code": 5901
+    "Postal_Code": "05901"
   },
   {
     "Town_ID": 138,
@@ -101,7 +101,7 @@
     "Population": 1666,
     "Square_MI": 41.8,
     "Altitude": 454,
-    "Postal_Code": 5472,
+    "Postal_Code": "05472",
     "URL": "http://newhavenvt.com/",
     "Office_Phone": "802-453-3516",
     "Clerk_Email": "newhavenclerk@gmavt.net"
@@ -113,7 +113,7 @@
     "Population": 1650,
     "Square_MI": 30.7,
     "Altitude": 501,
-    "Postal_Code": 5495,
+    "Postal_Code": "05495",
     "URL": "http://town.williston.vt.us",
     "Office_Phone": "802-878-5121",
     "Clerk_Email": "beckettd@willistontown.com"
@@ -125,7 +125,7 @@
     "Population": 682,
     "Square_MI": 22,
     "Altitude": 200,
-    "Postal_Code": 5491,
+    "Postal_Code": "05491",
     "URL": "http://www.pantonvt.us/",
     "Office_Phone": "802-475-2333",
     "Clerk_Email": "panton@gmavt.net"
@@ -137,7 +137,7 @@
     "Population": 2788,
     "Square_MI": 48.7,
     "Altitude": 422,
-    "Postal_Code": 5450,
+    "Postal_Code": "05450",
     "URL": "http://www.enosburghvermont.org/",
     "Office_Phone": "802-933-4421",
     "Clerk_Email": "enostown@myfairpoint.net"
@@ -149,7 +149,7 @@
     "Population": 0,
     "Square_MI": 39.7,
     "Altitude": 1711,
-    "Postal_Code": 5903
+    "Postal_Code": "05903"
   },
   {
     "Town_ID": 102,
@@ -158,7 +158,7 @@
     "Population": 455,
     "Square_MI": 21.3,
     "Altitude": 830,
-    "Postal_Code": 5777,
+    "Postal_Code": "05777",
     "URL": "http://www.townofira.com/",
     "Office_Phone": "802-235-2745",
     "Clerk_Email": "iraclerk@vermontel.com"
@@ -170,7 +170,7 @@
     "Population": 3210,
     "Square_MI": 46.1,
     "Altitude": 314,
-    "Postal_Code": 5158,
+    "Postal_Code": "05158",
     "URL": "http://westminster.govoffice.com/",
     "Office_Phone": "802-722-4091",
     "Clerk_Email": "dwoodward@westminstervt.org"
@@ -182,7 +182,7 @@
     "Population": 823,
     "Square_MI": 22.8,
     "Altitude": 850,
-    "Postal_Code": 5757,
+    "Postal_Code": "05757",
     "URL": "http://middletownsprings.vt.gov/",
     "Office_Phone": "802-235-2220",
     "Clerk_Email": "middletown@vermontel.net"
@@ -194,7 +194,7 @@
     "Population": 1571,
     "Square_MI": 34.1,
     "Altitude": 900,
-    "Postal_Code": 5871,
+    "Postal_Code": "05871",
     "URL": "http://www.burkevermont.org/",
     "Office_Phone": "802-467-3717",
     "Clerk_Email": "burke@burkevermont.org"
@@ -206,7 +206,7 @@
     "Population": 1564,
     "Square_MI": 36.1,
     "Altitude": 764,
-    "Postal_Code": 5859,
+    "Postal_Code": "05859",
     "URL": "http://www.troyvt.org/",
     "Office_Phone": "802-988-2663",
     "Clerk_Email": "townoftroy@comcast.net"
@@ -218,7 +218,7 @@
     "Population": 824,
     "Square_MI": 17.6,
     "Altitude": 180,
-    "Postal_Code": 5753,
+    "Postal_Code": "05753",
     "URL": "http://weybridge.govoffice.com",
     "Office_Phone": "802-545-2450",
     "Clerk_Email": "curavoo@gmavt.net"
@@ -230,7 +230,7 @@
     "Population": 3560,
     "Square_MI": 46.7,
     "Altitude": 385,
-    "Postal_Code": 5261,
+    "Postal_Code": "05261",
     "URL": "http://www.pownal.org/TownOffice/TownOffice.html",
     "Office_Phone": "802-823-7757",
     "Clerk_Email": "powclerk@sover.net"
@@ -242,7 +242,7 @@
     "Population": 2788,
     "Square_MI": 44.2,
     "Altitude": 412,
-    "Postal_Code": 5030,
+    "Postal_Code": "05030",
     "URL": "http://www.weathersfield.org/",
     "Office_Phone": "802-674-9500",
     "Clerk_Email": "tclerk@weathersfield.org"
@@ -254,7 +254,7 @@
     "Population": 1529,
     "Square_MI": 38.6,
     "Altitude": 777,
-    "Postal_Code": 5650,
+    "Postal_Code": "05650",
     "URL": "http://www.calaisvermont.gov",
     "Office_Phone": "802-456-8720",
     "Clerk_Email": "calais.townclerk@gmail.com"
@@ -266,7 +266,7 @@
     "Population": 2086,
     "Square_MI": 39.3,
     "Altitude": 464,
-    "Postal_Code": 5494,
+    "Postal_Code": "05494",
     "URL": "http://westfordvt.us/",
     "Office_Phone": "802-878-4587",
     "Clerk_Email": "townclerk@westfordvt.us"
@@ -278,7 +278,7 @@
     "Population": 380,
     "Square_MI": 13.7,
     "Altitude": 390,
-    "Postal_Code": 5778,
+    "Postal_Code": "05778",
     "Office_Phone": "802-623-7813",
     "Clerk_Email": "townofwhiting@shoreham.net"
   },
@@ -289,7 +289,7 @@
     "Population": 2211,
     "Square_MI": 61.2,
     "Altitude": 1341,
-    "Postal_Code": 5828,
+    "Postal_Code": "05828",
     "URL": "http://www.danvillevt.com/",
     "Office_Phone": "802-684-3352",
     "Clerk_Email": "danvtc36@yahoo.com"
@@ -301,7 +301,7 @@
     "Population": 203,
     "Square_MI": 43.8,
     "Altitude": 1670,
-    "Postal_Code": 5739,
+    "Postal_Code": "05739",
     "Office_Phone": "802-293-5282",
     "Clerk_Email": "mttabor@vermontel.net"
   },
@@ -312,7 +312,7 @@
     "Population": 3274,
     "Square_MI": 45.1,
     "Altitude": 516,
-    "Postal_Code": 5656,
+    "Postal_Code": "05656",
     "URL": "http://townofjohnson.com/",
     "Office_Phone": "802-635-2611",
     "Clerk_Email": "raudibert@townofjohnson.com"
@@ -324,7 +324,7 @@
     "Population": 3765,
     "Square_MI": 40.5,
     "Altitude": 349,
-    "Postal_Code": 5454,
+    "Postal_Code": "05454",
     "Office_Phone": "802-849-6111 x2",
     "Clerk_Email": "fairfaxtownclerk@live.com"
   },
@@ -335,7 +335,7 @@
     "Population": 1014,
     "Square_MI": 27.7,
     "Altitude": 718,
-    "Postal_Code": 5825,
+    "Postal_Code": "05825",
     "Office_Phone": "802-754-2288",
     "Clerk_Email": "covtc@hotmail.com"
   },
@@ -346,7 +346,7 @@
     "Population": 629,
     "Square_MI": 36.5,
     "Altitude": 1200,
-    "Postal_Code": 5079,
+    "Postal_Code": "05079",
     "URL": "http://vershirevt.org/",
     "Office_Phone": "802-685-2227",
     "Clerk_Email": "clerk-treasurer@vershirevt.org"
@@ -358,7 +358,7 @@
     "Population": 2980,
     "Square_MI": 51.4,
     "Altitude": 706,
-    "Postal_Code": 5490,
+    "Postal_Code": "05490",
     "URL": "http://www.underhillvt.gov",
     "Office_Phone": "802-899-4434 x101",
     "Clerk_Email": "underhillclerk@comcast.net"
@@ -370,7 +370,7 @@
     "Population": 7602,
     "Square_MI": 30.7,
     "Altitude": 760,
-    "Postal_Code": 5678,
+    "Postal_Code": "05678",
     "URL": "http://www.barretown.org/",
     "Office_Phone": "802-479-9391",
     "Clerk_Email": "dkelty@barretown.org"
@@ -382,7 +382,7 @@
     "Population": 4180,
     "Square_MI": 42.3,
     "Altitude": 700,
-    "Postal_Code": 5255,
+    "Postal_Code": "05255",
     "URL": "http://www.manchester-vt.gov/",
     "Office_Phone": "802-362-1315",
     "Clerk_Email": "l.spence@manchester-vt.gov"
@@ -394,7 +394,7 @@
     "Population": 4038,
     "Square_MI": 19.3,
     "Altitude": 540,
-    "Postal_Code": 5736,
+    "Postal_Code": "05736",
     "URL": "http://www.rutlandtown.com/",
     "Office_Phone": "802-773-2528 x5",
     "Clerk_Email": "mkh@rutlandtown.com"
@@ -406,7 +406,7 @@
     "Population": 1213,
     "Square_MI": 38.5,
     "Altitude": 1076,
-    "Postal_Code": 5647,
+    "Postal_Code": "05647",
     "URL": "http://www.cabotvt.us/",
     "Office_Phone": "802-563-2279",
     "Clerk_Email": "tcocabot@fairpoint.net"
@@ -418,7 +418,7 @@
     "Population": 306,
     "Square_MI": 37.5,
     "Altitude": 1170,
-    "Postal_Code": 5860,
+    "Postal_Code": "05860",
     "URL": "http://www.westmoreonline.org/main/",
     "Office_Phone": "802-525-3007",
     "Clerk_Email": "clerk@westmoreonline.org"
@@ -430,7 +430,7 @@
     "Population": 303,
     "Square_MI": 52.2,
     "Altitude": 950,
-    "Postal_Code": 5747,
+    "Postal_Code": "05747",
     "URL": "http://www.granvillevermont.org/",
     "Office_Phone": "802-767-4403",
     "Clerk_Email": "granvilletown@gmavt.net"
@@ -442,7 +442,7 @@
     "Population": 2864,
     "Square_MI": 36.5,
     "Altitude": 589,
-    "Postal_Code": 5602,
+    "Postal_Code": "05602",
     "URL": "http://www.berlinvt.org/",
     "Office_Phone": "802-229-9298",
     "Clerk_Email": "townclerk@berlinvt.org"
@@ -454,7 +454,7 @@
     "Population": 479,
     "Square_MI": 8.9,
     "Altitude": 450,
-    "Postal_Code": 5491,
+    "Postal_Code": "05491",
     "Office_Phone": "802-877-3641",
     "Clerk_Email": "Waltham@myfairpoint.net"
   },
@@ -465,7 +465,7 @@
     "Population": 876,
     "Square_MI": 55,
     "Altitude": 773,
-    "Postal_Code": 5046,
+    "Postal_Code": "05046",
     "URL": "http://www.grotonvt.com/",
     "Office_Phone": "802-584-3276",
     "Clerk_Email": "grotonclerk@fairpoint.net"
@@ -477,7 +477,7 @@
     "Population": 4915,
     "Square_MI": 49.7,
     "Altitude": 425,
-    "Postal_Code": 5676,
+    "Postal_Code": "05676",
     "URL": "http://www.waterburyvt.com/",
     "Office_Phone": "802-244-8447",
     "Clerk_Email": "clawrence@waterburyvt.com"
@@ -489,7 +489,7 @@
     "Population": 1709,
     "Square_MI": 35.9,
     "Altitude": 1100,
-    "Postal_Code": 5155,
+    "Postal_Code": "05155",
     "URL": "http://www.londonderryvt.org",
     "Office_Phone": "802-824-3356",
     "Clerk_Email": "londontown@vermontel.net"
@@ -501,7 +501,7 @@
     "Population": 1222,
     "Square_MI": 46.3,
     "Altitude": 396,
-    "Postal_Code": 5770,
+    "Postal_Code": "05770",
     "URL": "http://www.shorehamvt.org",
     "Office_Phone": "802-897-5841",
     "Clerk_Email": "shorehamtown@shoreham.net"
@@ -513,7 +513,7 @@
     "Population": 1915,
     "Square_MI": 30.8,
     "Altitude": 756,
-    "Postal_Code": 5346,
+    "Postal_Code": "05346",
     "URL": "http://www.dummerston.org",
     "Office_Phone": "802-257-1496",
     "Clerk_Email": "townclerk@dummerston.org"
@@ -525,7 +525,7 @@
     "Population": 1800,
     "Square_MI": 68.5,
     "Altitude": 500,
-    "Postal_Code": 5455,
+    "Postal_Code": "05455",
     "URL": "http://fairfieldvermont.us/",
     "Office_Phone": "802-827-3261",
     "Clerk_Email": "amanda@fairfieldvermont.us"
@@ -537,7 +537,7 @@
     "Population": 294,
     "Square_MI": 32.1,
     "Altitude": 720,
-    "Postal_Code": 5442,
+    "Postal_Code": "05442",
     "Office_Phone": "802-644-6621",
     "Clerk_Email": "beltc@pshift.net"
   },
@@ -548,7 +548,7 @@
     "Population": 1077,
     "Square_MI": 40.6,
     "Altitude": 814,
-    "Postal_Code": 5845,
+    "Postal_Code": "05845",
     "URL": "http://www.irasburgvt.com/",
     "Office_Phone": "802-754-2242",
     "Clerk_Email": "irasburgtc@comcast.net"
@@ -560,7 +560,7 @@
     "Population": 556,
     "Square_MI": 49.5,
     "Altitude": 1025,
-    "Postal_Code": 5766,
+    "Postal_Code": "05766",
     "URL": "http://www.riptonvt.org/",
     "Office_Phone": "802-388-2266",
     "Clerk_Email": "townclerk@riptonvt.org"
@@ -572,7 +572,7 @@
     "Population": 2617,
     "Square_MI": 44.2,
     "Altitude": 600,
-    "Postal_Code": 5075,
+    "Postal_Code": "05075",
     "URL": "http://www.thetfordvermont.us/",
     "Office_Phone": "802-785-2922",
     "Clerk_Email": "townclerk@thetfordvermont.us"
@@ -584,7 +584,7 @@
     "Population": 665,
     "Square_MI": 47.7,
     "Altitude": 1310,
-    "Postal_Code": 5862,
+    "Postal_Code": "05862",
     "URL": "http://www.peacham.net",
     "Office_Phone": "802-592-3218",
     "Clerk_Email": "townclerk@peacham.net"
@@ -596,7 +596,7 @@
     "Population": 16986,
     "Square_MI": 58.6,
     "Altitude": 274,
-    "Postal_Code": 5446,
+    "Postal_Code": "05446",
     "URL": "http://www.colchestervt.gov/",
     "Office_Phone": "802 264-5520",
     "Clerk_Email": "krichard@colchestervt.gov"
@@ -608,7 +608,7 @@
     "Population": 1194,
     "Square_MI": 38.3,
     "Altitude": 777,
-    "Postal_Code": 5060,
+    "Postal_Code": "05060",
     "URL": "http://www.braintreevt.com",
     "Office_Phone": "802-728-9787",
     "Clerk_Email": "braintreetownclerk@comcast.net"
@@ -620,7 +620,7 @@
     "Population": 2046,
     "Square_MI": 40,
     "Altitude": 400,
-    "Postal_Code": 5301,
+    "Postal_Code": "05301",
     "URL": "http://www.guilfordschool.org/",
     "Office_Phone": "802-254-6857",
     "Clerk_Email": "guilfordtc@yahoo.com"
@@ -632,7 +632,7 @@
     "Population": 1328,
     "Square_MI": 45.4,
     "Altitude": 1172,
-    "Postal_Code": 5906,
+    "Postal_Code": "05906",
     "Office_Phone": "802-892-5959",
     "Clerk_Email": "lunenburg01@live.com"
   },
@@ -643,7 +643,7 @@
     "Population": 1955,
     "Square_MI": 35.1,
     "Altitude": 160,
-    "Postal_Code": 5458,
+    "Postal_Code": "05458",
     "URL": "http://www.grandislevt.org",
     "Office_Phone": "802-372-8830",
     "Clerk_Email": "clerk@town.grand-isle.vt.us"
@@ -655,7 +655,7 @@
     "Population": 3633,
     "Square_MI": 44.8,
     "Altitude": 430,
-    "Postal_Code": 5764,
+    "Postal_Code": "05764",
     "Office_Phone": "802-287-5761",
     "Clerk_Email": "poultneytownclerk@comcast.net"
   },
@@ -666,7 +666,7 @@
     "Population": 1696,
     "Square_MI": 47.5,
     "Altitude": 240,
-    "Postal_Code": 5486,
+    "Postal_Code": "05486",
     "URL": "http://www.southherovt.org/",
     "Office_Phone": "802-372-5552",
     "Clerk_Email": "southherotc@aol.com"
@@ -678,7 +678,7 @@
     "Population": 1268,
     "Square_MI": 40.8,
     "Altitude": 452,
-    "Postal_Code": 5457,
+    "Postal_Code": "05457",
     "URL": "http://www.franklinvermont.com",
     "Office_Phone": "802-285-2101",
     "Clerk_Email": "townoff@franklinvt.net"
@@ -690,7 +690,7 @@
     "Population": 6203,
     "Square_MI": 61.7,
     "Altitude": 155,
-    "Postal_Code": 5488,
+    "Postal_Code": "05488",
     "URL": "http://www.swantonvermont.org/",
     "Office_Phone": "802-868-4421",
     "Clerk_Email": "townclerk@swantonvermont.org"
@@ -702,7 +702,7 @@
     "Population": 2535,
     "Square_MI": 18,
     "Altitude": 500,
-    "Postal_Code": 5777,
+    "Postal_Code": "05777",
     "URL": "http://www.westrutlandtown.com/",
     "Office_Phone": "802-438-2204",
     "Clerk_Email": "crwener@westrutlandtown.com"
@@ -714,7 +714,7 @@
     "Population": 1298,
     "Square_MI": 39.3,
     "Altitude": 1650,
-    "Postal_Code": 5342,
+    "Postal_Code": "05342",
     "Office_Phone": "802-368-7887",
     "Clerk_Email": "whitinghamtownclerk@yahoo.com"
   },
@@ -725,7 +725,7 @@
     "Population": 965,
     "Square_MI": 39,
     "Altitude": 1500,
-    "Postal_Code": 5649,
+    "Postal_Code": "05649",
     "URL": "http://www.orangevt.org/",
     "Office_Phone": "802-479-2673",
     "Clerk_Email": "kfelch@orangevt.org"
@@ -737,7 +737,7 @@
     "Population": 5,
     "Square_MI": 28.1,
     "Altitude": 2000,
-    "Postal_Code": 5356
+    "Postal_Code": "05356"
   },
   {
     "Town_ID": 194,
@@ -746,7 +746,7 @@
     "Population": 7571,
     "Square_MI": 36.8,
     "Altitude": 697,
-    "Postal_Code": 5819,
+    "Postal_Code": "05819",
     "URL": "http://www.stjtown.com/",
     "Office_Phone": "802-748-4331",
     "Clerk_Email": "townclerk@stjvt.com"
@@ -758,7 +758,7 @@
     "Population": 3174,
     "Square_MI": 38.9,
     "Altitude": 861,
-    "Postal_Code": 5843,
+    "Postal_Code": "05843",
     "URL": "http://hardwickvt.org/",
     "Office_Phone": "802-472-5971",
     "Clerk_Email": "hardwicktc@vtlink.net"
@@ -770,7 +770,7 @@
     "Population": 576,
     "Square_MI": 41.8,
     "Altitude": 1007,
-    "Postal_Code": 5669,
+    "Postal_Code": "05669",
     "URL": "http://www.roxbury.govoffice2.com",
     "Office_Phone": "802-485-7840",
     "Clerk_Email": "townrox@tds.net"
@@ -782,7 +782,7 @@
     "Population": 3225,
     "Square_MI": 40.3,
     "Altitude": 870,
-    "Postal_Code": 5679,
+    "Postal_Code": "05679",
     "URL": "http://www.williamstownvt.org/",
     "Office_Phone": "802-433-5455",
     "Clerk_Email": "clerk@williamstownvt.org"
@@ -794,7 +794,7 @@
     "Population": 4375,
     "Square_MI": 45.2,
     "Altitude": 385,
-    "Postal_Code": 5478,
+    "Postal_Code": "05478",
     "URL": "http://townofgeorgia.com/",
     "Office_Phone": "802-524-3524",
     "Clerk_Email": "georgia_clerk@comcast.net"
@@ -806,7 +806,7 @@
     "Population": 3397,
     "Square_MI": 59.9,
     "Altitude": 308,
-    "Postal_Code": 5459,
+    "Postal_Code": "05459",
     "URL": "http://www.highgatevt.org",
     "Office_Phone": "802-868-4697",
     "Clerk_Email": "hgtownclerk@gmail.com"
@@ -818,7 +818,7 @@
     "Population": 997,
     "Square_MI": 39.5,
     "Altitude": 1333,
-    "Postal_Code": 5067,
+    "Postal_Code": "05067",
     "URL": "http://pomfretvt.us/",
     "Office_Phone": "802-457-3861",
     "Clerk_Email": "clerk@pomfretvt.us"
@@ -830,7 +830,7 @@
     "Population": 1215,
     "Square_MI": 44.6,
     "Altitude": 726,
-    "Postal_Code": 5441,
+    "Postal_Code": "05441",
     "Office_Phone": "802-827-4495",
     "Clerk_Email": "townclerk_bakersfield@comcast.net"
   },
@@ -841,7 +841,7 @@
     "Population": 2397,
     "Square_MI": 42.4,
     "Altitude": 691,
-    "Postal_Code": 5250,
+    "Postal_Code": "05250",
     "URL": "http://www.arlingtonvt.org/",
     "Office_Phone": "802-375-2332",
     "Clerk_Email": "Townclerk@arlingtonvt.org"
@@ -853,7 +853,7 @@
     "Population": 2321,
     "Square_MI": 43.3,
     "Altitude": 477,
-    "Postal_Code": 5476,
+    "Postal_Code": "05476",
     "URL": "http://www.richfordvt.com",
     "Office_Phone": "802-848-7751",
     "Clerk_Email": "townclerk@richfordvt.org"
@@ -865,7 +865,7 @@
     "Population": 1759,
     "Square_MI": 36.2,
     "Altitude": 533,
-    "Postal_Code": 5469,
+    "Postal_Code": "05469",
     "URL": "http://www.monktonvt.com",
     "Office_Phone": "802-453-3800",
     "Clerk_Email": "townclerk@monktonvt.com"
@@ -877,7 +877,7 @@
     "Population": 1690,
     "Square_MI": 43.6,
     "Altitude": 452,
-    "Postal_Code": 5821,
+    "Postal_Code": "05821",
     "URL": "http://www.barnetvt.org",
     "Office_Phone": "802-633-2256",
     "Clerk_Email": "townclerk@barnetvt.org"
@@ -889,7 +889,7 @@
     "Population": 2928,
     "Square_MI": 18,
     "Altitude": 400,
-    "Postal_Code": 5743,
+    "Postal_Code": "05743",
     "URL": "http://www.fairhavenvt.org/",
     "Office_Phone": "802-265-3610 x4",
     "Clerk_Email": "sdclerk@comcast.net"
@@ -901,7 +901,7 @@
     "Population": 17292,
     "Square_MI": 7.6,
     "Altitude": 540,
-    "Postal_Code": 5702,
+    "Postal_Code": "05702",
     "URL": "http://rutland.govoffice.com/",
     "Office_Phone": "802-773-1800",
     "Clerk_Email": "henryh@rutlandcity.com"
@@ -913,7 +913,7 @@
     "Population": 1729,
     "Square_MI": 39.9,
     "Altitude": 560,
-    "Postal_Code": 5602,
+    "Postal_Code": "05602",
     "URL": "http://middlesexvermont.org/",
     "Office_Phone": "802-223-5915",
     "Clerk_Email": "middlesxtwnclrk@comcast.net"
@@ -925,7 +925,7 @@
     "Population": 1470,
     "Square_MI": 39.7,
     "Altitude": 920,
-    "Postal_Code": 5142,
+    "Postal_Code": "05142",
     "URL": "http://www.cavendishvt.com/",
     "Office_Phone": "802-226-7291",
     "Clerk_Email": "j.pixley@comcast.net"
@@ -937,7 +937,7 @@
     "Population": 1136,
     "Square_MI": 39.7,
     "Altitude": 904,
-    "Postal_Code": 5826,
+    "Postal_Code": "05826",
     "URL": "http://www.townofcraftsbury.com/",
     "Office_Phone": "802-586-2823",
     "Clerk_Email": "craftsbury@gmail.com"
@@ -949,7 +949,7 @@
     "Population": 1898,
     "Square_MI": 45.5,
     "Altitude": 615,
-    "Postal_Code": 5487,
+    "Postal_Code": "05487",
     "URL": "http://www.starksboro.org",
     "Office_Phone": "802-453-2639",
     "Clerk_Email": "starksboro@madriver.com"
@@ -961,7 +961,7 @@
     "Population": 2847,
     "Square_MI": 39,
     "Altitude": 671,
-    "Postal_Code": 5655,
+    "Postal_Code": "05655",
     "URL": "http://www.hydeparkvt.com",
     "Office_Phone": "802-888-2300",
     "Clerk_Email": "kim@hydeparkvt.com"
@@ -973,7 +973,7 @@
     "Population": 97,
     "Square_MI": 43,
     "Altitude": 1100,
-    "Postal_Code": 5858,
+    "Postal_Code": "05858",
     "Office_Phone": "802-328-2400",
     "Clerk_Email": "townofvictory@wildblue.net"
   },
@@ -984,7 +984,7 @@
     "Population": 1289,
     "Square_MI": 43.1,
     "Altitude": 550,
-    "Postal_Code": 5676,
+    "Postal_Code": "05676",
     "URL": "http://www.duxburyvermont.org/",
     "Office_Phone": "802-244-6660",
     "Clerk_Email": "duxbury1@myfairpoint.net"
@@ -996,7 +996,7 @@
     "Population": 1990,
     "Square_MI": 39.3,
     "Altitude": 374,
-    "Postal_Code": 5483,
+    "Postal_Code": "05483",
     "Office_Phone": "802-933-2524",
     "Clerk_Email": "tc@sheldonvt.com"
   },
@@ -1007,7 +1007,7 @@
     "Population": 809,
     "Square_MI": 39.1,
     "Altitude": 1164,
-    "Postal_Code": 5681,
+    "Postal_Code": "05681",
     "URL": "http://woodburyvt.org/",
     "Office_Phone": "802-456-7051",
     "Clerk_Email": "woodburyclerk@comcast.net"
@@ -1019,7 +1019,7 @@
     "Population": 250,
     "Square_MI": 4.7,
     "Altitude": 1067,
-    "Postal_Code": 5143,
+    "Postal_Code": "05143",
     "URL": "http://www.baltimorevt.org",
     "Office_Phone": "802-263-5274",
     "Clerk_Email": "baltimorevt@tds.net"
@@ -1031,7 +1031,7 @@
     "Population": 840,
     "Square_MI": 38.7,
     "Altitude": 956,
-    "Postal_Code": 5820,
+    "Postal_Code": "05820",
     "URL": "",
     "Office_Phone": "802-755-6100",
     "Clerk_Email": "albany@gaw.com"
@@ -1043,7 +1043,7 @@
     "Population": 1067,
     "Square_MI": 24.7,
     "Altitude": 689,
-    "Postal_Code": 5037,
+    "Postal_Code": "05037",
     "URL": "http://www.westwindsorvt.govoffice2.com/",
     "Office_Phone": "802-484-7212",
     "Clerk_Email": "west.windsor.townclerk@valley.net"
@@ -1055,7 +1055,7 @@
     "Population": 3756,
     "Square_MI": 19.8,
     "Altitude": 362,
-    "Postal_Code": 5089,
+    "Postal_Code": "05089",
     "URL": "http://www.windsorvt.org/",
     "Office_Phone": "802-674-5610",
     "Clerk_Email": "smicka@windsorvt.org"
@@ -1067,7 +1067,7 @@
     "Population": 4339,
     "Square_MI": 72.7,
     "Altitude": 723,
-    "Postal_Code": 5672,
+    "Postal_Code": "05672",
     "URL": "http://www.townofstowevt.org/",
     "Office_Phone": "802-253-6133",
     "Clerk_Email": "akaiser@townofstowevermont.org"
@@ -1079,7 +1079,7 @@
     "Population": 9479,
     "Square_MI": 60.9,
     "Altitude": 320,
-    "Postal_Code": 5468,
+    "Postal_Code": "05468",
     "URL": "http://miltonvt.org/",
     "Office_Phone": "802-893-7344",
     "Clerk_Email": "Jcushing@town.milton.vt.us"
@@ -1091,7 +1091,7 @@
     "Population": 1104,
     "Square_MI": 39.7,
     "Altitude": 816,
-    "Postal_Code": 5848,
+    "Postal_Code": "05848",
     "Office_Phone": "802-748-2122",
     "Clerk_Email": "townofwaterford@gmail.com"
   },
@@ -1102,7 +1102,7 @@
     "Population": 1393,
     "Square_MI": 49,
     "Altitude": 289,
-    "Postal_Code": 5491,
+    "Postal_Code": "05491",
     "URL": "http://www.addisonvt.org/",
     "Office_Phone": "802-759-2020",
     "Clerk_Email": "addisontown@gmavt.net"
@@ -1114,7 +1114,7 @@
     "Population": 1121,
     "Square_MI": 23.4,
     "Altitude": 502,
-    "Postal_Code": 5774,
+    "Postal_Code": "05774",
     "URL": "http://wellsvt.com/",
     "Office_Phone": "802-645-0486",
     "Clerk_Email": "wellstownclerk@comcast.net"
@@ -1126,7 +1126,7 @@
     "Population": 3223,
     "Square_MI": 45.2,
     "Altitude": 587,
-    "Postal_Code": 5048,
+    "Postal_Code": "05048",
     "URL": "http://www.hartland.govoffice.com",
     "Office_Phone": "802-436-2444",
     "Clerk_Email": "hardlandvtclerk@vermontel.net"
@@ -1138,7 +1138,7 @@
     "Population": 340,
     "Square_MI": 13.1,
     "Altitude": 980,
-    "Postal_Code": 5143,
+    "Postal_Code": "05143",
     "URL": "",
     "Office_Phone": "802-869-3370",
     "Clerk_Email": "townofathens@hotmail.com"
@@ -1150,7 +1150,7 @@
     "Population": 1456,
     "Square_MI": 39.2,
     "Altitude": 720,
-    "Postal_Code": 5680,
+    "Postal_Code": "05680",
     "URL": "http://www.wolcottvt.org/",
     "Office_Phone": "802-888-2746",
     "Clerk_Email": "wolcott@pshift.com"
@@ -1162,7 +1162,7 @@
     "Population": 1659,
     "Square_MI": 26.9,
     "Altitude": 800,
-    "Postal_Code": 5673,
+    "Postal_Code": "05673",
     "URL": "http://www.waitsfieldvt.us/",
     "Office_Phone": "802-496-2218",
     "Clerk_Email": "waitsfld@madriver.com"
@@ -1174,7 +1174,7 @@
     "Population": 6944,
     "Square_MI": 44.9,
     "Altitude": 148,
-    "Postal_Code": 5482,
+    "Postal_Code": "05482",
     "URL": "http://www.shelburnevt.org/",
     "Office_Phone": "802-985-5116",
     "Clerk_Email": "chaag@shelburnevt.org"
@@ -1186,7 +1186,7 @@
     "Population": 726,
     "Square_MI": 22.8,
     "Altitude": 752,
-    "Postal_Code": 5083,
+    "Postal_Code": "05083",
     "URL": "http://www.westfairleevt.com",
     "Office_Phone": "802-333-9696",
     "Clerk_Email": "westfairleetc@hotmail.com"
@@ -1198,7 +1198,7 @@
     "Population": 1260,
     "Square_MI": 53.4,
     "Altitude": 1280,
-    "Postal_Code": 5846,
+    "Postal_Code": "05846",
     "URL": "http://brightonvt.org/",
     "Office_Phone": "802-723-4405",
     "Clerk_Email": "brightonclerk@comcast.net"
@@ -1210,7 +1210,7 @@
     "Population": 278,
     "Square_MI": 28.5,
     "Altitude": 380,
-    "Postal_Code": 5743,
+    "Postal_Code": "05743",
     "Office_Phone": "802-265-4880",
     "Clerk_Email": "westhaven@myfairpoint.net"
   },
@@ -1221,7 +1221,7 @@
     "Population": 3044,
     "Square_MI": 55.9,
     "Altitude": 623,
-    "Postal_Code": 5143,
+    "Postal_Code": "05143",
     "URL": "http://www.chester.govoffice.com",
     "Office_Phone": "802-875-2173",
     "Clerk_Email": "tcchester@vermontel.net"
@@ -1233,7 +1233,7 @@
     "Population": 1185,
     "Square_MI": 49.7,
     "Altitude": 385,
-    "Postal_Code": 5760,
+    "Postal_Code": "05760",
     "URL": "http://www.town-of-orwell.org/",
     "Office_Phone": "802-948-2032",
     "Clerk_Email": "tckorwel@sover.net"
@@ -1245,7 +1245,7 @@
     "Population": 902,
     "Square_MI": 38.8,
     "Altitude": 780,
-    "Postal_Code": 5682,
+    "Postal_Code": "05682",
     "URL": "http://www.worcestervt.org/",
     "Office_Phone": "802-223-6942 x1",
     "Clerk_Email": "worcesterclerk@comcast.net"
@@ -1257,7 +1257,7 @@
     "Population": 416,
     "Square_MI": 37.4,
     "Altitude": 1660,
-    "Postal_Code": 5152,
+    "Postal_Code": "05152",
     "Office_Phone": "802-824-3065",
     "Clerk_Email": "perutown@myfairpoint.net"
   },
@@ -1268,7 +1268,7 @@
     "Population": 1461,
     "Square_MI": 48.6,
     "Altitude": 1000,
-    "Postal_Code": 5039,
+    "Postal_Code": "05039",
     "URL": "http://www.corinthvt.org/",
     "Office_Phone": "802-439-5850",
     "Clerk_Email": "corino@tops-tele.com"
@@ -1280,7 +1280,7 @@
     "Population": 2811,
     "Square_MI": 31.6,
     "Altitude": 600,
-    "Postal_Code": 5759,
+    "Postal_Code": "05759",
     "URL": "http://www.clarendonvt.org",
     "Office_Phone": "802-775-4274",
     "Clerk_Email": "clarendonclerk@comcast.net"
@@ -1292,7 +1292,7 @@
     "Population": 2619,
     "Square_MI": 29.9,
     "Altitude": 425,
-    "Postal_Code": 5033,
+    "Postal_Code": "05033",
     "URL": "http://www.bradford-vt.us/",
     "Office_Phone": "802 222-4727",
     "Clerk_Email": "clerk@bradford-vt.us"
@@ -1304,7 +1304,7 @@
     "Population": 3544,
     "Square_MI": 44.8,
     "Altitude": 531,
-    "Postal_Code": 5055,
+    "Postal_Code": "05055",
     "URL": "http://www.norwich.vt.us/",
     "Office_Phone": "802-649-1419  x103",
     "Clerk_Email": "clerk@norwich.vt.us"
@@ -1316,7 +1316,7 @@
     "Population": 946,
     "Square_MI": 49.5,
     "Altitude": 688,
-    "Postal_Code": 5343,
+    "Postal_Code": "05343",
     "URL": "http://www.jamaicavermont.org/",
     "Office_Phone": "802-874-4681",
     "Clerk_Email": "jamaicatownclerk@svcable.net"
@@ -1328,7 +1328,7 @@
     "Population": 2578,
     "Square_MI": 32.1,
     "Altitude": 727,
-    "Postal_Code": 5651,
+    "Postal_Code": "05651",
     "URL": "http://eastmontpeliervt.org",
     "Office_Phone": "802-223-3313",
     "Clerk_Email": "eastmonttct@comcast.net"
@@ -1340,7 +1340,7 @@
     "Population": 3788,
     "Square_MI": 42.2,
     "Altitude": 570,
-    "Postal_Code": 5443,
+    "Postal_Code": "05443",
     "URL": "http://www.bristolvt.org/",
     "Office_Phone": "802-453-2486",
     "Clerk_Email": "bristoltown@gmavt.net"
@@ -1352,7 +1352,7 @@
     "Population": 1680,
     "Square_MI": 40.4,
     "Altitude": 536,
-    "Postal_Code": 5345,
+    "Postal_Code": "05345",
     "URL": "http://www.newfanevt.com/",
     "Office_Phone": "802-365-7772 x10",
     "Clerk_Email": "tclerknewfane@svcable.net"
@@ -1364,7 +1364,7 @@
     "Population": 1394,
     "Square_MI": 42.9,
     "Altitude": 690,
-    "Postal_Code": 5761,
+    "Postal_Code": "05761",
     "URL": "http://pawlet.vt.gov/",
     "Office_Phone": "802-325-3309",
     "Clerk_Email": "pawletclerk@vermontel.net"
@@ -1376,7 +1376,7 @@
     "Population": 96,
     "Square_MI": 21.6,
     "Altitude": 1734,
-    "Postal_Code": 5363,
+    "Postal_Code": "05363",
     "Office_Phone": "802-464-8081",
     "Clerk_Email": "josiekil@yahoo.com"
   },
@@ -1387,7 +1387,7 @@
     "Population": 811,
     "Square_MI": 39.8,
     "Altitude": 790,
-    "Postal_Code": 5851,
+    "Postal_Code": "05851",
     "Office_Phone": "802-626-9094",
     "Clerk_Email": "wheelocktown@gmail.com"
   },
@@ -1398,7 +1398,7 @@
     "Population": 971,
     "Square_MI": 42.8,
     "Altitude": 342,
-    "Postal_Code": 5676,
+    "Postal_Code": "05676",
     "URL": "http://www.boltonvt.com/",
     "Office_Phone": "802-434-5075 x222",
     "Clerk_Email": "Deborah@townofboltonvt.com"
@@ -1410,7 +1410,7 @@
     "Population": 261,
     "Square_MI": 40.4,
     "Altitude": 261,
-    "Postal_Code": 5905,
+    "Postal_Code": "05905",
     "Office_Phone": "802-962-5191",
     "Clerk_Email": "townofbloomfieldvt@gmail.com"
   },
@@ -1421,7 +1421,7 @@
     "Population": 3140,
     "Square_MI": 43.5,
     "Altitude": 560,
-    "Postal_Code": 5763,
+    "Postal_Code": "05763",
     "URL": "http://www.town.pittsford.vt.us",
     "Office_Phone": "802-483-6500 x13",
     "Clerk_Email": "mckinlay1@myfairpoint.net"
@@ -1433,7 +1433,7 @@
     "Population": 1681,
     "Square_MI": 40.1,
     "Altitude": 893,
-    "Postal_Code": 5674,
+    "Postal_Code": "05674",
     "URL": "http://www.warrenvt.org",
     "Office_Phone": "802-496-2709",
     "Clerk_Email": "clerk@warrenvt.org"
@@ -1445,7 +1445,7 @@
     "Population": 588,
     "Square_MI": 38.2,
     "Altitude": 1405,
-    "Postal_Code": 5830,
+    "Postal_Code": "05830",
     "Office_Phone": "802-895-4440",
     "Clerk_Email": "holland1805@hotmail.com"
   },
@@ -1456,7 +1456,7 @@
     "Population": 1149,
     "Square_MI": 42.8,
     "Altitude": 547,
-    "Postal_Code": 5353,
+    "Postal_Code": "05353",
     "URL": "http://www.townshendvt.net/",
     "Office_Phone": "802-365-7300",
     "Clerk_Email": "tnclk@svcable.net"
@@ -1468,7 +1468,7 @@
     "Population": 1292,
     "Square_MI": 41.5,
     "Altitude": 790,
-    "Postal_Code": 5739,
+    "Postal_Code": "05739",
     "Office_Phone": "802-293-5136",
     "Clerk_Email": "danbytownclerk@vermontel.net"
   },
@@ -1479,7 +1479,7 @@
     "Population": 414,
     "Square_MI": 47.6,
     "Altitude": 2215,
-    "Postal_Code": 5201,
+    "Postal_Code": "05201",
     "URL": "http://woodfordvt.org/town-government",
     "Office_Phone": "802-442-4895",
     "Clerk_Email": "info@woodfordvt.org"
@@ -1491,7 +1491,7 @@
     "Population": 107,
     "Square_MI": 35.3,
     "Altitude": 1015,
-    "Postal_Code": 5903,
+    "Postal_Code": "05903",
     "Office_Phone": "802-277-4814",
     "Clerk_Email": "lemitown@myfairpoint.net"
   },
@@ -1502,7 +1502,7 @@
     "Population": 850,
     "Square_MI": 45.6,
     "Altitude": 659,
-    "Postal_Code": 5252,
+    "Postal_Code": "05252",
     "URL": "http://www.sunderlandvt.org/",
     "Office_Phone": "802-375-6106",
     "Clerk_Email": "town@sunderlandvt.org"
@@ -1514,7 +1514,7 @@
     "Population": 1196,
     "Square_MI": 53.5,
     "Altitude": 860,
-    "Postal_Code": 5824,
+    "Postal_Code": "05824",
     "URL": "http://www.concordvt.us/",
     "Office_Phone": "802-695-2220",
     "Clerk_Email": "townclerk@conclerk.com"
@@ -1526,7 +1526,7 @@
     "Population": 1222,
     "Square_MI": 41.7,
     "Altitude": 1325,
-    "Postal_Code": 5036,
+    "Postal_Code": "05036",
     "URL": "http://www.brookfieldvt.org/",
     "Office_Phone": "802-276-3352",
     "Clerk_Email": "Btownhall@aol.com"
@@ -1538,7 +1538,7 @@
     "Population": 5448,
     "Square_MI": 39.8,
     "Altitude": 720,
-    "Postal_Code": 5851,
+    "Postal_Code": "05851",
     "URL": "http://www.lyndonvt.org/",
     "Office_Phone": "802-626-5785",
     "Clerk_Email": "ltc@kingcon.com"
@@ -1550,7 +1550,7 @@
     "Population": 144,
     "Square_MI": 9.1,
     "Altitude": 1360,
-    "Postal_Code": 5148,
+    "Postal_Code": "05148",
     "URL": "http://landgrove.vermont.gov",
     "Office_Phone": "802-824-3716",
     "Clerk_Email": "townoflandgrove@gmail.com"
@@ -1562,7 +1562,7 @@
     "Population": 382,
     "Square_MI": 38.5,
     "Altitude": 912,
-    "Postal_Code": 5748,
+    "Postal_Code": "05748",
     "Office_Phone": "802-767-3660",
     "Clerk_Email": "hancocktwnclerk@yahoo.com"
   },
@@ -1573,7 +1573,7 @@
     "Population": 5015,
     "Square_MI": 35.4,
     "Altitude": 560,
-    "Postal_Code": 5465,
+    "Postal_Code": "05465",
     "URL": "http://www.jerichovt.gov/",
     "Office_Phone": "802-899-4936 x1",
     "Clerk_Email": "jerichovermont@yahoo.com"
@@ -1585,7 +1585,7 @@
     "Population": 328,
     "Square_MI": 26.1,
     "Altitude": 1967,
-    "Postal_Code": 5359,
+    "Postal_Code": "05359",
     "URL": "http://windhamvt.info/",
     "Office_Phone": "802-874-4211",
     "Clerk_Email": "Windham.town@gmail.com"
@@ -1597,7 +1597,7 @@
     "Population": 1001,
     "Square_MI": 38.4,
     "Altitude": 1152,
-    "Postal_Code": 5867,
+    "Postal_Code": "05867",
     "Office_Phone": "802-467-3377",
     "Clerk_Email": "duffyogden@yahoo.com"
   },
@@ -1608,7 +1608,7 @@
     "Population": 1388,
     "Square_MI": 42.2,
     "Altitude": 750,
-    "Postal_Code": 5450,
+    "Postal_Code": "05450",
     "Office_Phone": "802-933-2335",
     "Clerk_Email": "townclerk@berkshirevt.com"
   },
@@ -1619,7 +1619,7 @@
     "Population": 1653,
     "Square_MI": 40.2,
     "Altitude": 500,
-    "Postal_Code": 5660,
+    "Postal_Code": "05660",
     "URL": "http://www.moretownvt.org/",
     "Office_Phone": "802-496-3645",
     "Clerk_Email": "townclerk@moretownvt.net"
@@ -1631,7 +1631,7 @@
     "Population": 1955,
     "Square_MI": 64.4,
     "Altitude": 418,
-    "Postal_Code": 5051,
+    "Postal_Code": "05051",
     "Office_Phone": "802-866-5521",
     "Clerk_Email": "clerk@newburyvt.org"
   },
@@ -1642,7 +1642,7 @@
     "Population": 849,
     "Square_MI": 39.6,
     "Altitude": 1154,
-    "Postal_Code": 5657,
+    "Postal_Code": "05657",
     "URL": "http://www.elmorevt.org/",
     "Office_Phone": "802-888-2637",
     "Clerk_Email": "mccorkill@aol.com"
@@ -1654,7 +1654,7 @@
     "Population": 3232,
     "Square_MI": 44.6,
     "Altitude": 705,
-    "Postal_Code": 5091,
+    "Postal_Code": "05091",
     "URL": "http://www.townofwoodstock.org",
     "Office_Phone": "802-457-3611",
     "Clerk_Email": "jay@townofwoodstock.org"
@@ -1666,7 +1666,7 @@
     "Population": 1095,
     "Square_MI": 46.9,
     "Altitude": 1240,
-    "Postal_Code": 5751,
+    "Postal_Code": "05751",
     "URL": "http://www.killingtontown.com/",
     "Office_Phone": "802-422-3243",
     "Clerk_Email": "lucrecia@town.killington.vt.us"
@@ -1678,7 +1678,7 @@
     "Population": 1078,
     "Square_MI": 33.4,
     "Altitude": 1042,
-    "Postal_Code": 5903,
+    "Postal_Code": "05903",
     "URL": "http://www.canaanvt.org/",
     "Office_Phone": "802-266-3370",
     "Clerk_Email": "nlabrecque@canaanschools.org"
@@ -1690,7 +1690,7 @@
     "Population": 1235,
     "Square_MI": 46.2,
     "Altitude": 320,
-    "Postal_Code": 5734,
+    "Postal_Code": "05734",
     "Office_Phone": "802-758-2483",
     "Clerk_Email": "bridporttown@gmavt.net"
   },
@@ -1701,7 +1701,7 @@
     "Population": 0,
     "Square_MI": 3.2,
     "Altitude": 1285,
-    "Postal_Code": 5907
+    "Postal_Code": "05907"
   },
   {
     "Town_ID": 182,
@@ -1710,7 +1710,7 @@
     "Population": 727,
     "Square_MI": 32.8,
     "Altitude": 907,
-    "Postal_Code": 5866,
+    "Postal_Code": "05866",
     "URL": "http://sheffieldvt.org",
     "Office_Phone": "802-626-8862",
     "Clerk_Email": "townclerk@sheffieldvt.org"
@@ -1722,7 +1722,7 @@
     "Population": 702,
     "Square_MI": 44,
     "Altitude": 1293,
-    "Postal_Code": 5340,
+    "Postal_Code": "05340",
     "URL": "http://www.winhall.org/",
     "Office_Phone": "802-297-2122",
     "Clerk_Email": "winclerk@comcast.net"
@@ -1734,7 +1734,7 @@
     "Population": 470,
     "Square_MI": 37.2,
     "Altitude": 1738,
-    "Postal_Code": 5871,
+    "Postal_Code": "05871",
     "Office_Phone": "802-467-3336",
     "Clerk_Email": "tclerknewark@kingcon.com"
   },
@@ -1745,7 +1745,7 @@
     "Population": 38889,
     "Square_MI": 15.1,
     "Altitude": 201,
-    "Postal_Code": 5401,
+    "Postal_Code": "05401",
     "URL": "http://www.ci.burlington.vt.us/",
     "Office_Phone": "802-865-7019",
     "Clerk_Email": "sschrader@burlingtonvt.gov"
@@ -1757,7 +1757,7 @@
     "Population": 698,
     "Square_MI": 3.6,
     "Altitude": 643,
-    "Postal_Code": 5495,
+    "Postal_Code": "05495",
     "URL": "http://www.stgeorgevt.com/",
     "Office_Phone": "802-482-5272",
     "Clerk_Email": "stgeorgevtclerk@comcast.net"
@@ -1769,7 +1769,7 @@
     "Population": 2449,
     "Square_MI": 35.7,
     "Altitude": 1067,
-    "Postal_Code": 5149,
+    "Postal_Code": "05149",
     "URL": "http://www.ludlow.vt.us/",
     "Office_Phone": "802-228-3232",
     "Clerk_Email": "treasure@ludlow.vt.us"
@@ -1781,7 +1781,7 @@
     "Population": 1152,
     "Square_MI": 64.3,
     "Altitude": 1111,
-    "Postal_Code": 5653,
+    "Postal_Code": "05653",
     "URL": "http://www.edenvt.org/",
     "Office_Phone": "802-635-2528",
     "Clerk_Email": "cveareden@myfairpoint.net"
@@ -1793,7 +1793,7 @@
     "Population": 427,
     "Square_MI": 20.1,
     "Altitude": 892,
-    "Postal_Code": 5762,
+    "Postal_Code": "05762",
     "URL": "http://www.pittsfieldvt.org",
     "Office_Phone": "802-746-8170",
     "Clerk_Email": "townofpittsfield@myfairpoint.net"
@@ -1805,7 +1805,7 @@
     "Population": 7650,
     "Square_MI": 2,
     "Altitude": 388,
-    "Postal_Code": 5478,
+    "Postal_Code": "05478",
     "URL": "http://www.stalbansvt.com/",
     "Office_Phone": "802-524-1500 x264",
     "Clerk_Email": "s.krupp@stalbansvt.com"
@@ -1817,7 +1817,7 @@
     "Population": 1141,
     "Square_MI": 36.5,
     "Altitude": 1209,
-    "Postal_Code": 5660,
+    "Postal_Code": "05660",
     "URL": "http://www.faystonvt.com/",
     "Office_Phone": "802-496-2454",
     "Clerk_Email": "faystontc@madriver.com"
@@ -1829,7 +1829,7 @@
     "Population": 567,
     "Square_MI": 28.4,
     "Altitude": 1263,
-    "Postal_Code": 5773,
+    "Postal_Code": "05773",
     "URL": "http://www.tinmouthvt.org/",
     "Office_Phone": "802-446-2498",
     "Clerk_Email": "tinmouthtown@vermontel.net"
@@ -1841,7 +1841,7 @@
     "Population": 1108,
     "Square_MI": 50.2,
     "Altitude": 1640,
-    "Postal_Code": 5738,
+    "Postal_Code": "05738",
     "URL": "http://www.shrewsburyvt.org",
     "Office_Phone": "802-492-3511",
     "Clerk_Email": "shrewsburyclerk@vermontel.net"
@@ -1853,7 +1853,7 @@
     "Population": 1028,
     "Square_MI": 38.1,
     "Altitude": 1020,
-    "Postal_Code": 5701,
+    "Postal_Code": "05701",
     "URL": "http://www.mendonvt.org",
     "Office_Phone": "802-775-1662",
     "Clerk_Email": "mendonclerk@comcast.net"
@@ -1865,7 +1865,7 @@
     "Population": 958,
     "Square_MI": 48.9,
     "Altitude": 1334,
-    "Postal_Code": 5031,
+    "Postal_Code": "05031",
     "Office_Phone": "802-234-9211",
     "Clerk_Email": "barnardto@gmail.com"
   },
@@ -1876,7 +1876,7 @@
     "Population": 738,
     "Square_MI": 56.1,
     "Altitude": 996,
-    "Postal_Code": 5847,
+    "Postal_Code": "05847",
     "Office_Phone": "802-744-6559",
     "Clerk_Email": "kclinger@lowelltown.org"
   },
@@ -1887,7 +1887,7 @@
     "Population": 809,
     "Square_MI": 36.5,
     "Altitude": 1205,
-    "Postal_Code": 5350,
+    "Postal_Code": "05350",
     "URL": "https://readsborovt.org/",
     "Office_Phone": "802-423-5405",
     "Clerk_Email": "clerk@readsborovt.org"
@@ -1899,7 +1899,7 @@
     "Population": 2741,
     "Square_MI": 2.5,
     "Altitude": 203,
-    "Postal_Code": 5491,
+    "Postal_Code": "05491",
     "URL": "http://www.vergennes.org/",
     "Office_Phone": "802-877-2841",
     "Clerk_Email": "clerk@vergennes.org"
@@ -1911,7 +1911,7 @@
     "Population": 496,
     "Square_MI": 28.8,
     "Altitude": 1000,
-    "Postal_Code": 5143,
+    "Postal_Code": "05143",
     "Office_Phone": "802-875-2765",
     "Clerk_Email": "clerk@vermontel.net"
   },
@@ -1922,7 +1922,7 @@
     "Population": 5139,
     "Square_MI": 51.6,
     "Altitude": 675,
-    "Postal_Code": 5661,
+    "Postal_Code": "05661",
     "URL": "http://www.morristownvt.org/",
     "Office_Phone": "802-888-6370",
     "Clerk_Email": "mawilson@morristownvt.org"
@@ -1934,7 +1934,7 @@
     "Population": 15814,
     "Square_MI": 29.6,
     "Altitude": 310,
-    "Postal_Code": 5403,
+    "Postal_Code": "05403",
     "URL": "http://www.sburl.com/",
     "Office_Phone": "802-846-4105",
     "Clerk_Email": "dkinville@sburl.com"
@@ -1946,7 +1946,7 @@
     "Population": 669,
     "Square_MI": 33.9,
     "Altitude": 1384,
-    "Postal_Code": 5853,
+    "Postal_Code": "05853",
     "URL": "http://www.town.morgan-vt.org/",
     "Office_Phone": "802-895-2927",
     "Clerk_Email": "tmorganvt@comcast.net"
@@ -1958,7 +1958,7 @@
     "Population": 5309,
     "Square_MI": 42.3,
     "Altitude": 320,
-    "Postal_Code": 5101,
+    "Postal_Code": "05101",
     "URL": "http://www.rockbf.org/",
     "Office_Phone": "802-463-4336",
     "Clerk_Email": "daldrich@rockbf.org"
@@ -1970,7 +1970,7 @@
     "Population": 185,
     "Square_MI": 12.5,
     "Altitude": 1700,
-    "Postal_Code": 5842,
+    "Postal_Code": "05842",
     "Office_Phone": "802-533-2577",
     "Clerk_Email": "townofstanndard@myfairpoint.net"
   },
@@ -1981,7 +1981,7 @@
     "Population": 782,
     "Square_MI": 39,
     "Altitude": 1830,
-    "Postal_Code": 5873,
+    "Postal_Code": "05873",
     "Office_Phone": "802-563-2220",
     "Clerk_Email": "waldentc@pivot.net"
   },
@@ -1992,7 +1992,7 @@
     "Population": 488,
     "Square_MI": 16.7,
     "Altitude": 210,
-    "Postal_Code": 5463,
+    "Postal_Code": "05463",
     "URL": "http://www.islelamotte.us/",
     "Office_Phone": "802-928-3434",
     "Clerk_Email": "islemott@fairpoint.net"
@@ -2004,7 +2004,7 @@
     "Population": 980,
     "Square_MI": 49.6,
     "Altitude": 820,
-    "Postal_Code": 5034,
+    "Postal_Code": "05034",
     "Office_Phone": "802-672-3334",
     "Clerk_Email": "twnbridg@comcast.net"
   },
@@ -2015,7 +2015,7 @@
     "Population": 1182,
     "Square_MI": 74.2,
     "Altitude": 1100,
-    "Postal_Code": 5737,
+    "Postal_Code": "05737",
     "URL": "http://www.chittendenvt.org/",
     "Office_Phone": "802-483-6647",
     "Clerk_Email": "chittendenvt@comcast.net"
@@ -2027,7 +2027,7 @@
     "Population": 5791,
     "Square_MI": 43.7,
     "Altitude": 735,
-    "Postal_Code": 5663,
+    "Postal_Code": "05663",
     "URL": "http://www.northfield-vt.gov/",
     "Office_Phone": "802-485-5421",
     "Clerk_Email": "kpedley@northfield.vt.us"
@@ -2039,7 +2039,7 @@
     "Population": 10367,
     "Square_MI": 45.9,
     "Altitude": 371,
-    "Postal_Code": 5001,
+    "Postal_Code": "05001",
     "URL": "http://www.hartford-vt.org/",
     "Office_Phone": "802-295-2785",
     "Clerk_Email": "mhill@hartford-vt.org"
@@ -2051,7 +2051,7 @@
     "Population": 107,
     "Square_MI": 26,
     "Altitude": 1000,
-    "Postal_Code": 5905,
+    "Postal_Code": "05905",
     "Office_Phone": "802-962-5514",
     "Clerk_Email": "bruns321@sover.net"
   },
@@ -2062,7 +2062,7 @@
     "Population": 885,
     "Square_MI": 28.4,
     "Altitude": 1025,
-    "Postal_Code": 5860,
+    "Postal_Code": "05860",
     "Office_Phone": "802-754-8401",
     "Clerk_Email": "browningtontc@comcast.net"
   },
@@ -2073,7 +2073,7 @@
     "Population": 1286,
     "Square_MI": 21.1,
     "Altitude": 780,
-    "Postal_Code": 5667,
+    "Postal_Code": "05667",
     "URL": "http://www.plainfieldvt.us/",
     "Office_Phone": "802-454-8461",
     "Clerk_Email": "plainfieldtc@gmail.com"
@@ -2085,7 +2085,7 @@
     "Population": 426,
     "Square_MI": 34,
     "Altitude": 922,
-    "Postal_Code": 5859,
+    "Postal_Code": "05859",
     "URL": "http://www.jayvt.com/",
     "Office_Phone": "802-988-2996",
     "Clerk_Email": "townofjay@comcast.net"
@@ -2097,7 +2097,7 @@
     "Population": 1150,
     "Square_MI": 36.8,
     "Altitude": 1060,
-    "Postal_Code": 5042,
+    "Postal_Code": "05042",
     "URL": "http://www.ryegatevt.org/",
     "Office_Phone": "802-584-3880",
     "Clerk_Email": "ryegateclerk@yahoo.com"
@@ -2109,7 +2109,7 @@
     "Population": 1045,
     "Square_MI": 44.3,
     "Altitude": 930,
-    "Postal_Code": 5072,
+    "Postal_Code": "05072",
     "URL": "http://www.townofstraffordvt.com/",
     "Office_Phone": "802-765-4411",
     "Clerk_Email": "townclerk@straffordvt.org"
@@ -2121,7 +2121,7 @@
     "Population": 810,
     "Square_MI": 46.6,
     "Altitude": 116,
-    "Postal_Code": 5474,
+    "Postal_Code": "05474",
     "URL": "http://www.northherovt.com",
     "Office_Phone": "802-372-6926",
     "Clerk_Email": "townclerk@northherovt.com"
@@ -2133,7 +2133,7 @@
     "Population": 649,
     "Square_MI": 38.4,
     "Altitude": 860,
-    "Postal_Code": 5146,
+    "Postal_Code": "05146",
     "URL": "http://www.graftonvermont.org",
     "Office_Phone": "802-843-2419",
     "Clerk_Email": "gtclerk@vermontel.net"
@@ -2145,7 +2145,7 @@
     "Population": 1142,
     "Square_MI": 49,
     "Altitude": 1284,
-    "Postal_Code": 5076,
+    "Postal_Code": "05076",
     "URL": "http://www.topshamvt.org/",
     "Office_Phone": "802-439-5505",
     "Clerk_Email": "topsham@tops-tele.com"
@@ -2157,7 +2157,7 @@
     "Population": 674,
     "Square_MI": 46.2,
     "Altitude": 734,
-    "Postal_Code": 5772,
+    "Postal_Code": "05772",
     "Office_Phone": "802-746-8400",
     "Clerk_Email": "townofstockbridge@myfairpoint.net"
   },
@@ -2168,7 +2168,7 @@
     "Population": 2225,
     "Square_MI": 41.3,
     "Altitude": 1580,
-    "Postal_Code": 5363,
+    "Postal_Code": "05363",
     "URL": "http://www.wilmingtonvermont.us/",
     "Office_Phone": "802-464-5836",
     "Clerk_Email": "wilmclrk@sover.net"
@@ -2180,7 +2180,7 @@
     "Population": 3186,
     "Square_MI": 63.7,
     "Altitude": 454,
-    "Postal_Code": 5464,
+    "Postal_Code": "05464",
     "URL": "http://www.townofcambridgevt.org/",
     "Office_Phone": "802-644-2251",
     "Clerk_Email": "jane.cto@myfairpoint.net"
@@ -2192,7 +2192,7 @@
     "Population": 4853,
     "Square_MI": 47.9,
     "Altitude": 694,
-    "Postal_Code": 5060,
+    "Postal_Code": "05060",
     "URL": "http://randolphvt.govoffice2.com/",
     "Office_Phone": "802-728-5433 x11",
     "Clerk_Email": "clerk@randolphvt.org"
@@ -2204,7 +2204,7 @@
     "Population": 227,
     "Square_MI": 21.4,
     "Altitude": 1136,
-    "Postal_Code": 5733,
+    "Postal_Code": "05733",
     "URL": "http://goshenvt.org/",
     "Office_Phone": "802-247-6455",
     "Clerk_Email": "townclerk@goshenvt.org"
@@ -2216,7 +2216,7 @@
     "Population": 1410,
     "Square_MI": 35.3,
     "Altitude": 1860,
-    "Postal_Code": 5356,
+    "Postal_Code": "05356",
     "URL": "http://www.doververmont.com/",
     "Office_Phone": "802-464-5100",
     "Clerk_Email": "dvrclerk@sover.net"
@@ -2228,7 +2228,7 @@
     "Population": 2274,
     "Square_MI": 43.4,
     "Altitude": 620,
-    "Postal_Code": 5773,
+    "Postal_Code": "05773",
     "URL": "http://www.wallingfordvt.com/",
     "Office_Phone": "802-446-2336",
     "Clerk_Email": "townclerk@wallingfordvt.com"
@@ -2240,7 +2240,7 @@
     "Population": 630,
     "Square_MI": 35.2,
     "Altitude": 1300,
-    "Postal_Code": 5161,
+    "Postal_Code": "05161",
     "URL": "http://westonvt.org/",
     "Office_Phone": "802-824-6645",
     "Clerk_Email": "clerk@westonvt.org"
@@ -2252,7 +2252,7 @@
     "Population": 9078,
     "Square_MI": 49.5,
     "Altitude": 410,
-    "Postal_Code": 5156,
+    "Postal_Code": "05156",
     "URL": "http://www.springfieldvt.govoffice2.com/",
     "Office_Phone": "802-885-2104",
     "Clerk_Email": "tosclerk@vermontel.net"
@@ -2264,7 +2264,7 @@
     "Population": 353,
     "Square_MI": 42.2,
     "Altitude": 766,
-    "Postal_Code": 5250,
+    "Postal_Code": "05250",
     "URL": "http://www.sandgatevermont.org/",
     "Office_Phone": "802-375-9075",
     "Clerk_Email": "sandgateclerk@live.com"
@@ -2276,7 +2276,7 @@
     "Population": 15737,
     "Square_MI": 42.5,
     "Altitude": 750,
-    "Postal_Code": 5201,
+    "Postal_Code": "05201",
     "URL": "http://www.bennington.com/",
     "Office_Phone": "802 442-1043",
     "Clerk_Email": "tcorcoran@benningtonvt.org"
@@ -2288,7 +2288,7 @@
     "Population": 5005,
     "Square_MI": 7.6,
     "Altitude": 722,
-    "Postal_Code": 5855,
+    "Postal_Code": "05855",
     "URL": "http://www.newportvermont.org/",
     "Office_Phone": "802-334-2112",
     "Clerk_Email": "newportcityclerkjim@comcast.net"
@@ -2300,7 +2300,7 @@
     "Population": 1039,
     "Square_MI": 45.5,
     "Altitude": 420,
-    "Postal_Code": 5731,
+    "Postal_Code": "05731",
     "URL": "http://www.benson-vt.com",
     "Office_Phone": "802-537-2611",
     "Clerk_Email": "townclerk@benson-vt.com"
@@ -2312,7 +2312,7 @@
     "Population": 456,
     "Square_MI": 24.4,
     "Altitude": 1260,
-    "Postal_Code": 5851,
+    "Postal_Code": "05851",
     "URL": "http://kirbyvermont.org/",
     "Office_Phone": "802-626-9386",
     "Clerk_Email": "kirbytc@kingcon.com"
@@ -2324,7 +2324,7 @@
     "Population": 2141,
     "Square_MI": 20,
     "Altitude": 280,
-    "Postal_Code": 5354,
+    "Postal_Code": "05354",
     "URL": "http://www.vernon-vt.org/",
     "Office_Phone": "802-257-0292",
     "Clerk_Email": "s.harris@vernon-vt.org"
@@ -2336,7 +2336,7 @@
     "Population": 301,
     "Square_MI": 37.4,
     "Altitude": 1020,
-    "Postal_Code": 5837,
+    "Postal_Code": "05837",
     "Office_Phone": "802-467-3772",
     "Clerk_Email": "tclerk1790@kingcon.com"
   },
@@ -2347,7 +2347,7 @@
     "Population": 4367,
     "Square_MI": 42.4,
     "Altitude": 439,
-    "Postal_Code": 5735,
+    "Postal_Code": "05735",
     "URL": "http://www.bsi-vt.com/castleton/",
     "Office_Phone": "802-468-2212 x214",
     "Clerk_Email": "casclerk@shoreham.net"
@@ -2359,7 +2359,7 @@
     "Population": 2657,
     "Square_MI": 61.2,
     "Altitude": 218,
-    "Postal_Code": 5456,
+    "Postal_Code": "05456",
     "URL": "http://www.ferrisburghvt.org/",
     "Office_Phone": "802-877-3429",
     "Clerk_Email": "ferrisburghclerk@comcast.net"
@@ -2371,8 +2371,8 @@
     "Population": 583,
     "Square_MI": 22.2,
     "Altitude": 572,
-    "Postal_Code": 5733,
-    "Office_Phone": "802-623-7296"
+    "Postal_Code": "05733",
+    "Office_Phone": "802-623-7296",
   },
   {
     "Town_ID": 167,
@@ -2381,7 +2381,7 @@
     "Population": 4090,
     "Square_MI": 32.3,
     "Altitude": 319,
-    "Postal_Code": 5477,
+    "Postal_Code": "05477",
     "URL": "http://www.richmondvt.com/home.php",
     "Office_Phone": "802-434-2221",
     "Clerk_Email": "townclerk@richmondvt.com"
@@ -2393,7 +2393,7 @@
     "Population": 4340,
     "Square_MI": 40.1,
     "Altitude": 241,
-    "Postal_Code": 5461,
+    "Postal_Code": "05461",
     "URL": "http://www.hinesburg.org/",
     "Office_Phone": "802-482-2281",
     "Clerk_Email": "hinesburgclerk@gmavt.net"
@@ -2405,7 +2405,7 @@
     "Population": 2780,
     "Square_MI": 44.9,
     "Altitude": 931,
-    "Postal_Code": 5822,
+    "Postal_Code": "05822",
     "URL": "http://sites.google.com/site/townofbarton/",
     "Office_Phone": "802-525-6222",
     "Clerk_Email": "bartontown@comcast.net"
@@ -2417,7 +2417,7 @@
     "Population": 136,
     "Square_MI": 46.9,
     "Altitude": 1880,
-    "Postal_Code": 5360,
+    "Postal_Code": "05360",
     "URL": "http://townofstrattonvt.com/",
     "Office_Phone": "802-896-6184",
     "Clerk_Email": "townclerk@townofstrattonvt.com"
@@ -2429,7 +2429,7 @@
     "Population": 8183,
     "Square_MI": 39.2,
     "Altitude": 370,
-    "Postal_Code": 5753,
+    "Postal_Code": "05753",
     "URL": "http://www.middlebury.govoffice.com/",
     "Office_Phone": "802-388-8100 x211",
     "Clerk_Email": "awebster@townofmiddlebury.org"
@@ -2441,7 +2441,7 @@
     "Population": 214,
     "Square_MI": 39.4,
     "Altitude": 1252,
-    "Postal_Code": 5907,
+    "Postal_Code": "05907",
     "Office_Phone": "802-822-9935",
     "Clerk_Email": "townofnorton@myfairpoint.net"
   },
@@ -2452,7 +2452,7 @@
     "Population": 10,
     "Square_MI": 11.6,
     "Altitude": 1789,
-    "Postal_Code": 5907
+    "Postal_Code": "05907"
   },
   {
     "Town_ID": 211,
@@ -2461,7 +2461,7 @@
     "Population": 1309,
     "Square_MI": 44.8,
     "Altitude": 600,
-    "Postal_Code": 5077,
+    "Postal_Code": "05077",
     "URL": "http://www.tunbridgevt.com/",
     "Office_Phone": "802-889-5521",
     "Clerk_Email": "townclerk@tunbridge.biz"
@@ -2473,7 +2473,7 @@
     "Population": 974,
     "Square_MI": 22,
     "Altitude": 440,
-    "Postal_Code": 5733,
+    "Postal_Code": "05733",
     "URL": "http://www.leicestervt.org",
     "Office_Phone": "802-247-5961 x3",
     "Clerk_Email": "leicestervt@comcast.net"
@@ -2485,7 +2485,7 @@
     "Population": 2603,
     "Square_MI": 40.9,
     "Altitude": 513,
-    "Postal_Code": 5068,
+    "Postal_Code": "05068",
     "URL": "http://www.royaltonvt.com",
     "Office_Phone": "802-763-7207",
     "Clerk_Email": "royalclerk@bluemoo.net"
@@ -2497,7 +2497,7 @@
     "Population": 967,
     "Square_MI": 21.2,
     "Altitude": 430,
-    "Postal_Code": 5045,
+    "Postal_Code": "05045",
     "URL": "http://www.fairleevt.org/",
     "Office_Phone": "802-333-4363",
     "Clerk_Email": "townclerk@fairleevt.org"
@@ -2509,7 +2509,7 @@
     "Population": 770,
     "Square_MI": 39.4,
     "Altitude": 1463,
-    "Postal_Code": 5841,
+    "Postal_Code": "05841",
     "URL": "http://www.greensborovt.org/",
     "Office_Phone": "802-533-2911",
     "Clerk_Email": "brideyvt@yahoo.com"
@@ -2521,7 +2521,7 @@
     "Population": 782,
     "Square_MI": 39.8,
     "Altitude": 1590,
-    "Postal_Code": 5358,
+    "Postal_Code": "05358",
     "URL": "http://www.halifaxvermont.com",
     "Office_Phone": "802-368-7390",
     "Clerk_Email": "townclerk@halifaxvermont.com"
@@ -2533,7 +2533,7 @@
     "Population": 1090,
     "Square_MI": 30.1,
     "Altitude": 340,
-    "Postal_Code": 5769,
+    "Postal_Code": "05769",
     "URL": "http://townofsalisbury.org/",
     "Office_Phone": "802-352-4228",
     "Clerk_Email": "town.clerk@comcast.net"
@@ -2545,7 +2545,7 @@
     "Population": 1968,
     "Square_MI": 45.5,
     "Altitude": 573,
-    "Postal_Code": 5032,
+    "Postal_Code": "05032",
     "URL": "http://www.bethelvt.govoffice3.com/",
     "Office_Phone": "802-234-9722",
     "Clerk_Email": "betheltownclerk@comcast.net"
@@ -2557,7 +2557,7 @@
     "Population": 8035,
     "Square_MI": 10.3,
     "Altitude": 523,
-    "Postal_Code": 5602,
+    "Postal_Code": "05602",
     "URL": "http://www.montpelier-vt.org/",
     "Office_Phone": "802-223-9500",
     "Clerk_Email": "jodum@montpelier-vt.org"
@@ -2569,7 +2569,7 @@
     "Population": 1861,
     "Square_MI": 38.1,
     "Altitude": 623,
-    "Postal_Code": 5462,
+    "Postal_Code": "05462",
     "URL": "http://huntingtonvt.org/",
     "Office_Phone": "802-434-2032",
     "Clerk_Email": "huntingtonclerk@gmavt.net"
@@ -2581,7 +2581,7 @@
     "Population": 854,
     "Square_MI": 29.3,
     "Altitude": 1090,
-    "Postal_Code": 5355,
+    "Postal_Code": "05355",
     "Office_Phone": "802-896-6055",
     "Clerk_Email": "wardsborotownoffice@myfairpoint.net"
   },
@@ -2592,7 +2592,7 @@
     "Population": 5086,
     "Square_MI": 60.6,
     "Altitude": 180,
-    "Postal_Code": 5481,
+    "Postal_Code": "05481",
     "URL": "http://www.stalbanstown.com",
     "Office_Phone": "802-524-2415",
     "Clerk_Email": "stalbtwn@comcast.net"
@@ -2604,7 +2604,7 @@
     "Population": 503,
     "Square_MI": 40.2,
     "Altitude": 825,
-    "Postal_Code": 5874,
+    "Postal_Code": "05874",
     "Office_Phone": "802-744-2484",
     "Clerk_Email": "townofwestfield@comcast.net"
   },
@@ -2615,7 +2615,7 @@
     "Population": 555,
     "Square_MI": 48.7,
     "Altitude": 1217,
-    "Postal_Code": 5056,
+    "Postal_Code": "05056",
     "URL": "http://www.plymouthvt.org",
     "Office_Phone": "802-672-3655",
     "Clerk_Email": "clerk@plymouthvt.org"
@@ -2627,7 +2627,7 @@
     "Population": 966,
     "Square_MI": 38.6,
     "Altitude": 945,
-    "Postal_Code": 5839,
+    "Postal_Code": "05839",
     "URL": "http://townofglover.com/",
     "Office_Phone": "802-525-6227",
     "Clerk_Email": "glovertc@comcast.net"
@@ -2639,7 +2639,7 @@
     "Population": 3569,
     "Square_MI": 50.4,
     "Altitude": 110,
-    "Postal_Code": 5445,
+    "Postal_Code": "05445",
     "URL": "http://www.charlottevt.org/",
     "Office_Phone": "802-425-3071",
     "Clerk_Email": "mary@townofcharlotte.com"
@@ -2651,7 +2651,7 @@
     "Population": 1877,
     "Square_MI": 7.6,
     "Altitude": 500,
-    "Postal_Code": 5765,
+    "Postal_Code": "05765",
     "URL": "http://proctorvermont.com/",
     "Office_Phone": "802-459-3333",
     "Clerk_Email": "info@proctorvermont.com"
@@ -2663,7 +2663,7 @@
     "Population": 9291,
     "Square_MI": 4,
     "Altitude": 609,
-    "Postal_Code": 5641,
+    "Postal_Code": "05641",
     "URL": "http://www.barrecity.org/",
     "Office_Phone": "802-476-0242",
     "Clerk_Email": "cdawes@barrecity.org"
@@ -2675,7 +2675,7 @@
     "Population": 1952,
     "Square_MI": 48.8,
     "Altitude": 124,
-    "Postal_Code": 5440,
+    "Postal_Code": "05440",
     "URL": "http://www.alburghvt.org/",
     "Office_Phone": "802-796-3468",
     "Clerk_Email": "townofalburgh@fairpoint.net"
@@ -2687,7 +2687,7 @@
     "Population": 268,
     "Square_MI": 32.7,
     "Altitude": 874,
-    "Postal_Code": 5905,
+    "Postal_Code": "05905",
     "URL": "http://www.guildhallvt.org/",
     "Office_Phone": "802-676-3797",
     "Clerk_Email": "townclerk@guildhallvt.org"
@@ -2699,7 +2699,7 @@
     "Population": 105,
     "Square_MI": 31.8,
     "Altitude": 893,
-    "Postal_Code": 5905,
+    "Postal_Code": "05905",
     "URL": "http://www.maidstone-vt.org/",
     "Office_Phone": "802-676-3210",
     "Clerk_Email": "maidstonetownclerk@gmail.com"
@@ -2711,7 +2711,7 @@
     "Population": 16,
     "Square_MI": 44.5,
     "Altitude": 1200,
-    "Postal_Code": 5262
+    "Postal_Code": "05262"
   },
   {
     "Town_ID": 228,
@@ -2720,7 +2720,7 @@
     "Population": 697,
     "Square_MI": 16.4,
     "Altitude": 394,
-    "Postal_Code": 5492,
+    "Postal_Code": "05492",
     "Office_Phone": "802-644-8865",
     "Clerk_Email": "townofwaterville@myfairpoint.net"
   },
@@ -2731,7 +2731,7 @@
     "Population": 978,
     "Square_MI": 40.7,
     "Altitude": 1736,
-    "Postal_Code": 5344,
+    "Postal_Code": "05344",
     "URL": "http://www.marlboro.vt.us",
     "Office_Phone": "802-254-2181",
     "Clerk_Email": "marlborotownclerk@gmail.com"
@@ -2743,7 +2743,7 @@
     "Population": 1047,
     "Square_MI": 38.9,
     "Altitude": 1260,
-    "Postal_Code": 5675,
+    "Postal_Code": "05675",
     "Office_Phone": "802-883-2218",
     "Clerk_Email": "washingtontownclerk@gmail.com"
   },
@@ -2754,7 +2754,7 @@
     "Population": 704,
     "Square_MI": 44.6,
     "Altitude": 824,
-    "Postal_Code": 5776,
+    "Postal_Code": "05776",
     "Office_Phone": "802-394-7728",
     "Clerk_Email": "rupert187@myfairpoint.net"
   },
@@ -2765,7 +2765,7 @@
     "Population": 2634,
     "Square_MI": 26.8,
     "Altitude": 580,
-    "Postal_Code": 5346,
+    "Postal_Code": "05346",
     "URL": "http://www.putneyvt.org",
     "Office_Phone": "802-387-5862",
     "Clerk_Email": "putneytc@putneyvt.org"
@@ -2777,7 +2777,7 @@
     "Population": 1171,
     "Square_MI": 56.2,
     "Altitude": 878,
-    "Postal_Code": 5767,
+    "Postal_Code": "05767",
     "URL": "http://www.rochestervermont.org/",
     "Office_Phone": "802-767-3631",
     "Clerk_Email": "rochestertown@comcast.net"
@@ -2789,7 +2789,7 @@
     "Population": 895,
     "Square_MI": 38.6,
     "Altitude": 1196,
-    "Postal_Code": 5872,
+    "Postal_Code": "05872",
     "URL": "http://www.charlestonvt.org/",
     "Office_Phone": "802-895-2814",
     "Clerk_Email": "townofcharlestonvt@comcastnet"
@@ -2801,7 +2801,7 @@
     "Population": 18626,
     "Square_MI": 39.3,
     "Altitude": 492,
-    "Postal_Code": 5452,
+    "Postal_Code": "05452",
     "URL": "http://www.essex.org/",
     "Office_Phone": "802-879-0413",
     "Clerk_Email": "cmoomey@essex.org"
@@ -2813,7 +2813,7 @@
     "Population": 992,
     "Square_MI": 56.7,
     "Altitude": 492,
-    "Postal_Code": 5471,
+    "Postal_Code": "05471",
     "URL": "http://www.montgomeryvt.us/",
     "Office_Phone": "802-326-4719",
     "Clerk_Email": "montgomerytc@fairpoint.net"
@@ -2825,7 +2825,7 @@
     "Population": 707,
     "Square_MI": 41.7,
     "Altitude": 754,
-    "Postal_Code": 5062,
+    "Postal_Code": "05062",
     "URL": "http://www.readingvt.govoffice.com/",
     "Office_Phone": "802-484-7250",
     "Clerk_Email": "readingvermont@comcast.net"
@@ -2837,7 +2837,7 @@
     "Population": 2036,
     "Square_MI": 47.9,
     "Altitude": 802,
-    "Postal_Code": 5253,
+    "Postal_Code": "05253",
     "URL": "http://www.dorsetvt.org/",
     "Office_Phone": "802-362-1178 x2",
     "Clerk_Email": "dorsetclerk@gmail.com"
@@ -2849,7 +2849,7 @@
     "Population": 467,
     "Square_MI": 12.9,
     "Altitude": 570,
-    "Postal_Code": 5345,
+    "Postal_Code": "05345",
     "URL": "http://www.brooklinevt.com",
     "Office_Phone": "802-365-4648",
     "Clerk_Email": "brook763@comcast.net"
@@ -2861,7 +2861,7 @@
     "Population": 752,
     "Square_MI": 28.9,
     "Altitude": 480,
-    "Postal_Code": 5735,
+    "Postal_Code": "05735",
     "URL": "http://hubbardtonvt.com/",
     "Office_Phone": "802-273-2951",
     "Clerk_Email": "clrkhubb@shoreham.net"
@@ -2873,7 +2873,7 @@
     "Population": 1511,
     "Square_MI": 43.5,
     "Altitude": 792,
-    "Postal_Code": 5857,
+    "Postal_Code": "05857",
     "Office_Phone": "802-334-6442",
     "Clerk_Email": "nctownclerk@comcast.net"
   },
@@ -2884,7 +2884,7 @@
     "Population": 3917,
     "Square_MI": 40.2,
     "Altitude": 421,
-    "Postal_Code": 5733,
+    "Postal_Code": "05733",
     "URL": "http://www.town.brandon.vt.us/",
     "Office_Phone": "802-247-5721",
     "Clerk_Email": "wadick@sover.net"
@@ -2896,7 +2896,7 @@
     "Population": 1411,
     "Square_MI": 40.1,
     "Altitude": 500,
-    "Postal_Code": 5065,
+    "Postal_Code": "05065",
     "URL": "http://sharonvt.net/",
     "Office_Phone": "802-763-8268 x101",
     "Clerk_Email": "clerk@sharonvt.net"
@@ -2908,7 +2908,7 @@
     "Population": 813,
     "Square_MI": 39.6,
     "Altitude": 1131,
-    "Postal_Code": 5352,
+    "Postal_Code": "05352",
     "URL": "http://www.stamfordvt.org/",
     "Office_Phone": "802-694-1361",
     "Clerk_Email": "stamfdvt@live.com"
@@ -2920,7 +2920,7 @@
     "Population": 3767,
     "Square_MI": 43.2,
     "Altitude": 833,
-    "Postal_Code": 5262,
+    "Postal_Code": "05262",
     "URL": "http://www.shaftsbury.net/",
     "Office_Phone": "802-442-4038",
     "Clerk_Email": "shaftsburyclerk@comcast.net"
@@ -2932,7 +2932,7 @@
     "Population": 1241,
     "Square_MI": 49.6,
     "Altitude": 1540,
-    "Postal_Code": 5758,
+    "Postal_Code": "05758",
     "URL": "http://www.mounthollyvt.org/",
     "Office_Phone": "802-259-2391",
     "Clerk_Email": "mthollytc@yahoo.com"
@@ -2944,7 +2944,7 @@
     "Population": 1179,
     "Square_MI": 38,
     "Altitude": 628,
-    "Postal_Code": 5444,
+    "Postal_Code": "05444",
     "URL": "http://fletchervt.net/",
     "Office_Phone": "802-849-6616",
     "Clerk_Email": "townfletcher@surfglobal.net"
@@ -2956,7 +2956,7 @@
     "Population": 6561,
     "Square_MI": 1.5,
     "Altitude": 200,
-    "Postal_Code": 5404,
+    "Postal_Code": "05404",
     "URL": "http://www.winooskivt.org/",
     "Office_Phone": "802-655-6419",
     "Clerk_Email": "cjbarrett@winooskivt.org"
@@ -2968,7 +2968,7 @@
     "Population": 1136,
     "Square_MI": 28.6,
     "Altitude": 374,
-    "Postal_Code": 5753,
+    "Postal_Code": "05753",
     "URL": "http://cornwallvt.com/",
     "Office_Phone": "802-462-2775",
     "Clerk_Email": "cornwallvt@shoreham.net"
@@ -2980,7 +2980,7 @@
     "Population": 12005,
     "Square_MI": 32.4,
     "Altitude": 310,
-    "Postal_Code": 5301,
+    "Postal_Code": "05301",
     "URL": "http://www.brattleboro.org/",
     "Office_Phone": "802-251-8157",
     "Clerk_Email": "townclerk@brattleboro.org"
