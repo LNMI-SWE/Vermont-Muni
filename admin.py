@@ -20,18 +20,19 @@ def delete_collection(coll_ref, batch_size):
     print("All documents from collection deleted.")
 
 if __name__ == "__main__":
+    # get the data file from program run command
     data_file = sys.argv[1]
+    # connect to firestore
     cred = credentials.Certificate("serviceAccountKey.json")
     firebase_admin.initialize_app(cred)
-
     db=firestore.client()
-
+    # read in the data
     f = open(data_file)
     data = json.load(f)
     f.close()
-
+    # delete the old data
     delete_collection(db.collection('restaurants'), len(data))
-
+    # add the data to the firestore
     for idx, item in enumerate(data):
         db.collection('restaurants').add(item)
         if idx == len(data) - 1:
