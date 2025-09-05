@@ -1,9 +1,18 @@
-# query.py
 import sys
 import argparse
 from typing import List, Any
 
-from parser import parse_query  # your parser.py function
+from parser import parse_query
+
+def ensure_firestore():
+    """Initialize Firebase and return Firestore client."""
+    import firebase_admin
+    from firebase_admin import credentials, firestore
+    
+    if not firebase_admin._apps:
+        cred = credentials.Certificate("serviceAccountKey.json")
+        firebase_admin.initialize_app(cred)
+    return firestore.client()
 
 HELP_TEXT = """
 Vermont Query CLI — mini language
