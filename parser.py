@@ -13,7 +13,7 @@ FIELD = pp.oneOf(
 
 number   = pp.pyparsing_common.number().setName("number")   # int or float
 qstring  = pp.quotedString.setParseAction(pp.removeQuotes)   # "string"
-word     = pp.Word(pp.alphanums + "_.'-")  # alphanumeric word with common punctuation
+word     = pp.Word(pp.alphanums + "_.'- ")  # alphanumeric word with common punctuation and spaces
 
 # Operators
 NUM_OP   = pp.oneOf("< > <= >=")
