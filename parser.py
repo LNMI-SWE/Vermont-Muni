@@ -21,7 +21,7 @@ EQ_OP    = pp.oneOf("== !=")
 OF_OP    = pp.CaselessKeyword("OF")
 
 # Values
-NAME_WORD   = pp.Word(pp.alphas, pp.alphas + "_-.'")   # starts with a letter, no digits allowed
+NAME_WORD   = pp.Word(pp.alphas, pp.alphas + "_-.' ")   # starts with a letter, no digits allowed, includes spaces
 STRING_TOKEN = (qstring | NAME_WORD).setName("string")  # quoted strings OR no-digit words
 
 """
