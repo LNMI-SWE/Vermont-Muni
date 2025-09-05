@@ -11,7 +11,7 @@ FIELD = pp.oneOf(
 
 number   = pp.pyparsing_common.number().setName("number")   # int or float
 qstring  = pp.quotedString.setParseAction(pp.removeQuotes)   # "string"
-word     = pp.Word(pp.alphanums + "_")
+word     = pp.Word(pp.alphanums + "_.'-")  # alphanumeric word with common punctuation
 
 # Operators
 NUM_OP   = pp.oneOf("< > <= >=")
@@ -118,6 +118,23 @@ def _validate_atom(atom_dict, errors):
     if op.upper() == "OF":
         if not isinstance(value, str):
             errors.append(f"Operator 'OF' with field '{field}' expects a string, got {value}")
+            return
+        
+        # Validate that the value looks like a reasonable town name
+        if not value or len(value.strip()) == 0:
+            errors.append(f"Town name cannot be empty")
+            return
+            
+        # Check if it contains only numbers and basic punctuation
+        if not any(c.isalpha() for c in value):
+            errors.append(f"'{value}' is not a valid town name (no letters found)")
+            return
+            
+        # Check if it contains any digits (town names don't have numbers)
+        if any(c.isdigit() for c in value):
+            errors.append(f"'{value}' is not a valid town name (contains numbers)")
+            return
+            
         return
 
     if field == "phone":
