@@ -115,6 +115,11 @@ def _validate_atom(atom_dict, errors):
         errors.append(f"Field '{field}' does not support numeric operator '{op}'")
         return
 
+    if op.upper() == "OF":
+        if not isinstance(value, str):
+            errors.append(f"Operator 'OF' with field '{field}' expects a string, got {value}")
+        return
+
     if field == "phone":
         s = str(int(value)) if isinstance(value, (int, float)) else str(value)
         if not s.isdigit():
