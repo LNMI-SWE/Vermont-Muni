@@ -20,3 +20,11 @@ def parse_query(query_str: str):
         return result.asList()
     except ParseException as pe:
         return f"Invalid query: {pe}"
+
+def to_firestore(db, parsed_input: list):
+    operator = parsed_input[1]
+    match operator:
+        case "OF":
+            return db.collection("Vermont_Muni").where(parsed_input[0], "==", parsed_input[2])
+        case "==" | "<" | ">" | "!=":
+            return db.collection("Vermont_Muni").where(parsed_input[0], operator, parsed_input[2])
