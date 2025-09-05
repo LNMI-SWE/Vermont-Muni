@@ -24,6 +24,7 @@ OF_OP    = pp.CaselessKeyword("OF")
 NAME_WORD   = pp.Word(pp.alphas, pp.alphas + "_-.' ")   # starts with a letter, no digits allowed, includes spaces
 STRING_TOKEN = (qstring | NAME_WORD).setName("string")  # quoted strings OR no-digit words
 
+
 """
 Accepted fields:
 - id -> int -> Town_ID
@@ -184,6 +185,11 @@ def _convert_to_query_plan(parsed_result) -> QueryPlan:
 
 def parse_query(s: str):
     s = s.strip()
+    
+    # Check for OF with AND/OR combinations early
+    if " OF " in s.upper() and (" AND " in s.upper() or " OR " in s.upper()):
+        return "Invalid query: Cannot use AND/OR with OF operator. Use OF queries separately or combine OF with regular comparisons."
+    
     # Early field guard: catch unknown fields before infixNotation noise
     first = _first_token(s)
     if first and first not in FIELD_TYPES and first not in {"help", "quit"}:
