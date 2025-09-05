@@ -1,3 +1,5 @@
+from unittest import expectedFailure
+
 import pyparsing as pp
 from query_engine import QueryPlan, Filter
 
@@ -19,7 +21,8 @@ EQ_OP    = pp.oneOf("== !=")
 OF_OP    = pp.CaselessKeyword("OF")
 
 # Values
-any_value = qstring | word
+NAME_WORD   = pp.Word(pp.alphas, pp.alphas + "_-.'")   # starts with a letter, no digits allowed
+STRING_TOKEN = (qstring | NAME_WORD).setName("string")  # quoted strings OR no-digit words
 
 """
 Accepted fields:
@@ -57,8 +60,8 @@ def _atom_to_dict(tokens):
 
 atom = pp.Group(
     (FIELD("field") + NUM_OP("op") + number("value")) |
-    (FIELD("field") + EQ_OP("op")  + (number | any_value)("value")) |
-    (FIELD("field") + OF_OP("op")  + (qstring | word)("value"))
+    (FIELD("field") + EQ_OP("op")  + (number | STRING_TOKEN)("value")) |
+    (FIELD("field") + OF_OP("op")  + STRING_TOKEN("value"))
 ).setParseAction(_atom_to_dict)
 
 # AND has higher precedence than OR
@@ -193,6 +196,10 @@ def parse_query(s: str):
             return "Invalid query: " + "; ".join(errors)
         return _convert_to_query_plan(parsed)
     except pp.ParseException as pe:
+        err_text = str(pe)
+        if "Expected end of text, found" in err_text:
+            return "Invalid query: string values must not contain numbers"
+
         # If the first token *is* a known field, show a cleaner hint
         if first in FIELD_TYPES:
             # Try parsing a single atom to surface a tighter message
