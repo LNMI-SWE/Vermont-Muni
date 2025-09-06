@@ -34,6 +34,7 @@ def run_fn(db, plan: QueryPlan):
     #TODO: This will capture the operator of a well formed single query. We can use a
     # switch after this to tailor query functionality for each operator
     if len(plan.filters) == 1:
+        # if OF or of is entered this will capture it and normalize it to OF
         single_filter_operand = plan.filters[0][1].op.upper()
     
     
