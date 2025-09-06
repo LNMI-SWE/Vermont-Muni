@@ -31,12 +31,12 @@ def normalize_field(user_field: str) -> str:
 
 # Query the firestore with passed in pared query
 def run_fn(db, plan: QueryPlan):
-    # docs = (
-    #     db.collection("Vermont_Municipalities")
-    #     .where(filter=FieldFilter(plan.filters[0][1].field, plan.filters[0][1].op, plan.filters[0][1].value))
-    #     .stream()
-    # )
-
+    #TODO: This will capture the operator of a well formed single query. We can use a
+    # switch after this to tailor query functionality for each operator
+    if len(plan.filters) == 1:
+        single_filter_operand = plan.filters[0][1].op.upper()
+    
+    
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")
 
