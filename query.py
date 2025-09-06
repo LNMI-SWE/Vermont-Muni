@@ -1,14 +1,16 @@
+import shutil
 import sys
-import argparse
+import textwrap
 from typing import List, Any
 
 from parser import parse_query
+from query_engine import run_fn as run_fn
 
 def ensure_firestore():
     """Initialize Firebase and return Firestore client."""
     import firebase_admin
     from firebase_admin import credentials, firestore
-    
+
     if not firebase_admin._apps:
         cred = credentials.Certificate("serviceAccountKey.json")
         firebase_admin.initialize_app(cred)
@@ -16,6 +18,9 @@ def ensure_firestore():
 
 HELP_TEXT = """
 Vermont Query CLI — mini language
+Queryable Fields:
+Town_ID, Town_Name, County, Population, Square_MI, Altitude, 
+Postal_Code, URL, Office_Phone, Clerk_Email
 
 Grammar (simplified):
   FIELD OPERATOR VALUE
@@ -46,30 +51,14 @@ def format_results(rows: List[dict]) -> str:
         return "no information"
     # Heuristic: prefer Town_Name, then name
     names = [r.get("Town_Name") or r.get("name") or "<unknown>" for r in rows]
-    return ", ".join(names)
+    result = ", ".join(names)
+    # Detect terminal width (fallback to 80 if unknown)
+    width = shutil.get_terminal_size((80, 20)).columns
 
-def main(argv: List[str]) -> int:
-    parser = argparse.ArgumentParser(
-        description="Query CLI (parse-only by default; use --execute to run against Firestore)."
-    )
-    parser.add_argument(
-        "--execute",
-        action="store_true",
-        help="Execute the parsed plan against Firestore (requires serviceAccountKey.json and query_engine.run).",
-    )
-    args = parser.parse_args(argv)
+    # Wrap text so it doesn’t overflow
+    return textwrap.fill(result, width=width)
 
-    db = None
-    run_fn = None
-
-    if args.execute:
-        try:
-            db = ensure_firestore()
-            # Import here so parse-only mode doesn't require this file
-            from query_engine import run as run_fn  # noqa: F401
-        except Exception as e:
-            print(f"Failed to initialize Firestore execution mode: {e}")
-            print("Falling back to parse-only mode.\n")
+def main() -> int:
 
     print("> Vermont Query CLI (type 'help' for help, 'quit' to exit)")
     while True:
@@ -103,19 +92,26 @@ def main(argv: List[str]) -> int:
             print(plan)
             continue
 
-        # --- Behavior: parse-only vs execute ---
-        if db and run_fn:
-            # Execute the plan against Firestore
-            try:
-                rows = run_fn(db, plan)  # you provide query_engine.run(db, plan)
-                print(format_results(rows))
-            except Exception as e:
-                print(f"Execution error: {e}")
-        else:
-            # Parse-only: just print the parse result (list structure)
+        # ---- Connect to Firestore ----
+        try:
+            db = ensure_firestore()
+        except Exception as e:
+            print(f"Failed to initialize Firestore Connection: {e}")
+            print(f"Query parsed as: {plan}")
+
+        # ---- Execute the Query ----
+        try:
+            # TODO: get rid of this once we do not need to see the parsed string
             print(plan)
+
+            # run the parsed query
+            rows = run_fn(db, plan)
+            print(format_results(rows))
+
+        except Exception as e:
+            print(f"Execution error: {e}")
 
     return 0
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+    sys.exit(main())
