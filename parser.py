@@ -21,8 +21,21 @@ EQ_OP    = pp.oneOf("== !=")
 OF_OP    = pp.CaselessKeyword("OF")
 
 # Values
-NAME_WORD   = pp.Word(pp.alphas, pp.alphas + "_-.' ")   # starts with a letter, no digits allowed, includes spaces
-STRING_TOKEN = (qstring | NAME_WORD).setName("string")  # quoted strings OR no-digit words
+# boolean keywords
+AND = pp.CaselessKeyword("and")
+OR  = pp.CaselessKeyword("or")
+
+# word "name" (without digits), allows . _ ' -
+NAME_WORD = pp.Word(pp.alphas, pp.alphas + "._'-")
+
+# Many words one after the other, but stops the string if AND/OR appears (as they are keywords)
+# Returns plain text
+PLAIN_STRING = pp.originalTextFor(
+    pp.OneOrMore(~(AND | OR) + NAME_WORD)
+).setName("string")
+
+# accepts quoted or not quoted and always returns strings
+STRING_TOKEN = (qstring | PLAIN_STRING).setName("string")
 
 
 """
@@ -59,8 +72,13 @@ def _atom_to_dict(tokens):
     t = tokens[0]  # because we Group()'d
     return {"field": t.field, "op": str(t.op), "value": t.value}
 
+# keep your STRING_TOKEN as you already have (doesn't swallow AND/OR)
+
+VAL_NUMOP = (number | STRING_TOKEN).setName("num_compare_value")  # number FIRST
+VAL_EQ = (number | STRING_TOKEN).setName("eq_value")
+
 atom = pp.Group(
-    (FIELD("field") + NUM_OP("op") + number("value")) |
+    (FIELD("field") + NUM_OP("op") + VAL_NUMOP("value")) |          # <-- changed
     (FIELD("field") + EQ_OP("op")  + (number | STRING_TOKEN)("value")) |
     (FIELD("field") + OF_OP("op")  + STRING_TOKEN("value"))
 ).setParseAction(_atom_to_dict)
@@ -99,7 +117,22 @@ def _validate_expr(node, errors):
 
 def _atom_to_dict(tokens):
     t = tokens[0]
-    return {"field": t.field, "op": str(t.op), "value": t.value}
+    val = t.value
+    # Normaliza a string si llega como ParseResults/lista
+    if isinstance(val, pp.ParseResults):
+        if len(val) == 1 and isinstance(val[0], str):
+            val = val[0]
+        else:
+            val = " ".join(map(str, val.asList()))
+
+    # if value looks like a digit string, coerce to int
+    if isinstance(val, str) and val.isdigit():
+        val = int(val)
+
+    return {"field": t.field, "op": str(t.op), "value": val}
+
+atom.setParseAction(_atom_to_dict)
+
 
 # ensure atoms become dicts
 atom.setParseAction(_atom_to_dict)
@@ -115,9 +148,14 @@ def _validate_atom(atom_dict, errors):
 
     expected = FIELD_TYPES[field]
 
-    if op in {"<", ">", "<=", ">="} and expected not in (int, float):
-        errors.append(f"Field '{field}' does not support numeric operator '{op}'")
-        return
+    # --- Numeric operators: prioritize “operator not supported” first ---
+    if op in {"<", ">", "<=", ">="}:
+        if expected not in (int, float):
+            errors.append(f"Field '{field}' does not support numeric operator '{op}'")
+            return
+        # If field is numeric, then enforce numeric value
+        if not isinstance(value, (int, float)):
+            errors.append(f"Field '{field}' expects a number, got '{value}'")
 
     if op.upper() == "OF":
         if not isinstance(value, str):
