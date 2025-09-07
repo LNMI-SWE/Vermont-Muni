@@ -1,3 +1,5 @@
+from unittest import expectedFailure
+
 import pyparsing as pp
 from query_engine import QueryPlan, Filter
 
@@ -5,13 +7,13 @@ pp.ParserElement.enablePackrat()
 
 # --- Allowed fields (whitelist) ---
 FIELD = pp.oneOf(
-    "id population city county millage altitude zipcode phone email url",
+    "id population city county square_mi altitude zipcode phone email url",
     caseless=True, asKeyword=True
 ).setName("field").addParseAction(lambda t: t[0].lower())
 
 number   = pp.pyparsing_common.number().setName("number")   # int or float
 qstring  = pp.quotedString.setParseAction(pp.removeQuotes)   # "string"
-word     = pp.Word(pp.alphanums + "_")
+word     = pp.Word(pp.alphanums + "_.'- ")  # alphanumeric word with common punctuation and spaces
 
 # Operators
 NUM_OP   = pp.oneOf("< > <= >=")
@@ -19,7 +21,22 @@ EQ_OP    = pp.oneOf("== !=")
 OF_OP    = pp.CaselessKeyword("OF")
 
 # Values
-any_value = qstring | word
+# boolean keywords
+AND = pp.CaselessKeyword("and")
+OR  = pp.CaselessKeyword("or")
+
+# word "name" (without digits), allows . _ ' -
+NAME_WORD = pp.Word(pp.alphas, pp.alphas + "._'-")
+
+# Many words one after the other, but stops the string if AND/OR appears (as they are keywords)
+# Returns plain text
+PLAIN_STRING = pp.originalTextFor(
+    pp.OneOrMore(~(AND | OR) + NAME_WORD)
+).setName("string")
+
+# accepts quoted or not quoted and always returns strings
+STRING_TOKEN = (qstring | PLAIN_STRING).setName("string")
+
 
 """
 Accepted fields:
@@ -27,7 +44,7 @@ Accepted fields:
 - population -> int -> Population
 - city -> str -> Town_Name
 - county -> str -> County
-- millage -> float -> Square_MI
+- square_mi -> float -> Square_MI
 - altitude -> int -> Altitude
 - zipcode -> int -> Postal_Code
 - phone -> int -> Office_Phone (accept digits; format later as 802-xxx-xxxx)
@@ -40,7 +57,7 @@ FIELD_TYPES = {
     "population": int,
     "city": str,
     "county": str,
-    "millage": float,
+    "square_mi": float,
     "altitude": int,
     "zipcode": int,
     "phone": int,
@@ -55,10 +72,15 @@ def _atom_to_dict(tokens):
     t = tokens[0]  # because we Group()'d
     return {"field": t.field, "op": str(t.op), "value": t.value}
 
+# keep your STRING_TOKEN as you already have (doesn't swallow AND/OR)
+
+VAL_NUMOP = (number | STRING_TOKEN).setName("num_compare_value")  # number FIRST
+VAL_EQ = (number | STRING_TOKEN).setName("eq_value")
+
 atom = pp.Group(
-    (FIELD("field") + NUM_OP("op") + number("value")) |
-    (FIELD("field") + EQ_OP("op")  + (number | any_value)("value")) |
-    (FIELD("field") + OF_OP("op")  + (qstring | word)("value"))
+    (FIELD("field") + NUM_OP("op") + VAL_NUMOP("value")) |          # <-- changed
+    (FIELD("field") + EQ_OP("op")  + (number | STRING_TOKEN)("value")) |
+    (FIELD("field") + OF_OP("op")  + STRING_TOKEN("value"))
 ).setParseAction(_atom_to_dict)
 
 # AND has higher precedence than OR
@@ -76,7 +98,7 @@ IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 FIELD_TYPES = {
     "id": int, "population": int, "city": str, "county": str,
-    "millage": float, "altitude": int, "zipcode": int, "phone": int,
+    "square_mi": float, "altitude": int, "zipcode": int, "phone": int,
     "email": str, "url": str,
 }
 
@@ -95,7 +117,22 @@ def _validate_expr(node, errors):
 
 def _atom_to_dict(tokens):
     t = tokens[0]
-    return {"field": t.field, "op": str(t.op), "value": t.value}
+    val = t.value
+    # Normaliza a string si llega como ParseResults/lista
+    if isinstance(val, pp.ParseResults):
+        if len(val) == 1 and isinstance(val[0], str):
+            val = val[0]
+        else:
+            val = " ".join(map(str, val.asList()))
+
+    # if value looks like a digit string, coerce to int
+    if isinstance(val, str) and val.isdigit():
+        val = int(val)
+
+    return {"field": t.field, "op": str(t.op), "value": val}
+
+atom.setParseAction(_atom_to_dict)
+
 
 # ensure atoms become dicts
 atom.setParseAction(_atom_to_dict)
@@ -111,8 +148,35 @@ def _validate_atom(atom_dict, errors):
 
     expected = FIELD_TYPES[field]
 
-    if op in {"<", ">", "<=", ">="} and expected not in (int, float):
-        errors.append(f"Field '{field}' does not support numeric operator '{op}'")
+    # --- Numeric operators: prioritize “operator not supported” first ---
+    if op in {"<", ">", "<=", ">="}:
+        if expected not in (int, float):
+            errors.append(f"Field '{field}' does not support numeric operator '{op}'")
+            return
+        # If field is numeric, then enforce numeric value
+        if not isinstance(value, (int, float)):
+            errors.append(f"Field '{field}' expects a number, got '{value}'")
+
+    if op.upper() == "OF":
+        if not isinstance(value, str):
+            errors.append(f"Operator 'OF' with field '{field}' expects a string, got {value}")
+            return
+        
+        # Validate that the value looks like a reasonable town name
+        if not value or len(value.strip()) == 0:
+            errors.append(f"Town name cannot be empty")
+            return
+            
+        # Check if it contains only numbers and basic punctuation
+        if not any(c.isalpha() for c in value):
+            errors.append(f"'{value}' is not a valid town name (no letters found)")
+            return
+            
+        # Check if it contains any digits (town names don't have numbers)
+        if any(c.isdigit() for c in value):
+            errors.append(f"'{value}' is not a valid town name (contains numbers)")
+            return
+            
         return
 
     if field == "phone":
@@ -159,6 +223,11 @@ def _convert_to_query_plan(parsed_result) -> QueryPlan:
 
 def parse_query(s: str):
     s = s.strip()
+    
+    # Check for OF with AND/OR combinations early
+    if " OF " in s.upper() and (" AND " in s.upper() or " OR " in s.upper()):
+        return "Invalid query: Cannot use AND/OR with OF operator. Use OF queries separately or combine OF with regular comparisons."
+    
     # Early field guard: catch unknown fields before infixNotation noise
     first = _first_token(s)
     if first and first not in FIELD_TYPES and first not in {"help", "quit"}:
@@ -171,6 +240,10 @@ def parse_query(s: str):
             return "Invalid query: " + "; ".join(errors)
         return _convert_to_query_plan(parsed)
     except pp.ParseException as pe:
+        err_text = str(pe)
+        if "Expected end of text, found" in err_text:
+            return "Invalid query: string values must not contain numbers"
+
         # If the first token *is* a known field, show a cleaner hint
         if first in FIELD_TYPES:
             # Try parsing a single atom to surface a tighter message
