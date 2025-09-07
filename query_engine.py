@@ -36,7 +36,29 @@ def run_fn(db, plan: QueryPlan):
     if len(plan.filters) == 1:
         # if OF or of is entered this will capture it and normalize it to OF
         single_filter_operand = plan.filters[0][1].op.upper()
-    
+        
+        # Special handling for OF operator
+        if single_filter_operand == "OF":
+            town_name = plan.filters[0][1].value  # e.g., "Burlington"
+            field_to_get = plan.filters[0][1].field  # e.g., "altitude"
+            
+            # Find the town by name (case-insensitive)
+            # Get all towns and filter by case-insensitive name match
+            all_towns = db.collection("Vermont_Municipalities").stream()
+            docs = []
+            for doc in all_towns:
+                town_data = doc.to_dict()
+                if town_data.get("Town_Name", "").lower() == town_name.lower():
+                    docs.append(doc)
+                    break  # Found the town, stop searching
+            
+            if docs:
+                town_data = docs[0].to_dict()
+                firestore_field = normalize_field(field_to_get)
+                field_value = town_data.get(firestore_field)
+                return [field_value] if field_value is not None else []
+            else:
+                return []  # Town not found
     
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")

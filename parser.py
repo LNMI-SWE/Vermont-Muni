@@ -7,7 +7,7 @@ pp.ParserElement.enablePackrat()
 
 # --- Allowed fields (whitelist) ---
 FIELD = pp.oneOf(
-    "id population city county millage altitude zipcode phone email url",
+    "id population city county square_mi altitude zipcode phone email url",
     caseless=True, asKeyword=True
 ).setName("field").addParseAction(lambda t: t[0].lower())
 
@@ -44,7 +44,7 @@ Accepted fields:
 - population -> int -> Population
 - city -> str -> Town_Name
 - county -> str -> County
-- millage -> float -> Square_MI
+- square_mi -> float -> Square_MI
 - altitude -> int -> Altitude
 - zipcode -> int -> Postal_Code
 - phone -> int -> Office_Phone (accept digits; format later as 802-xxx-xxxx)
@@ -57,7 +57,7 @@ FIELD_TYPES = {
     "population": int,
     "city": str,
     "county": str,
-    "millage": float,
+    "square_mi": float,
     "altitude": int,
     "zipcode": int,
     "phone": int,
@@ -98,7 +98,7 @@ IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 FIELD_TYPES = {
     "id": int, "population": int, "city": str, "county": str,
-    "millage": float, "altitude": int, "zipcode": int, "phone": int,
+    "square_mi": float, "altitude": int, "zipcode": int, "phone": int,
     "email": str, "url": str,
 }
 

@@ -45,17 +45,24 @@ Commands:
   quit     Exit the program
 """
 
-def format_results(rows: List[dict]) -> str:
-    """Pretty-prints a list of Firestore docs (if executing)."""
+def format_results(rows: List[Any]) -> str:
+    """Nicely prints a list of Firestore docs or single values (if executing)."""
     if not rows:
         return "no information"
-    # Heuristic: prefer Town_Name, then name
-    names = [r.get("Town_Name") or r.get("name") or "<unknown>" for r in rows]
-    result = ", ".join(names)
+    
+    # Check if this is a list of single values (from OF queries) or dicts (from regular queries)
+    if rows and not isinstance(rows[0], dict):
+        # OF query results - single values
+        result = ", ".join(str(r) for r in rows)
+    else:
+        # Regular query results - dictionaries
+        names = [r.get("Town_Name") or r.get("name") or "<unknown>" for r in rows]
+        result = ", ".join(names)
+    
     # Detect terminal width (fallback to 80 if unknown)
     width = shutil.get_terminal_size((80, 20)).columns
 
-    # Wrap text so it doesn’t overflow
+    # Wrap text so it doesn't overflow
     return textwrap.fill(result, width=width)
 
 def main() -> int:
