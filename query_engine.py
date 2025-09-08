@@ -16,19 +16,6 @@ class QueryPlan:
     order_by: Optional[Tuple[str, str]] = None  # (field, direction)
     limit: Optional[int] = None
 
-FIELD_MAP = {
-    "population": "Population",
-    "county": "County",
-    "town_name": "Town_Name",
-    "altitude": "Altitude",
-    "square_mi": "Square_MI",
-    "postal_code": "Postal_Code",
-}
-
-def normalize_field(user_field: str) -> str:
-    """Convert user input (any case) into the Firestore field name."""
-    return FIELD_MAP.get(user_field.lower(), user_field)
-
 # Query the firestore with passed in pared query
 def run_fn(db, plan: QueryPlan):
     #TODO: This will capture the operator of a well formed single query. We can use a
@@ -66,8 +53,7 @@ def run_fn(db, plan: QueryPlan):
     # Apply all filters from QueryPlan
     for _, f in plan.filters:
         if f.op == "==" or f.op == "<" or f.op == ">" or f.op == "!=":
-            field_name = normalize_field(f.field)
-            query = query.where(filter=FieldFilter(field_name, f.op, f.value))
+            query = query.where(filter=FieldFilter(f.field, f.op, f.value))
             # Apply ordering if specified
             if plan.order_by:
                 query = query.order_by(plan.order_by)
