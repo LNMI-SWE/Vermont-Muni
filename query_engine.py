@@ -52,7 +52,22 @@ def run_fn(db, plan: QueryPlan):
 
     # Apply all filters from QueryPlan
     for _, f in plan.filters:
-        if f.op == "==" or f.op == "<" or f.op == ">" or f.op == "!=":
+        if f.op == "OF":
+            query = query.where(filter=FieldFilter("town_name", "==", f.value))
+            # Apply ordering if specified
+            if plan.order_by:
+                query = query.order_by(plan.order_by)
+
+            # Apply limit if specified
+            if plan.limit:
+                query = query.limit(plan.limit)
+
+            # Execute and return dicts instead of snapshots
+            docs = list(query.stream())
+            for doc in docs:
+                doc.to_dict()
+            return docs[0].get(f.field)
+        else:  # operator is ==, <, >, !=
             query = query.where(filter=FieldFilter(f.field, f.op, f.value))
             # Apply ordering if specified
             if plan.order_by:
@@ -65,20 +80,7 @@ def run_fn(db, plan: QueryPlan):
             # Execute and return dicts instead of snapshots
             docs = list(query.stream())
             return [doc.to_dict() | {"id": doc.id} for doc in docs]
-        else: # f.op == "OF":
-            query = query.where(filter=FieldFilter("Town_Name", "==", f.value))
-            # Apply ordering if specified
-            if plan.order_by:
-                query = query.order_by(plan.order_by)
 
-            # Apply limit if specified
-            if plan.limit:
-                query = query.limit(plan.limit)
-
-            # Execute and return dicts instead of snapshots
-            docs = list(query.stream())
-            # TODO: return just the field that was asked for
-            return [doc.to_dict() | {"id": doc.id} for doc in docs]
 
     # Apply ordering if specified
     if plan.order_by:

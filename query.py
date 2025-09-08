@@ -28,7 +28,7 @@ Grammar (simplified):
 
 Operators:
   ==  !=  <  >  <=  >=  OF
-  (Example: city == Burlington)
+  (Example: county == Chittenden)
   (Example: altitude OF Burlington)
 
 Values:
@@ -36,9 +36,9 @@ Values:
   - multi-word: use quotes        (e.g., "South Burlington")
 
 Examples:
-  city == Burlington
-  cost <= 3 and city == "Burlington"
-  reservations OF "Henrys Diner"
+    county == Lamoille
+    altitude < 500 and population > 16000
+    population of Middlebury
 
 Commands:
   help     Show this help
@@ -56,7 +56,7 @@ def format_results(rows: List[Any]) -> str:
         result = ", ".join(str(r) for r in rows)
     else:
         # Regular query results - dictionaries
-        names = [r.get("Town_Name") or r.get("name") or "<unknown>" for r in rows]
+        names = [r.get("town_name") or r.get("name") or "<unknown>" for r in rows]
         result = ", ".join(names)
     
     # Detect terminal width (fallback to 80 if unknown)
@@ -114,8 +114,7 @@ def main() -> int:
             # run the parsed query
             rows = run_fn(db, plan)
             if plan.filters[0][1].op == "OF":
-                # TODO: get that specific field from the dictionary
-                print(rows[0].get(plan.filters[0][1].field))
+                print(rows)
             else:
                 print(format_results(rows))
 
