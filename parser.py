@@ -1,4 +1,5 @@
 from unittest import expectedFailure
+import re
 
 import pyparsing as pp
 from query_engine import QueryPlan, Filter
@@ -7,7 +8,7 @@ pp.ParserElement.enablePackrat()
 
 # --- Allowed fields (whitelist) ---
 FIELD = pp.oneOf(
-    "id population city county square_mi altitude zipcode phone email url",
+    "id population county square_mi altitude zipcode phone email url",
     caseless=True, asKeyword=True
 ).setName("field").addParseAction(lambda t: t[0].lower())
 
@@ -37,12 +38,15 @@ PLAIN_STRING = pp.originalTextFor(
 # accepts quoted or not quoted and always returns strings
 STRING_TOKEN = (qstring | PLAIN_STRING).setName("string")
 
+# check the phone format
+PHONE_DASHED = pp.Regex(r"\d{3}-\d{3}-\d{4}").setName("phone_dashed")
+PHONE_PLAIN  = pp.Regex(r"\d{10}").setName("phone_plain")
+
 
 """
 Accepted fields:
 - id -> int -> Town_ID
 - population -> int -> Population
-- city -> str -> Town_Name
 - county -> str -> County
 - square_mi -> float -> Square_MI
 - altitude -> int -> Altitude
@@ -55,12 +59,11 @@ Accepted fields:
 FIELD_TYPES = {
     "id": int,
     "population": int,
-    "city": str,
     "county": str,
     "square_mi": float,
     "altitude": int,
     "zipcode": int,
-    "phone": int,
+    "phone": str,
     "email": str,
     "url": str,
 }
@@ -75,13 +78,14 @@ def _atom_to_dict(tokens):
 # keep your STRING_TOKEN as you already have (doesn't swallow AND/OR)
 
 VAL_NUMOP = (number | STRING_TOKEN).setName("num_compare_value")  # number FIRST
-VAL_EQ = (number | STRING_TOKEN).setName("eq_value")
+VAL_EQ = (PHONE_DASHED | PHONE_PLAIN | number | STRING_TOKEN).setName("eq_value")
 
 atom = pp.Group(
-    (FIELD("field") + NUM_OP("op") + VAL_NUMOP("value")) |          # <-- changed
-    (FIELD("field") + EQ_OP("op")  + (number | STRING_TOKEN)("value")) |
+    (FIELD("field") + NUM_OP("op") + VAL_NUMOP("value")) |
+    (FIELD("field") + EQ_OP("op")  + VAL_EQ("value")) |
     (FIELD("field") + OF_OP("op")  + STRING_TOKEN("value"))
 ).setParseAction(_atom_to_dict)
+
 
 # AND has higher precedence than OR
 expr = pp.infixNotation(
@@ -97,7 +101,7 @@ expr = pp.infixNotation(
 IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 FIELD_TYPES = {
-    "id": int, "population": int, "city": str, "county": str,
+    "id": int, "population": int, "county": str,
     "square_mi": float, "altitude": int, "zipcode": int, "phone": int,
     "email": str, "url": str,
 }
@@ -179,10 +183,19 @@ def _validate_atom(atom_dict, errors):
             
         return
 
+    if field == "zipcode":
+        s = str(value).zfill(5)
+        if not re.fullmatch(r"05\d{3}", s):
+            errors.append(f"Field 'zipcode' should be a 5 digit integer starting by 05")
+        return
+
     if field == "phone":
-        s = str(int(value)) if isinstance(value, (int, float)) else str(value)
-        if not s.isdigit():
-            errors.append(f"Field 'phone' expects only digits, got '{value}'")
+        s = str(value)
+        digits = re.sub(r"\D", "", s)
+        if len(digits) != 10:
+            errors.append("Field 'phone' must be 10 digits (e.g., 8021231234 or 802-123-1234)")
+            return
+        atom_dict["value"] = f"{digits[0:3]}-{digits[3:6]}-{digits[6:10]}"
         return
 
     if expected in (int, float) and not isinstance(value, (int, float)):
