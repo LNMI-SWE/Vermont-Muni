@@ -38,20 +38,3 @@ if __name__ == "__main__":
         db.collection('Vermont_Municipalities').add(item)
         if idx == len(data) - 1:
             print("Upload successful")
-
-    # Find All towns in Chittenden County
-    print("All towns in Chittenden County:")
-    q = db.collection("Vermont_Municipalities").where("County", "==", "Chittenden")
-    for doc in q.stream():
-        data = doc.to_dict()
-        print(data.get("Town_Name"))
-
-    # Find the 5 largest towns by population
-    print("5 largest towns by population:")
-    q = (db.collection("Vermont_Municipalities")
-       .where("Population", ">", 0)
-       .order_by("Population", direction=firestore.Query.DESCENDING)
-       .limit(5))
-    for doc in q.stream():
-        t = doc.to_dict()
-        print(t["Town_Name"], t["Population"])
