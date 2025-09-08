@@ -113,7 +113,11 @@ def main() -> int:
 
             # run the parsed query
             rows = run_fn(db, plan)
-            print(format_results(rows))
+            if plan.filters[0][1].op == "OF":
+                # TODO: get that specific field from the dictionary
+                print(rows[0].get(plan.filters[0][1].field))
+            else:
+                print(format_results(rows))
 
         except Exception as e:
             print(f"Execution error: {e}")

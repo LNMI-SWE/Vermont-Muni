@@ -36,7 +36,7 @@ def run_fn(db, plan: QueryPlan):
     if len(plan.filters) == 1:
         # if OF or of is entered this will capture it and normalize it to OF
         single_filter_operand = plan.filters[0][1].op.upper()
-        
+        '''
         # Special handling for OF operator
         if single_filter_operand == "OF":
             town_name = plan.filters[0][1].value  # e.g., "Burlington"
@@ -59,14 +59,40 @@ def run_fn(db, plan: QueryPlan):
                 return [field_value] if field_value is not None else []
             else:
                 return []  # Town not found
-    
+    '''
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")
 
     # Apply all filters from QueryPlan
     for _, f in plan.filters:
-        field_name = normalize_field(f.field)
-        query = query.where(filter=FieldFilter(field_name, f.op, f.value))
+        if f.op == "==" or f.op == "<" or f.op == ">" or f.op == "!=":
+            field_name = normalize_field(f.field)
+            query = query.where(filter=FieldFilter(field_name, f.op, f.value))
+            # Apply ordering if specified
+            if plan.order_by:
+                query = query.order_by(plan.order_by)
+
+            # Apply limit if specified
+            if plan.limit:
+                query = query.limit(plan.limit)
+
+            # Execute and return dicts instead of snapshots
+            docs = list(query.stream())
+            return [doc.to_dict() | {"id": doc.id} for doc in docs]
+        else: # f.op == "OF":
+            query = query.where(filter=FieldFilter("Town_Name", "==", f.value))
+            # Apply ordering if specified
+            if plan.order_by:
+                query = query.order_by(plan.order_by)
+
+            # Apply limit if specified
+            if plan.limit:
+                query = query.limit(plan.limit)
+
+            # Execute and return dicts instead of snapshots
+            docs = list(query.stream())
+            # TODO: return just the field that was asked for
+            return [doc.to_dict() | {"id": doc.id} for doc in docs]
 
     # Apply ordering if specified
     if plan.order_by:
