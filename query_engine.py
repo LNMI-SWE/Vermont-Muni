@@ -29,22 +29,15 @@ def run_fn(db, plan: QueryPlan):
         if connector == "":
             # this is the first query and will always run
             if f.op == "OF":
-                query = query.where(filter=FieldFilter("town_name", "==", f.value))
-                # Apply ordering if specified
-                if plan.order_by:
-                    query = query.order_by(plan.order_by)
-
-                # Apply limit if specified
-                if plan.limit:
-                    query = query.limit(plan.limit)
-
-                # Execute and return dicts instead of snapshots
-                docs = list(query.stream())
-                if docs:
-                    docs[0].to_dict()
-                    return docs[0].get(f.field)
-                else:
-                    return []
+                # Case-insensitive search for town name
+                all_towns = db.collection("Vermont_Municipalities").stream()
+                for doc in all_towns:
+                    town_data = doc.to_dict()
+                    # Get town name from the data
+                    town_name = town_data.get("town_name", "")
+                    if town_name.lower() == f.value.lower():
+                        return [town_data.get(f.field)]
+                return []
             else:  # operator is ==, <, >, !=
                 query = query.where(filter=FieldFilter(f.field, f.op, f.value))
                 # Apply ordering if specified
