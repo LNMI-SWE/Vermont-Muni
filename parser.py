@@ -255,6 +255,10 @@ def parse_query(s: str):
     except pp.ParseException as pe:
         err_text = str(pe)
         
+        # Handle invalid characters in OF queries
+        if " of " in s.lower() and (";" in s or ":" in s or "!" in s or "@" in s or "#" in s or "$" in s or "%" in s or "^" in s or "&" in s or "*" in s or "(" in s or ")" in s or "+" in s or "=" in s or "[" in s or "]" in s or "{" in s or "}" in s or "|" in s or "\\" in s or "/" in s or "<" in s or ">" in s or "," in s or "?" in s):
+            return "Invalid query: Town names cannot contain special characters like ; : ! @ # $ % ^ & * ( ) + = [ ] { } | \\ / < > , ?"
+        
         # Handle double operators first (AND AND, OR OR)
         if " and and " in s.lower() or " or or " in s.lower() or " and and" in s.lower() or " or or" in s.lower():
             return "Invalid query: Double operator detected. Use only one AND or OR between conditions."
