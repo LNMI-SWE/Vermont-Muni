@@ -255,7 +255,11 @@ def parse_query(s: str):
     except pp.ParseException as pe:
         err_text = str(pe)
         
-        # Handle incomplete compound queries first
+        # Handle double operators first (AND AND, OR OR)
+        if " and and " in s.lower() or " or or " in s.lower() or " and and" in s.lower() or " or or" in s.lower():
+            return "Invalid query: Double operator detected. Use only one AND or OR between conditions."
+        
+        # Handle incomplete compound queries
         has_and_or = (" and" in s.lower() or " or" in s.lower())
         has_end_of_text = "Expected end of text, found" in err_text
         if has_and_or and has_end_of_text:
