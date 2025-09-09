@@ -254,8 +254,16 @@ def parse_query(s: str):
         return _convert_to_query_plan(parsed)
     except pp.ParseException as pe:
         err_text = str(pe)
+        
+        # Handle incomplete compound queries first
+        has_and_or = (" and" in s.lower() or " or" in s.lower())
+        has_end_of_text = "Expected end of text, found" in err_text
+        if has_and_or and has_end_of_text:
+            return "Invalid query: Incomplete compound query. Missing condition after AND/OR operator."
+        
+        # Handle incomplete single queries
         if "Expected end of text, found" in err_text:
-            return "Invalid query: string values must not contain numbers"
+            return f"Invalid query: Incomplete query. {err_text}"
 
         # If the first token *is* a known field, show a cleaner hint
         if first in FIELD_TYPES:
