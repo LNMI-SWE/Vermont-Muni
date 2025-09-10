@@ -23,6 +23,7 @@ def run_fn(db, plan: QueryPlan):
 
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")
+    saw_or = False  # add this right after you create `query`
 
     # Apply all filters from QueryPlan
     for connector, f in plan.filters:
@@ -55,13 +56,24 @@ def run_fn(db, plan: QueryPlan):
             # add another "where" to the query
             # can assume here that the operator is not "OF"
             query = query.where(filter=FieldFilter(f.field, f.op, f.value))
-        else: # connector == "OR":
-            # append the new docs to the existing docs
-            # can assume here that the operator is not "OF"
+
+        else:  # connector == "OR"
+            # Seed docs from the current AND-chain once
+            if not saw_or:
+                docs = list(query.stream())
+
+            # Run the OR branch independently
             new_query = (db.collection("Vermont_Municipalities")
                          .where(filter=FieldFilter(f.field, f.op, f.value)))
-            docs.append(list(new_query.stream()))
+            new_docs = list(new_query.stream())
 
+            # Union by document id (avoid duplicates)
+            existing_ids = {d.id for d in docs}
+            for nd in new_docs:
+                if nd.id not in existing_ids:
+                    docs.append(nd)
+
+            saw_or = True
 
     # Apply ordering if specified
     if plan.order_by:
@@ -72,5 +84,8 @@ def run_fn(db, plan: QueryPlan):
         query = query.limit(plan.limit)
 
     # Execute and return dicts instead of snapshots
-    docs = list(query.stream())
+    # Only run the chained AND query when there was NO OR
+    if not saw_or:
+        docs = list(query.stream())
+
     return [doc.to_dict() | {"id": doc.id} for doc in docs]
