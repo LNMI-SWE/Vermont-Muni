@@ -8,13 +8,13 @@ pp.ParserElement.enablePackrat()
 
 # --- Allowed fields (whitelist) ---
 FIELD = pp.oneOf(
-    "id population county square_mi altitude zipcode phone email url",
+    "town_id population county square_mi altitude postal_code office_phone clerk_email url town_name",
     caseless=True, asKeyword=True
 ).setName("field").addParseAction(lambda t: t[0].lower())
 
 number   = pp.pyparsing_common.number().setName("number")   # int or float
 qstring  = pp.quotedString.setParseAction(pp.removeQuotes)   # "string"
-word     = pp.Word(pp.alphanums + "_.'- ")  # alphanumeric word with common punctuation and spaces
+word     = pp.Word(pp.alphanums + "_.'- @:/")  # alphanumeric word with common punctuation and spaces
 
 # Operators
 NUM_OP   = pp.oneOf("< > <= >=")
@@ -27,7 +27,7 @@ AND = pp.CaselessKeyword("and")
 OR  = pp.CaselessKeyword("or")
 
 # word "name" (without digits), allows . _ ' -
-NAME_WORD = pp.Word(pp.alphas, pp.alphas + "._'-")
+NAME_WORD = pp.Word(pp.alphas, pp.alphas + "._'-@:/")
 
 # Many words one after the other, but stops the string if AND/OR appears (as they are keywords)
 # Returns plain text
@@ -45,15 +45,16 @@ PHONE_PLAIN  = pp.Regex(r"\d{10}").setName("phone_plain")
 
 """
 Accepted fields:
-- id -> int -> Town_ID
-- population -> int -> Population
-- county -> str -> County
-- square_mi -> float -> Square_MI
-- altitude -> int -> Altitude
-- zipcode -> int -> Postal_Code
-- phone -> int -> Office_Phone (accept digits; format later as 802-xxx-xxxx)
-- email -> str -> Clerk_Email
-- url -> str -> URL
+- town_id -> int -> town_id
+- population -> int -> population
+- county -> str -> county
+- square_mi -> float -> square_mi
+- altitude -> int -> altitude
+- postal_code -> int -> postal_code
+- office_phone -> int -> office_phone (accept digits; format later as 802-xxx-xxxx)
+- clerk_email -> str -> clerk_email
+- url -> str -> url
+- town_name -> str -> town_name
 """
 
 FIELD_TYPES = {
@@ -62,10 +63,11 @@ FIELD_TYPES = {
     "county": str,
     "square_mi": float,
     "altitude": int,
-    "postal_code": str,
+    "postal_code": int,
     "office_phone": str,
     "clerk_email": str,
     "url": str,
+    "town_name": str
 }
 
 # Atoms
@@ -102,7 +104,7 @@ IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 FIELD_TYPES = {
     "town_id": int, "population": int, "county": str,
-    "square_mi": float, "altitude": int, "postal_code": str, "office_phone": int,
+    "square_mi": float, "altitude": int, "postal_code": int, "office_phone": int,
     "clerk_email": str, "url": str, "town_name": str
 }
 
@@ -129,9 +131,17 @@ def _atom_to_dict(tokens):
         else:
             val = " ".join(map(str, val.asList()))
 
-    # if value looks like a digit string, coerce to int
-    if isinstance(val, str) and val.isdigit():
-        val = int(val)
+    # For numeric fields (except postal_code), try int first, then float
+    if t.field != "postal_code" and isinstance(val, str):
+        try:
+            # first try integer
+            val = int(val)
+        except ValueError:
+            try:
+                # then try float
+                val = float(val)
+            except ValueError:
+                pass  # leave it as string if neither works
 
     return {"field": t.field, "op": str(t.op), "value": val}
 
@@ -183,13 +193,35 @@ def _validate_atom(atom_dict, errors):
             
         return
 
-    if field == "zipcode":
-        s = str(value).zfill(5)
-        if not re.fullmatch(r"05\d{3}", s):
-            errors.append(f"Field 'zipcode' should be a 5 digit integer starting by 05")
+    if field == "postal_code":
+        # Only allow == and OF
+        if op not in ("==", "OF"):
+            errors.append("postal_code only supports '==' and 'OF'")
+            return
+
+        if op == "==":
+            # For equality, require digits; preserve leading zeros by zero-padding
+            s = str(value).strip()
+            if not s.isdigit():
+                errors.append("postal_code must be numeric digits (e.g., 05478)")
+                return
+            # Normalize to 5 digits; this preserves (or adds) the leading 0
+            atom_dict["value"] = s.zfill(5)
+            return
+
+        # op == "OF" here:
+        # Expect a town name string (letters/spaces/etc.), not just digits.
+        s = str(value).strip()
+        if not s:
+            errors.append("Town name for 'postal_code OF …' cannot be empty")
+            return
+        if not any(c.isalpha() for c in s):
+            errors.append(f"'{s}' is not a valid town name (no letters found)")
+            return
+        # No further rewrite; 'OF' logic is handled at execution time
         return
 
-    if field == "phone":
+    if field == "office_phone":
         s = str(value)
         digits = re.sub(r"\D", "", s)
         if len(digits) != 10:
@@ -254,7 +286,7 @@ def parse_query(s: str):
         return _convert_to_query_plan(parsed)
     except pp.ParseException as pe:
         err_text = str(pe)
-        
+
         # Handle invalid characters in OF queries
         if " of " in s.lower() and (";" in s or ":" in s or "!" in s or "@" in s or "#" in s or "$" in s or "%" in s or "^" in s or "&" in s or "*" in s or "(" in s or ")" in s or "+" in s or "=" in s or "[" in s or "]" in s or "{" in s or "}" in s or "|" in s or "\\" in s or "/" in s or "<" in s or ">" in s or "," in s or "?" in s):
             return "Invalid query: Town names cannot contain special characters like ; : ! @ # $ % ^ & * ( ) + = [ ] { } | \\ / < > , ?"
