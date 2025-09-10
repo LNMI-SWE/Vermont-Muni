@@ -57,14 +57,14 @@ Accepted fields:
 """
 
 FIELD_TYPES = {
-    "id": int,
+    "town_id": int,
     "population": int,
     "county": str,
     "square_mi": float,
     "altitude": int,
-    "zipcode": int,
-    "phone": str,
-    "email": str,
+    "postal_code": str,
+    "office_phone": str,
+    "clerk_email": str,
     "url": str,
 }
 
@@ -101,9 +101,9 @@ expr = pp.infixNotation(
 IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 FIELD_TYPES = {
-    "id": int, "population": int, "county": str,
-    "square_mi": float, "altitude": int, "zipcode": int, "phone": int,
-    "email": str, "url": str,
+    "town_id": int, "population": int, "county": str,
+    "square_mi": float, "altitude": int, "postal_code": str, "office_phone": int,
+    "clerk_email": str, "url": str, "town_name": str
 }
 
 def validate(tree):
