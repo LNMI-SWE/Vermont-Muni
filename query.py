@@ -114,7 +114,7 @@ def main() -> int:
             # run the parsed query
             rows = run_fn(db, plan)
             if plan.filters[0][1].op == "OF":
-                print(rows)
+                print(rows[0])
             else:
                 print(format_results(rows))
 
