@@ -18,9 +18,6 @@ class QueryPlan:
 
 # Query the firestore with passed in pared query
 def run_fn(db, plan: QueryPlan):
-    #TODO: This will capture the operator of a well formed single query. We can use a
-    # switch after this to tailor query functionality for each operator
-
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")
     saw_or = False  # add this right after you create `query`
@@ -49,9 +46,8 @@ def run_fn(db, plan: QueryPlan):
                 if plan.limit:
                     query = query.limit(plan.limit)
 
-                # Execute and return dicts instead of snapshots
+                # Execute
                 docs = list(query.stream())
-                # return [doc.to_dict() | {"id": doc.id} for doc in docs]
         elif connector == "AND":
             # add another "where" to the query
             # can assume here that the operator is not "OF"

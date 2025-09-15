@@ -66,7 +66,6 @@ def format_results(rows: List[Any]) -> str:
     return textwrap.fill(result, width=width)
 
 def main() -> int:
-
     print("> Vermont Query CLI (type 'help' for help, 'quit' to exit)")
     while True:
         try:
@@ -108,15 +107,9 @@ def main() -> int:
 
         # ---- Execute the Query ----
         try:
-            # TODO: get rid of this once we do not need to see the parsed string
-            print(plan)
-
             # run the parsed query
             rows = run_fn(db, plan)
-            if plan.filters[0][1].op == "OF":
-                print(rows[0])
-            else:
-                print(format_results(rows))
+            print(format_results(rows))
 
         except Exception as e:
             print(f"Execution error: {e}")
