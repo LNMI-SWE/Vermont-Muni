@@ -22,7 +22,7 @@ def run_fn(db, plan: QueryPlan):
     query = db.collection("Vermont_Municipalities")
     saw_or = False  # add this right after you create `query`
 
-    # Apply all filters from QueryPlan
+    # Apply all filters from the QueryPlan
     for connector, f in plan.filters:
         if connector == "":
             if f.field.lower() == "town_name" and (f.op == "==" or f.op == "OF"):
