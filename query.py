@@ -37,6 +37,7 @@ Values:
 
 Examples:
     county == Lamoille
+    county == "Grand Isle"
     altitude < 500 and population > 16000
     population of Middlebury
 
