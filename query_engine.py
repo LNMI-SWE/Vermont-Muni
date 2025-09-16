@@ -9,12 +9,22 @@ class Filter:
     op: str
     value: Any
 
+    def __eq__(self, other):
+        if self.field == other.field and self.op == other.op and self.value == other.value:
+            return True
+        return False
+
 
 @dataclass
 class QueryPlan:
     filters: List[Tuple[str, Filter]]  # list of (connector, filter), first connector can be ""; connectors are "AND" or "OR"
     order_by: Optional[Tuple[str, str]] = None  # (field, direction)
     limit: Optional[int] = None
+
+    def __eq__(self, other):
+        if self.filters == other.filters and self.order_by == other.order_by and self.limit == other.limit:
+            return True
+        return False
 
 # Query the firestore with passed in pared query
 def run_fn(db, plan: QueryPlan):

@@ -270,7 +270,7 @@ def parse_query(s: str):
     s = s.strip()
 
     # Check for using more than 2 compound queries at once
-    if s.upper().count(" AND ") > 1 or s.upper().count(" OR ") > 1 or " AND " in s.upper() and " OR " in s.upper():
+    if s.upper().count(" AND ") > 1 or s.upper().count(" OR ") > 1 or (" AND " in s.upper() and " OR " in s.upper()):
         return "Invalid query: Cannot use more than one AND/OR operator"
     # Check for OF with AND/OR combinations early
     if " OF " in s.upper() and (" AND " in s.upper() or " OR " in s.upper()):
