@@ -25,6 +25,19 @@ def run_fn(db, plan: QueryPlan):
     # Apply all filters from QueryPlan
     for connector, f in plan.filters:
         if connector == "":
+            # case-insensitive equality for town_name/county
+            if len(plan.filters) == 1:
+                _, f = plan.filters[0]
+                if f.op == "==" and f.field in {"town_name", "county"}:
+                    want = str(f.value).lower()
+                    rows = []
+                    for doc in db.collection("Vermont_Municipalities").stream():
+                        d = doc.to_dict()
+                        got = str(d.get(f.field, "")).lower()
+                        if got == want:
+                            rows.append(d | {"id": doc.id})
+                    return rows
+
             # this is the first query and will always run
             if f.op == "OF":
                 # Case-insensitive search for town name
