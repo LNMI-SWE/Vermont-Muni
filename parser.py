@@ -35,8 +35,10 @@ PLAIN_STRING = pp.originalTextFor(
     pp.OneOrMore(~(AND | OR) + NAME_WORD)
 ).setName("string")
 
+SINGLE_WORD = pp.Word(pp.alphas, pp.alphanums + "._'-@:/")
+
 # accepts quoted or not quoted and always returns strings
-STRING_TOKEN = (qstring | PLAIN_STRING).setName("string")
+STRING_TOKEN = (qstring | SINGLE_WORD).setName("string")
 
 # check the phone format
 PHONE_DASHED = pp.Regex(r"\d{3}-\d{3}-\d{4}").setName("phone_dashed")
@@ -50,7 +52,7 @@ Accepted fields:
 - county -> str -> county
 - square_mi -> float -> square_mi
 - altitude -> int -> altitude
-- postal_code -> int -> postal_code
+- postal_code -> str -> postal_code
 - office_phone -> int -> office_phone (accept digits; format later as 802-xxx-xxxx)
 - clerk_email -> str -> clerk_email
 - url -> str -> url
