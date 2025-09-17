@@ -63,7 +63,7 @@ FIELD_TYPES = {
     "county": str,
     "square_mi": float,
     "altitude": int,
-    "postal_code": int,
+    "postal_code": str,
     "office_phone": str,
     "clerk_email": str,
     "url": str,
@@ -101,12 +101,6 @@ expr = pp.infixNotation(
 # Semantic validation
 
 IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
-
-FIELD_TYPES = {
-    "town_id": int, "population": int, "county": str,
-    "square_mi": float, "altitude": int, "postal_code": int, "office_phone": int,
-    "clerk_email": str, "url": str, "town_name": str
-}
 
 def validate(tree):
     errors = []
@@ -193,7 +187,17 @@ def _validate_atom(atom_dict, errors):
             
         return
 
+    # TODO: postal_code is a string, so can handle it as a string
+    # TODO: ensure postal_codes can only be 5 digits... postal_code accepts 00005464 and 5464
     if field == "postal_code":
+        if not type(value) is str:
+            errors.append("postal_code must be a string")
+            return
+        '''
+        if len(value) < 4 or len(value) > 5:
+            errors.append("postal_code must be only five digits")
+            return
+        '''
         # Only allow == and OF
         if op not in ("==", "OF"):
             errors.append("postal_code only supports '==' and 'OF'")
