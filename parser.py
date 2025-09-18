@@ -204,7 +204,12 @@ def _validate_atom(atom_dict, errors):
                 errors.append("postal_code must be numeric digits (e.g., 05478)")
                 return
             # Normalize to 5 digits; this preserves (or adds) the leading 0
-            atom_dict["value"] = s.zfill(5)
+            s = s.zfill(5)
+            if re.fullmatch(r"05\d{3}", s):
+                atom_dict["value"] = s
+                return
+
+            errors.append("Field 'postal_code' must be 5 digits starting by 05 (e.g., 05090 or 05405)")
             return
 
         # op == "OF" here:
