@@ -192,14 +192,6 @@ def _validate_atom(atom_dict, errors):
     # TODO: postal_code is a string, so can handle it as a string
     # TODO: ensure postal_codes can only be 5 digits... postal_code accepts 00005464 and 5464
     if field == "postal_code":
-        if not type(value) is str:
-            errors.append("postal_code must be a string")
-            return
-        '''
-        if len(value) < 4 or len(value) > 5:
-            errors.append("postal_code must be only five digits")
-            return
-        '''
         # Only allow == and OF
         if op not in ("==", "OF"):
             errors.append("postal_code only supports '==' and 'OF'")
