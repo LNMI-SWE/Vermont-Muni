@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 Load JSON data into Firestore, replacing existing docs:
 ```
-python admin.py csvjson.json
+python admin.py Vermont_Muni.json
 ```
 
 ## Query CLI
@@ -22,8 +22,11 @@ python admin.py csvjson.json
 Start interactive prompt to run queries like:
 ```
 > county == Chittenden
+> town_name == "South Burlington"
 > altitude >= 1200
-> population > 0 ORDER BY population DESC LIMIT 5
-> help
-> quit
 ```
+
+The queryable fields are the following: `town_id`, `town_name`, `county`, `population`, `square_mi`, 
+`altitude`, `postal_code`, `url`, `office_phone`, and `clerk_email`. Not all documents in the database 
+have the `url`, `office_phone`, or `clerk_email` fields.
+If you need help, use the `help` command, and use the `quit` command to exit the program. 
