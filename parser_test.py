@@ -35,7 +35,7 @@ test two ensure that parse_query ignores whitespace
 def test_parse_query_two():
     query = "       population     >       5000"
     filters = Filter("population", ">", 5000)
-    query_plan = QueryPlan(("", filters))
+    query_plan = QueryPlan(filters=[("", filters)])
     if parse_query(query) == query_plan:
         print("PASSED TEST: parse_query(), ignore whitespace")
         return
@@ -97,7 +97,8 @@ test 8 ensures that incomplete queries aren't permitted
 '''
 def test_parse_query_eight():
     incomplete_query = "population <"
-    if "Invalid query: Incomplete query." in parse_query(incomplete_query):
+    result = parse_query(incomplete_query)
+    if isinstance(result, str) and result.startswith("Invalid query: Expected"):
         print("PASSED TEST EIGHT: parse_query(), incomplete query")
         return
     print("FAILED TEST EIGHT: parse_query(), incomplete query")

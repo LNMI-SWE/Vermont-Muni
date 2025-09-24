@@ -3,6 +3,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 import sys
 import json
+from models import Town
 
 def delete_collection(coll_ref, batch_size):
     if batch_size == 0:
@@ -33,8 +34,9 @@ if __name__ == "__main__":
     f.close()
     # delete the old data
     delete_collection(db.collection('Vermont_Municipalities'), len(data))
-    # add the data to the firestore
+    # add the data to the firestore (normalize via model)
     for idx, item in enumerate(data):
-        db.collection('Vermont_Municipalities').add(item)
+        town = Town.from_dict(item)
+        db.collection('Vermont_Municipalities').add(town.to_dict())
         if idx == len(data) - 1:
             print("Upload successful")

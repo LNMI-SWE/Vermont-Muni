@@ -5,6 +5,7 @@ from typing import List, Any
 
 from parser import parse_query
 from query_engine import run_fn as run_fn
+from models import Town
 
 def ensure_firestore():
     """Initialize Firebase and return Firestore client."""
@@ -56,8 +57,9 @@ def format_results(rows: List[Any]) -> str:
         # OF query results - single values
         result = ", ".join(str(r) for r in rows)
     else:
-        # Regular query results - dictionaries
-        names = [r.get("town_name") or r.get("name") or "<unknown>" for r in rows]
+        # Regular query results - normalize dicts via model
+        towns = [Town.from_dict(r) for r in rows]
+        names = [t.town_name or "<unknown>" for t in towns]
         result = ", ".join(names)
     
     # Detect terminal width (fallback to 80 if unknown)
