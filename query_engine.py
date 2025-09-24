@@ -18,11 +18,10 @@ class Filter:
 @dataclass
 class QueryPlan:
     filters: List[Tuple[str, Filter]]  # list of (connector, filter), first connector can be ""; connectors are "AND" or "OR"
-    order_by: Optional[Tuple[str, str]] = None  # (field, direction)
-    limit: Optional[int] = None
+
 
     def __eq__(self, other):
-        if self.filters == other.filters and self.order_by == other.order_by and self.limit == other.limit:
+        if self.filters == other.filters:
             return True
         return False
 
@@ -63,13 +62,6 @@ def run_fn(db, plan: QueryPlan):
                 return []
             else:  # operator is ==, <, >, !=
                 query = query.where(filter=FieldFilter(f.field, f.op, f.value))
-                # Apply ordering if specified
-                if plan.order_by:
-                    query = query.order_by(plan.order_by)
-
-                # Apply limit if specified
-                if plan.limit:
-                    query = query.limit(plan.limit)
 
                 # Execute
                 docs = list(query.stream())
@@ -95,14 +87,6 @@ def run_fn(db, plan: QueryPlan):
                     docs.append(nd)
 
             saw_or = True
-
-    # Apply ordering if specified
-    if plan.order_by:
-        query = query.order_by(plan.order_by)
-
-    # Apply limit if specified
-    if plan.limit:
-        query = query.limit(plan.limit)
 
     # Execute and return dicts instead of snapshots
     # Only run the chained AND query when there was NO OR
