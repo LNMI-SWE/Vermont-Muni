@@ -1,32 +1,62 @@
+"""
+This module declares the following classes:
+ - Filter, with attributes field, op, value
+ - QueryPlan, with the only attribute being filters
+
+It also provides the run_fn(db, plan) method, which executes
+the parsed QueryPlan against Firestore.
+"""
+
 from dataclasses import dataclass
-from typing import List, Optional, Tuple, Any
+from typing import List, Tuple, Any
 from google.cloud.firestore_v1 import FieldFilter
 
 
 @dataclass
 class Filter:
+    """
+    This class represents a single query condition.
+
+    Attributes:
+     - field (str): the Firestore document field to filter on
+     - op (str): the comparison operator (e.g., '==', '>', '<', 'of')
+     - value (Any): the comparison value for the filter
+
+    Two Filter instances are equal if their field, operator and value are equal
+    """
     field: str
     op: str
     value: Any
 
     def __eq__(self, other):
-        if self.field == other.field and self.op == other.op and self.value == other.value:
+        if (self.field == other.field
+                and self.op == other.op
+                and self.value == other.value):
             return True
         return False
 
 
 @dataclass
 class QueryPlan:
-    filters: List[Tuple[str, Filter]]  # list of (connector, filter), first connector can be ""; connectors are "AND" or "OR"
+    """
+    Represents a parsed query to be executed against Firestore in run_fn
 
+    Attributes:
+     - filters (List[Tuple[str, Filter]]): a list of (connector, Filter) pairs
+
+    Two QueryPlan instances are equal if their filters are equal (if they have
+    the same sequence of connectors and filters)
+    """
+    # list of (connector, filter), first connector can be ""; connectors are "AND" or "OR"
+    filters: List[Tuple[str, Filter]]
 
     def __eq__(self, other):
         if self.filters == other.filters:
             return True
         return False
 
-# Query the firestore with passed in pared query
 def run_fn(db, plan: QueryPlan):
+    """Executes a parsed QueryPlan against the Vermont_Municipalities collection in Firestore"""
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")
     saw_or = False  # add this right after you create `query`
@@ -60,11 +90,12 @@ def run_fn(db, plan: QueryPlan):
                     if town_name.lower() == f.value.lower():
                         return [town_data.get(f.field)]
                 return []
-            else:  # operator is ==, <, >, !=
-                query = query.where(filter=FieldFilter(f.field, f.op, f.value))
 
-                # Execute
-                docs = list(query.stream())
+            query = query.where(filter=FieldFilter(f.field, f.op, f.value))
+
+            # Execute
+            docs = list(query.stream())
+
         elif connector == "AND":
             # add another "where" to the query
             # can assume here that the operator is not "OF"
