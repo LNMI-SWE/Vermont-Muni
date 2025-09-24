@@ -193,8 +193,6 @@ def _validate_atom(atom_dict, errors):
             
         return
 
-    # TODO: postal_code is a string, so can handle it as a string
-    # TODO: ensure postal_codes can only be 5 digits... postal_code accepts 00005464 and 5464
     if field == "postal_code":
         # Only allow == and OF
         if op not in ("==", "OF"):
@@ -271,7 +269,7 @@ def _convert_to_query_plan(parsed_result) -> QueryPlan:
                 process_node(node[0], connector)
     
     process_node(parsed_result)
-    return QueryPlan(filters=filters, order_by=None, limit=None)
+    return QueryPlan(filters=filters)
 
 def parse_query(s: str):
     s = s.strip()
