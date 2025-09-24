@@ -110,7 +110,6 @@ def main() -> int:
 
         # ---- Execute the Query ----
         try:
-            print(plan)
             # run the parsed query
             rows = run_fn(db, plan)
             print(format_results(rows))
