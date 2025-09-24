@@ -1,4 +1,3 @@
-from unittest import expectedFailure
 import re
 
 import pyparsing as pp
@@ -12,14 +11,14 @@ FIELD = pp.oneOf(
     caseless=True, asKeyword=True
 ).setName("field").addParseAction(lambda t: t[0].lower())
 
-number   = pp.pyparsing_common.number().setName("number")   # int or float
-qstring  = pp.quotedString.setParseAction(pp.removeQuotes)   # "string"
-word     = pp.Word(pp.alphanums + "_.'- @:/")  # alphanumeric word with common punctuation and spaces
+number = pp.pyparsing_common.number().setName("number")  # int or float
+qstring = pp.quotedString.setParseAction(pp.removeQuotes)  # "string"
+word = pp.Word(pp.alphanums + "_.'- @:/")  # alphanumeric word with common punctuation and spaces
 
 # Operators
-NUM_OP   = pp.oneOf("< > <= >=")
-EQ_OP    = pp.oneOf("== !=")
-OF_OP    = pp.CaselessKeyword("OF")
+NUM_OP = pp.oneOf("< > <= >=")
+EQ_OP = pp.oneOf("== !=")
+OF_OP = pp.CaselessKeyword("OF")
 
 # Values
 # boolean keywords
@@ -43,7 +42,6 @@ STRING_TOKEN = (qstring | SINGLE_WORD).setName("string")
 # check the phone format
 PHONE_DASHED = pp.Regex(r"\d{3}-\d{3}-\d{4}").setName("phone_dashed")
 PHONE_PLAIN  = pp.Regex(r"\d{10}").setName("phone_plain")
-
 
 """
 Accepted fields:
@@ -72,37 +70,6 @@ FIELD_TYPES = {
     "town_name": str
 }
 
-# Atoms
-# Turn each atom into a dict so validation is easy
-def _atom_to_dict(tokens):
-    # tokens has named fields: field, op, value
-    t = tokens[0]  # because we Group()'d
-    return {"field": t.field, "op": str(t.op), "value": t.value}
-
-# keep your STRING_TOKEN as you already have (doesn't swallow AND/OR)
-
-VAL_NUMOP = (number | STRING_TOKEN).setName("num_compare_value")  # number FIRST
-VAL_EQ = (PHONE_DASHED | PHONE_PLAIN | number | STRING_TOKEN).setName("eq_value")
-
-atom = pp.Group(
-    (FIELD("field") + NUM_OP("op") + VAL_NUMOP("value")) |
-    (FIELD("field") + EQ_OP("op")  + VAL_EQ("value")) |
-    (FIELD("field") + OF_OP("op")  + STRING_TOKEN("value"))
-).setParseAction(_atom_to_dict)
-
-
-# AND has higher precedence than OR
-expr = pp.infixNotation(
-    atom,
-    [
-        (pp.CaselessKeyword("and"), 2, pp.opAssoc.LEFT),
-        (pp.CaselessKeyword("or"),  2, pp.opAssoc.LEFT),
-    ],
-)
-
-# Semantic validation
-
-IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 def validate(tree):
     errors = []
@@ -145,11 +112,29 @@ def _atom_to_dict(tokens):
 
     return {"field": t.field, "op": str(t.op), "value": val}
 
-atom.setParseAction(_atom_to_dict)
+# keep your STRING_TOKEN as you already have (doesn't swallow AND/OR)
 
+VAL_NUMOP = (number | STRING_TOKEN).setName("num_compare_value")  # number FIRST
+VAL_EQ = (PHONE_DASHED | PHONE_PLAIN | number | STRING_TOKEN).setName("eq_value")
 
-# ensure atoms become dicts
-atom.setParseAction(_atom_to_dict)
+atom = pp.Group(
+    (FIELD("field") + NUM_OP("op") + VAL_NUMOP("value")) |
+    (FIELD("field") + EQ_OP("op") + VAL_EQ("value")) |
+    (FIELD("field") + OF_OP("op") + STRING_TOKEN("value"))
+).setParseAction(_atom_to_dict)
+
+# AND has higher precedence than OR
+expr = pp.infixNotation(
+    atom,
+    [
+        (pp.CaselessKeyword("and"), 2, pp.opAssoc.LEFT),
+        (pp.CaselessKeyword("or"), 2, pp.opAssoc.LEFT),
+    ],
+)
+
+# Semantic validation
+
+IDENT = pp.Word(pp.alphas, pp.alphanums + "_")  # for first-token sniffing
 
 def _validate_atom(atom_dict, errors):
     field = atom_dict.get("field")
