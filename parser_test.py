@@ -37,9 +37,9 @@ def test_parse_query_two():
     filters = Filter("population", ">", 5000)
     query_plan = QueryPlan(filters=[("", filters)])
     if parse_query(query) == query_plan:
-        print("PASSED TEST: parse_query(), ignore whitespace")
+        print("PASSED TEST TWO: parse_query(), ignore whitespace")
         return
-    print("FAILED TEST: parse_query(), ignore whitespace")
+    print("FAILED TEST TWO: parse_query(), ignore whitespace")
 
 '''
 tests to ensure that only on compound operator (AND/OR) is allowed at once
