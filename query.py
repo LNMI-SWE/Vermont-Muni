@@ -19,28 +19,26 @@ def ensure_firestore():
 
 HELP_TEXT = """
 Vermont Query CLI — mini language
-Queryable Fields:
-Town_ID, Town_Name, County, Population, Square_MI, Altitude, 
-Postal_Code, URL, Office_Phone, Clerk_Email
 
-Grammar (simplified):
-  FIELD OPERATOR VALUE
-  FIELD OPERATOR VALUE and/or FIELD OPERATOR VALUE
+Fields (case-insensitive):
+  town_id, town_name, county, population, square_mi, altitude,
+  postal_code, office_phone, clerk_email, url
 
 Operators:
   ==  !=  <  >  <=  >=  OF
-  (Example: county == Chittenden)
-  (Example: altitude OF Burlington)
 
-Values:
-  - single words: use letters/digits (e.g., Burlington, 3)
-  - multi-word: use quotes        (e.g., "South Burlington")
+Rules:
+  - Fields/operators are case-insensitive; values are case-insensitive for this dataset.
+  - Multi-word values require quotes (e.g., "South Burlington").
+  - Only one AND or OR per query (no mixing), and OF cannot be combined with AND/OR.
+  - OF town lookups are case-insensitive on town_name.
 
 Examples:
-    county == Lamoille
-    county == "Grand Isle"
-    altitude < 500 and population > 16000
-    population of Middlebury
+  county == Lamoille
+  county == "Grand Isle"
+  altitude < 500 and population > 16000
+  postal_code == 05401
+  altitude OF Burlington
 
 Commands:
   help     Show this help
