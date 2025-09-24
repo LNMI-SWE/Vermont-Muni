@@ -1,18 +1,23 @@
+"""Parse user queries, execute against Firestore and pretty-print results"""
+
 import shutil
 import sys
 import textwrap
 from typing import List, Any
 
 from parser import parse_query
-from query_engine import run_fn as run_fn
+
+import firebase_admin
+from firebase_admin import credentials, firestore
+
+from query_engine import run_fn
 from models import Town
 
 def ensure_firestore():
     """Initialize Firebase and return Firestore client."""
-    import firebase_admin
-    from firebase_admin import credentials, firestore
-
-    if not firebase_admin._apps:
+    try:
+        firebase_admin.get_app()
+    except ValueError:
         cred = credentials.Certificate("serviceAccountKey.json")
         firebase_admin.initialize_app(cred)
     return firestore.client()
@@ -49,17 +54,18 @@ def format_results(rows: List[Any]) -> str:
     """Nicely prints a list of Firestore docs or single values (if executing)."""
     if not rows:
         return "no information available. To learn more type \"help\""
-    
+
     # Check if this is a list of single values (from OF queries) or dicts (from regular queries)
     if rows and not isinstance(rows[0], dict):
         # OF query results - single values
         result = ", ".join(str(r) for r in rows)
+
     else:
         # Regular query results - normalize dicts via model
         towns = [Town.from_dict(r) for r in rows]
         names = [t.town_name or "<unknown>" for t in towns]
         result = ", ".join(names)
-    
+
     # Detect terminal width (fallback to 80 if unknown)
     width = shutil.get_terminal_size((80, 20)).columns
 
@@ -67,6 +73,7 @@ def format_results(rows: List[Any]) -> str:
     return textwrap.fill(result, width=width)
 
 def main() -> int:
+    """This main method parses input, runs queries and prints results"""
     print("> Vermont Query CLI (type 'help' for help, 'quit' to exit)")
     while True:
         try:
