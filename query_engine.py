@@ -32,20 +32,24 @@ def run_fn(db, plan: QueryPlan):
     query = db.collection("Vermont_Municipalities")
     saw_or = False  # add this right after you create `query`
 
+    if (len(plan.filters) == 1 and
+            plan.filters[0][0] == "" and
+            plan.filters[0][1].field.lower() == "town_name" and
+            plan.filters[0][1].op in ("==", "OF")):
+
+        want = str(plan.filters[0][1].value).lower()
+        matches = []
+        for doc in db.collection("Vermont_Municipalities").stream():
+            got = str(doc.to_dict().get("town_name", ""))
+            if got.lower() == want:
+                matches.append(got)
+        if matches:
+            return [f"{matches[0]}... What did you expect?"]
+        return []
+
     # Apply all filters from the QueryPlan
     for connector, f in plan.filters:
         if connector == "":
-            if f.field.lower() == "town_name" and (f.op == "==" or f.op == "OF"):
-                want = str(f.value).lower()
-                for doc in db.collection("Vermont_Municipalities").stream():
-                    d = doc.to_dict()
-                    got = str(d.get(f.field, ""))
-                    got_lower = str(d.get(f.field, "")).lower()
-                    if got_lower == want:
-                        return [str(got) + "... What did you expect?"]
-
-                return []
-
             # this is the first query and will always run
             if f.op == "OF":
                 # Case-insensitive search for town name
