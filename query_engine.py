@@ -17,38 +17,40 @@ class Filter:
 
 @dataclass
 class QueryPlan:
-    # list of (connector, filter), first connector can be ""; connectors are "AND" or "OR"
-    filters: List[Tuple[str, Filter]]
+    filters: List[Tuple[str, Filter]]  # list of (connector, filter), first connector can be ""; connectors are "AND" or "OR"
+    order_by: Optional[Tuple[str, str]] = None  # (field, direction)
+    limit: Optional[int] = None
 
     def __eq__(self, other):
-        if self.filters == other.filters:
+        if self.filters == other.filters and self.order_by == other.order_by and self.limit == other.limit:
             return True
         return False
 
-'''
-run_fn takes in parsed input and returns the actual query from the firestore database.
-'''
+# Query the firestore with passed in pared query
 def run_fn(db, plan: QueryPlan):
     # Start with collection reference
     query = db.collection("Vermont_Municipalities")
     saw_or = False  # add this right after you create `query`
 
+    if (len(plan.filters) == 1 and
+            plan.filters[0][0] == "" and
+            plan.filters[0][1].field.lower() == "town_name" and
+            plan.filters[0][1].op in ("==", "OF")):
+
+        want = str(plan.filters[0][1].value).lower()
+        matches = []
+        for doc in db.collection("Vermont_Municipalities").stream():
+            got = str(doc.to_dict().get("town_name", ""))
+            if got.lower() == want:
+                matches.append(got)
+        if matches:
+            return [f"{matches[0]}... What did you expect?"]
+        return []
+
     # Apply all filters from the QueryPlan
     for connector, f in plan.filters:
-        # the connector for the first filter will always be an empty string
         if connector == "":
-            # special handling for town_name queries
-            if f.field.lower() == "town_name" and (f.op == "==" or f.op == "OF"):
-                want = str(f.value).lower()
-                for doc in db.collection("Vermont_Municipalities").stream():
-                    d = doc.to_dict()
-                    got = str(d.get(f.field, ""))
-                    got_lower = str(d.get(f.field, "")).lower()
-                    if got_lower == want:
-                        return [str(got) + "... What did you expect?"]
-
-                return []
-
+            # this is the first query and will always run
             if f.op == "OF":
                 # Case-insensitive search for town name
                 all_towns = db.collection("Vermont_Municipalities").stream()
@@ -61,6 +63,14 @@ def run_fn(db, plan: QueryPlan):
                 return []
             else:  # operator is ==, <, >, !=
                 query = query.where(filter=FieldFilter(f.field, f.op, f.value))
+                # Apply ordering if specified
+                if plan.order_by:
+                    query = query.order_by(plan.order_by)
+
+                # Apply limit if specified
+                if plan.limit:
+                    query = query.limit(plan.limit)
+
                 # Execute
                 docs = list(query.stream())
         elif connector == "AND":
@@ -85,6 +95,15 @@ def run_fn(db, plan: QueryPlan):
                     docs.append(nd)
 
             saw_or = True
+
+    # Apply ordering if specified
+    if plan.order_by:
+        query = query.order_by(plan.order_by)
+
+    # Apply limit if specified
+    if plan.limit:
+        query = query.limit(plan.limit)
+
     # Execute and return dicts instead of snapshots
     # Only run the chained AND query when there was NO OR
     if not saw_or:
