@@ -19,6 +19,11 @@ python admin.py Vermont_Muni.json
 
 ## Query CLI
 
+To start the query interface:
+```
+python query.py
+```
+
 Start interactive prompt to run queries like:
 ```
 > county == Chittenden
