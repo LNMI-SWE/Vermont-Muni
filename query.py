@@ -48,7 +48,7 @@ Commands:
 def format_results(rows: List[Any]) -> str:
     """Nicely prints a list of Firestore docs or single values (if executing)."""
     if not rows:
-        return "no information"
+        return "no information available. To learn more type \"Help\""
     
     # Check if this is a list of single values (from OF queries) or dicts (from regular queries)
     if rows and not isinstance(rows[0], dict):

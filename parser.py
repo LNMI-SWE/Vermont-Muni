@@ -120,6 +120,10 @@ def _validate_expr(node, errors):
 def _atom_to_dict(tokens):
     t = tokens[0]
     val = t.value
+    # Capitalize first letter of each word for all string fields
+    if isinstance(val, str) and t.field in FIELD_TYPES and FIELD_TYPES[t.field] is str:
+        val = " ".join(word.capitalize() for word in val.split())
+
     # Normaliza a string si llega como ParseResults/lista
     if isinstance(val, pp.ParseResults):
         if len(val) == 1 and isinstance(val[0], str):
