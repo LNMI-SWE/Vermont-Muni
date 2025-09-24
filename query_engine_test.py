@@ -74,7 +74,7 @@ def test_five():
     filters = [("", Filter(field="url", op="OF", value="Buel's Gore"))]
     plan = QueryPlan(filters=filters)
     result = run_fn(db, plan)
-    if format_results(result) == 'no information available. To learn more type "Help"':
+    if format_results(result) == 'no information available. To learn more type "help"':
         print("PASSED TEST FIVE")
         return
     print('FAILED TEST FIVE')
