@@ -20,15 +20,14 @@ Tests for parser.py
 
 # tests for parse_query()
 '''
-tests to ensure that parse_query is case insensitive
+test_one ensures that multi-word tokens require quotation marks
 '''
 def test_parse_query_one():
-    query_one = "county == Lamoille"
-    query_two = "COUNTY == LAMOILLE"
-    if parse_query(query_one) == parse_query(query_two):
-        print("PASSED TEST ONE: parse_query(), case insensitive")
+    query = "county == grand isle"
+    if "Invalid query: Incomplete query. " in parse_query(query):
+        print("PASSED TEST ONE: parse_query multi-word tokens require quotes")
         return
-    print("FAILED TEST ONE: parse_query(), case insensitive")
+    print("FAILED TEST ONE: parse_query multi-word tokens require quotes")
 '''
 test two ensure that parse_query ignores whitespace
 '''
