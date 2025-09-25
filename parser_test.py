@@ -4,19 +4,6 @@ from query_engine import Filter, QueryPlan
 Tests for parser.py
 '''
 
-# tests for validate(tree)
-
-# tests for _validate_expr()
-
-# tests for _atom_to_dict()
-
-# tests for _validate_atom()
-
-# tests for _first_token()
-
-# tests for _convert_to_query_plan()
-
-# tests for parse_query()
 '''
 test_one ensures that multi-word tokens require quotation marks
 '''
