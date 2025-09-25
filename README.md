@@ -40,6 +40,10 @@ Rules:
 - Fields/operators are case-insensitive; values area also case-insensitive for this dataset.
 - Multi-word values require quotes (e.g., "South Burlington").
 - Support a single AND or OR (no mixing), and do not combine `OF` with AND/OR.
+- Not all fields support all operators (e.g., `town_name` does not support the `>` operator).
+- Depending on the operator the value must be of a certain type: 
+      - After `>`, `<`, `>=` or `<=`, the value must be a number.
+      - After `OF`, the value must be a string.
 
 Interface between parser and engine:
 - `parse_query(query_str: str) -> QueryPlan`
