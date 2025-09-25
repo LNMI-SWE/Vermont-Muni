@@ -4,8 +4,6 @@ from query_engine import Filter, QueryPlan
 Tests for parser.py
 '''
 
-# tests for _atom_to_dict()
-
 # tests for validate(tree)
 
 # tests for _validate_expr()
